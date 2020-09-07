@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-semantic-order",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Opinionated stylelint config order semantically grouping css properties",
   "main": "index.js",
   "scripts": {
