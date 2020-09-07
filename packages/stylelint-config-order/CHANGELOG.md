@@ -12,12 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - order rules
 - system test
 - ci workflow
+- eslint
 - readme
 - license
 
 ### Changed
 
 - npm to more generic release workflow
+- config files to yml format
 
 ### Fixed
 
