@@ -10,11 +10,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - order rules
-- system tests
+- system test
+- ci workflow
+- readme
+- license
+
+### Changed
+
+- npm to more generic release workflow
 
 ### Fixed
 
-- package dependencies
+- package
+  - dependencies
+  - keywords
 
 ## [0.1.0]
 
