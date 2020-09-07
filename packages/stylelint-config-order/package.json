@@ -2,24 +2,15 @@
   "name": "stylelint-config-semantic-order",
   "version": "0.1.0",
   "description": "Opinionated stylelint config order semantically grouping css properties",
-  "main": "index.js",
-  "scripts": {
-    "fix": "npm run fix:styles & npm run fix:format",
-    "fix:styles": "stylelint --fix **/*.{css,scss}",
-    "fix:format": "prettier --write **/*.{js,ts,md,mdx,html,css,scss}"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{css,scss}": "stylelint --fix",
-    "*.{js,ts,md,mdx,html,css,scss}": "prettier --write"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pvds/stylelint-config-semantic-order.git"
+  },
+  "author": "pvds <pvdsteen@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/pvds/stylelint-config-semantic-order#readme",
+  "bugs": {
+    "url": "https://github.com/pvds/stylelint-config-semantic-order/issues"
   },
   "keywords": [
     "stylelint",
@@ -35,19 +26,29 @@
     "semantic order",
     "semantic grouping"
   ],
-  "author": "pvds <pvdsteen@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pvds/stylelint-config-semantic-order/issues"
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "format": "prettier --write **/*.{js,ts,md,mdx,html,css,scss}"
   },
-  "homepage": "https://github.com/pvds/stylelint-config-semantic-order#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,md,mdx,html,css,scss}": "prettier --write"
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "stylelint": "^13.7.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=13"
   },
   "dependencies": {
-    "stylelint": "^13.7.0",
     "stylelint-order": "^4.1.0"
   }
 }

@@ -7,9 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0]
 
+### Added
+
+- order rules
+- system tests
+
 ### Changed
 
 - npm publish workflow to use yarn
+
+### Fixed
+
+- package dependencies
 
 ## [0.0.0]
 
