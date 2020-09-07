@@ -1,7 +1,7 @@
 # Stylelint Config Semantic Order
 
 [![NPM version][version-img]][npm-url]
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-semantic-order/Node.js%20Package)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-semantic-order/release)
 [![License][license-img]][npm-url]
 
 Opinionated stylelint config order semantically grouping related css properties.
