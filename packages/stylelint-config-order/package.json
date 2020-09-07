@@ -27,6 +27,7 @@
     "semantic grouping"
   ],
   "main": "index.js",
+  "files": [],
   "scripts": {
     "test": "node test/test.js",
     "format": "prettier --write **/*.{js,ts,md,mdx,html,css,scss}"
