@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Block component
+   ========================================================================== */
+
+.block {
+  @mixin block-mixin-blockless() {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  %block-placeholder {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  @extend %block-placeholder;
+
+  @mixin block-mixin-block() {
+    border: 1px solid slategray;
+    background-color: white;
+
+    @content;
+  }
+  $block: &;
+
+  $block_size: 160px;
+  $block_margin: 16px;
+  $block_margin-sm: 32px;
+  $block_padding: 4px;
+
+  --selector_offset-top: 24px;
+
+  $block--size_padding: 12px;
+  $block--size__element_margin-bottom: 8px;
+
+  background-color: lightgrey;
+  border: 1px solid black;
+  bottom: 0;
+  box-sizing: border-box;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: $block_size;
+  left: 0;
+  line-height: 1.2;
+  margin: $block_margin;
+  padding: $block_padding;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: var(--selector_offset-top);
+  width: $block_size;
+  z-index: 1;
+  @include block-mixin-blockless();
+  @include block-mixin-block() {
+    margin: $block_margin-sm;
+  }
+
+  /**
+   * Element description
+   */
+
+  &__element {
+    /**
+     * Element size modifier description
+     */
+
+    &--theme-modifier {
+      color: darkblue;
+    }
+
+    color: black;
+
+    @extend %block-placeholder;
+  }
+
+  /* Block size modifier description
+     ========================================================================== */
+
+  &--size-modifier {
+    .block {
+      &__element {
+        margin-bottom: $block--size__element_margin-bottom;
+
+        display: flex;
+      }
+
+      // Keep dimensions
+      &__element2 {
+        visibility: hidden;
+      }
+    }
+
+    padding: $block--size_padding;
+  }
+
+  all: unset;
+}
