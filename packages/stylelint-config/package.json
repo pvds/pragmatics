@@ -1,0 +1,61 @@
+{
+  "name": "stylelint-config-pragmatic",
+  "version": "1.0.0-alpha.1",
+  "description": "Opinionated stylelint config providing pragmatic code style",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvds/stylelint-config-pragmatic-order.git"
+  },
+  "author": "pvds <pvdsteen@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/pvds/stylelint-config-pragmatic-order#readme",
+  "bugs": {
+    "url": "https://github.com/pvds/stylelint-config-pragmatic-order/issues"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "stylelint-plugin",
+    "css lint",
+    "pragmatic code",
+    "code style"
+  ],
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --fix .",
+    "format": "prettier --write **/*.{js,md}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,md}": "prettier --write"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "stylelint": "^13.7.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=13",
+    "prettier": ">=2"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-pragmatic-order": "^1.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2"
+  }
+}
