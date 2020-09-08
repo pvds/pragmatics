@@ -1,33 +1,33 @@
-# Stylelint Config Semantic Order
+# Stylelint Config Pragmatic Order
 
 [![NPM version][version-img]][npm-url]
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-semantic-order/release)
-![release](https://github.com/pvds/stylelint-config-semantic-order/workflows/release/badge.svg)
-[![Code Coverage](https://codecov.io/gh/pvds/stylelint-config-semantic-order/branch/master/graph/badge.svg)](https://codecov.io/gh/pvds/stylelint-config-semantic-order)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release)
+![release](https://github.com/pvds/stylelint-config-pragmatic-order/workflows/release/badge.svg)
+[![Code Coverage](https://codecov.io/gh/pvds/stylelint-config-pragmatic-order/branch/master/graph/badge.svg)](https://codecov.io/gh/pvds/stylelint-config-pragmatic-order)
 
-Opinionated stylelint config order semantically grouping related css properties.
+Opinionated stylelint config order pragmatically grouping related css properties.
 
 ## Installation
 
 **NPM**
 
 ```sh
-npm i -D stylelint-config-semantic-order
+npm i -D stylelint-config-pragmatic-order
 ```
 
 **Yarn**
 
 ```sh
-yarn add -D stylelint-config-semantic-order
+yarn add -D stylelint-config-pragmatic-order
 ```
 
 ## Usage
 
-Add `stylelint-config-semantic-order` your Stylelint config [extends](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configure.md#extends):
+Add `stylelint-config-pragmatic-order` your Stylelint config [extends](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configure.md#extends):
 
 ```json
 {
-  "extends": "stylelint-config-semantic-order"
+  "extends": "stylelint-config-pragmatic-order"
 }
 ```
 
@@ -81,6 +81,6 @@ The following sources have been used as inspiration for this config:
 
 [idiomatic css]: https://github.com/necolas/idiomatic-css
 [itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[npm-url]: https://www.npmjs.com/package/stylelint-config-semantic-order
-[version-img]: https://img.shields.io/npm/v/stylelint-config-semantic-order.svg?style=flat-square
-[license-img]: https://img.shields.io/npm/l/stylelint-config-semantic-order.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/stylelint-config-pragmatic-order
+[version-img]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order.svg?style=flat-square
+[license-img]: https://img.shields.io/npm/l/stylelint-config-pragmatic-order.svg?style=flat-square

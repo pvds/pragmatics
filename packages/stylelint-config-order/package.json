@@ -1,16 +1,16 @@
 {
-  "name": "stylelint-config-semantic-order",
-  "version": "1.0.0",
-  "description": "Opinionated stylelint config order semantically grouping css properties",
+  "name": "stylelint-config-pragmatic-order",
+  "version": "1.1.0",
+  "description": "Opinionated stylelint config order pragmatically grouping css properties",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/stylelint-config-semantic-order.git"
+    "url": "git+https://github.com/pvds/stylelint-config-pragmatic-order.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/pvds/stylelint-config-semantic-order#readme",
+  "homepage": "https://github.com/pvds/stylelint-config-pragmatic-order#readme",
   "bugs": {
-    "url": "https://github.com/pvds/stylelint-config-semantic-order/issues"
+    "url": "https://github.com/pvds/stylelint-config-pragmatic-order/issues"
   },
   "keywords": [
     "stylelint",
@@ -23,8 +23,8 @@
     "property grouping",
     "declaration order",
     "declaration grouping",
-    "semantic order",
-    "semantic grouping"
+    "pragmatic order",
+    "pragmatic grouping"
   ],
   "main": "index.js",
   "files": [],
