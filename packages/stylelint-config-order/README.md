@@ -2,7 +2,8 @@
 
 [![NPM version][version-img]][npm-url]
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-semantic-order/release)
-[![License][license-img]][npm-url]
+![release](https://github.com/pvds/stylelint-config-semantic-order/workflows/release/badge.svg)
+[![Code Coverage](https://codecov.io/gh/pvds/stylelint-config-semantic-order/branch/master/graph/badge.svg)](https://codecov.io/gh/pvds/stylelint-config-semantic-order)
 
 Opinionated stylelint config order semantically grouping related css properties.
 

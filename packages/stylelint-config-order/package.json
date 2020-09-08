@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-semantic-order",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Opinionated stylelint config order semantically grouping css properties",
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   "main": "index.js",
   "files": [],
   "scripts": {
-    "test": "node test/test.js",
+    "test": "jest",
     "lint": "eslint --fix .",
     "format": "prettier --write **/*.{js,md}"
   },
@@ -46,7 +46,9 @@
     "eslint": "^7.8.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^24.0.0",
     "husky": "^4.2.5",
+    "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
     "prettier": "^2.1.1",
     "stylelint": "^13.7.0"

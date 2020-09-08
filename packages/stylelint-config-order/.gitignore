@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/coverage
 
 # package managers
 node_modules/

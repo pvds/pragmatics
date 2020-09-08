@@ -9,10 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- order rules
-- system test
+- stylelint order rules
 - ci workflow
 - eslint
+- jest system test
 - readme
 - license
 
