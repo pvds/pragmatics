@@ -21,6 +21,7 @@ jobs:
       with:
         registry-url: 'https://npm.pkg.github.com'
         scope: 'pvds'
+    - run: echo "registry=https://npm.pkg.github.com/pvds" >> .npmrc
     - name: Publish to Github
       run: yarn publish
       env:
