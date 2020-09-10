@@ -2,13 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const stylelint = require('stylelint');
 
-const configFile = path.join(__dirname, '..', 'index.js');
+const configFile = require(path.join(__dirname, '..', 'index.js'));
 const fixtureFile = path.join(__dirname, 'system/fixture.scss');
 const expectedFile = path.join(__dirname, 'system/expected.scss');
 
 describe('configuration', () => {
   test('to load', () => {
-    expect(require(configFile)).toBeTruthy();
+    expect(configFile).toBeTruthy();
   });
 });
 
@@ -20,7 +20,7 @@ describe('linted file', () => {
     return stylelint
       .lint({
         code: fixture,
-        config: require(configFile),
+        config: configFile,
         fix: true,
       })
       .then((result) => {
