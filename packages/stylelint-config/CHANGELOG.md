@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- badge format indexing by adding '.svg' suffix to badge image urls
+- badge indexing by adding '.svg' suffix to badge image urls
 
 ## [1.2.3]
 
