@@ -2,27 +2,29 @@ const fs = require('fs');
 const path = require('path');
 const stylelint = require('stylelint');
 
-describe('configuration', () => {
-  const configFile = require(path.join(__dirname, '..', 'index.js'));
+const configFile = path.join(__dirname, '..', 'index.js');
+const fixtureFile = path.join(__dirname, 'system/fixture.scss');
+const expectedFile = path.join(__dirname, 'system/expected.scss');
 
+describe('configuration', () => {
   test('to load', () => {
-    expect(configFile).toBeTruthy();
+    expect(require(configFile)).toBeTruthy();
   });
 });
 
 describe('linted file', () => {
-  const fixture = fs.readFileSync(path.join(__dirname, 'system/fixture.scss'), 'utf8');
-  const expected = fs.readFileSync(path.join(__dirname, 'system/expected.scss'), 'utf8');
+  const fixture = fs.readFileSync(fixtureFile, 'utf8');
+  const expected = fs.readFileSync(expectedFile, 'utf8');
 
   test('to be properly formatted', () => {
     return stylelint
       .lint({
         code: fixture,
-        config: require('..'),
+        config: require(configFile),
         fix: true,
       })
       .then((result) => {
-        // expect(result.errored).toStrictEqual(false);
+        expect(result.errored).toStrictEqual(false);
         expect(result.output).toStrictEqual(expected);
       });
   });

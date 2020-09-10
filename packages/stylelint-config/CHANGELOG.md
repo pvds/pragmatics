@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - .gitattributes
   - mark lock files as binary
   - remove test scss files from Github statistics
+- system test
 
 ## [1.2.0]
 
