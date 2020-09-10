@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pragmatic",
-  "version": "1.2.4",
+  "version": "1.3.0",
   "description": "Opinionated stylelint config providing pragmatic code style",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/pvds/stylelint-config-pragmatic-order#readme",
+  "homepage": "https://www.npmjs.com/package/stylelint-config-pragmatic",
+  "links": {},
   "bugs": {
     "url": "https://github.com/pvds/stylelint-config-pragmatic-order/issues"
   },
@@ -22,7 +23,8 @@
   ],
   "main": "index.js",
   "files": [
-    "index.js"
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md"
   ],
   "scripts": {
     "test": "jest",
