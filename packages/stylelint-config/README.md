@@ -2,7 +2,7 @@
 
 [![NPM version][version-shield]][version-url]
 [![Maintenance][maintenance-shield]][maintenance-url]
-[![Package size][package-size-shield]][package-size-url] \
+[![Package size][package-size-shield]][package-size-url]
 [![Release Status][release-status-shield]][release-status-url]
 [![Dependencies][dependencies-shield]][dependencies-url]
 [![Issues open][issues-shield]][issues-url]
@@ -42,12 +42,14 @@ Add `stylelint-config-pragmatic` your Stylelint config [extends](https://github.
 Being opinionated it's best to limit the amount of rules you use yourself.
 The following rule extensions are already part of this module:
 
-```js
-extends: [
-  'stylelint-config-standard',
-  'stylelint-config-pragmatic-order',
-  'stylelint-prettier/recommended',
-]
+```json
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-pragmatic-order",
+    "stylelint-prettier/recommended"
+  ]
+}
 ```
 
 A number of rules are defined to make Stylelint play nicely with Scss and Prettier.
