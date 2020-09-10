@@ -1,9 +1,34 @@
-# Changelog - [stylelint-config-pragmatic-order]
+# Changelog - [Stylelint config pragmatic order]
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.2.0]
+
+### Added
+
+- .gitattributes
+  - line endings
+  - types
+  - linguist-vendored
+
+### Changed
+
+- workflows
+  - add caching
+  - use setup-node@v2-beta
+  - clarify job/step names
+- readme
+  - add reference to `stylelint-config-pragmatic`
+  - update badges
+  - cleanup references
+- system test cleaned up
+
+### Removed
+
+- .prettierignore
 
 ## [1.1.0]
 
@@ -45,8 +70,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - package dependencies, linters and ignores
 
-[@priva/styles]: https://github.com/pvds/stylelint-config-pragmatic-order
+[stylelint config pragmatic order]: https://github.com/pvds/stylelint-config-pragmatic-order
 [0.0.0]: https://github.com/pvds/stylelint-config-pragmatic-order/tree/0.0.0
 [0.1.0]: https://github.com/pvds/stylelint-config-pragmatic-order/tree/0.1.0
 [1.0.0]: https://github.com/pvds/stylelint-config-pragmatic-order/tree/1.0.0
 [1.1.0]: https://github.com/pvds/stylelint-config-pragmatic-order/tree/1.1.0
+[1.2.0]: https://github.com/pvds/stylelint-config-pragmatic-order/tree/1.2.0

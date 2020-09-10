@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-pragmatic-order",
-  "version": "1.1.0",
-  "description": "Opinionated stylelint config order pragmatically grouping css properties",
+  "version": "1.2.0",
+  "description": "Opinionated stylelint config pragmatically ordering css properties",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pvds/stylelint-config-pragmatic-order.git"
@@ -27,7 +27,9 @@
     "pragmatic grouping"
   ],
   "main": "index.js",
-  "files": [],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix .",

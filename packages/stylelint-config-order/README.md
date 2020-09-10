@@ -1,24 +1,30 @@
 # Stylelint Config Pragmatic Order
 
-[![NPM version][version-img]][npm-url]
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release)
-![release](https://github.com/pvds/stylelint-config-pragmatic-order/workflows/release/badge.svg)
-[![Code Coverage](https://codecov.io/gh/pvds/stylelint-config-pragmatic-order/branch/master/graph/badge.svg)](https://codecov.io/gh/pvds/stylelint-config-pragmatic-order)
+[![NPM version][version-shield]][version-url]
+[![Maintenance][maintenance-shield]][maintenance-url]
+[![Package size][package-size-shield]][package-size-url] \
+[![Release Status][release-status-shield]][release-status-url]
+[![Dependencies][dependencies-shield]][dependencies-url]
+[![Issues open][issues-shield]][issues-url]
+[![Code coverage][coverage-shield]][coverage-url]
+[![Quality Gate Status][quality-shield]][quality-url]
 
-Opinionated stylelint config order pragmatically grouping related css properties.
+Opinionated stylelint config pragmatically ordering related css properties.
 
 ## Installation
+
+You need to have `stylelint` and this config as part of your `devDependencies`.
 
 **NPM**
 
 ```sh
-npm i -D stylelint-config-pragmatic-order
+npm i stylelint stylelint-config-pragmatic-order -D
 ```
 
 **Yarn**
 
 ```sh
-yarn add -D stylelint-config-pragmatic-order
+yarn add stylelint stylelint-config-pragmatic-order -D
 ```
 
 ## Usage
@@ -27,11 +33,14 @@ Add `stylelint-config-pragmatic-order` your Stylelint config [extends](https://g
 
 ```json
 {
-  "extends": "stylelint-config-pragmatic-order"
+  "extends": ["stylelint-config-pragmatic-order"]
 }
 ```
 
-> Learn more about [Stylelint](https://stylelint.io/).
+> Use [stylelint-config-pragmatic](https://www.npmjs.com/package/stylelint-config-pragmatic) to apply pragmatic code style to the full extend (`stylelint-config-pragmatic-order` is already a part
+> of this config).
+
+Learn more about [Stylelint](https://stylelint.io/).
 
 ## Rationale
 
@@ -67,20 +76,42 @@ Related property declarations are grouped in the following order:
 
 ## Sources
 
-The following sources have been used as inspiration for this config:
+The following guidelines, methodologies and architectures have been used as inspiration for this config:
 
-- [Idiomatic CSS]
-- [ITCSS]
-- [Code Guide by @mdo](https://codeguide.co/#css)
-- [High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/)
-- ["Outside-in" method (logical ordering)](https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
+### Ordering
+
+- [CSSComb](https://github.com/csscomb/csscomb.js)
 - [CSS rule order @9elements](https://9elements.com/css-rule-order/)
-- [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
+- ["Outside-in" method (logical ordering)](https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
+- [Harry Potter and the order of CSS](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
+- [Concentric CSS](https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style3.css)
+
+### General
+
+- [ITCSS]
+- [Idiomatic CSS]
+- [Code Guide by @mdo](https://codeguide.co/#css)
+- [CSS guidelines](https://cssguidelin.es/)
+- [Code Guide by @mdo](https://codeguide.co/#css)
 - [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css#css)
+- [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
 - [CSS-Tricks - CSS Style Guides](https://css-tricks.com/css-style-guides/)
 
 [idiomatic css]: https://github.com/necolas/idiomatic-css
 [itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[npm-url]: https://www.npmjs.com/package/stylelint-config-pragmatic-order
-[version-img]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order.svg?style=flat-square
-[license-img]: https://img.shields.io/npm/l/stylelint-config-pragmatic-order.svg?style=flat-square
+[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order
+[version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic-order
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020?color=blue
+[maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic-order/graphs/commit-activity
+[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic-order?label=size
+[package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic-order
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release
+[release-status-url]: https://github.com/pvds/stylelint-config-pragmatic-order/actions?query=workflow%3Arelease
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic-order
+[dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic-order
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic-order
+[issues-url]: https://github.com/pvds/stylelint-config-pragmatic-order/issues
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic-order
+[coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic-order
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic-order?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic-order

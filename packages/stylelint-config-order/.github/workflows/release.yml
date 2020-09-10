@@ -3,17 +3,22 @@ on:
   release:
     types: [created]
 jobs:
-  build:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup node
+      uses: actions/setup-node@v2-beta
       with:
-        node-version: '12.x'
+        node-version: '12'
         registry-url: 'https://registry.npmjs.org'
-    - name: Install dependencies
-      run: yarn
-    - name: Publish package
+
+    - name: Run yarn install
+      run: yarn install --frozen-lockfile
+
+    - name: Run yarn publish
       run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

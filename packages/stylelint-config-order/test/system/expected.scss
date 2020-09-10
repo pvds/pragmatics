@@ -3,101 +3,106 @@
    ========================================================================== */
 
 .block {
-    $block: &;
+  $block: &;
 
-    $block_size: 160px;
-    $block_margin: 16px;
-    $block_margin-sm: 32px;
-    $block_padding: 4px;
+  $block_size: 160px;
+  $block_margin: 16px;
+  $block_margin-sm: 32px;
+  $block_padding: 4px;
 
-    $block--size_padding: 12px;
-    $block--size__element_margin-bottom: 8px;
+  $block--size_padding: 12px;
+  $block--size__element_margin-bottom: 8px;
 
-    --selector_offset-top: 24px;
+  --selector_offset-top: 24px;
 
-    %block-placeholder {
-        cursor: pointer;
-        user-select: none;
-    }
-    @mixin block-mixin-blockless() {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    }
+  %block-placeholder {
+    cursor: pointer;
+    user-select: none;
+  }
+  @mixin block-mixin-blockless() {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
 
-    @mixin block-mixin-block() {
-        border: 1px solid slategray;
-        background-color: white;
+  @mixin block-mixin-block() {
+    border: 1px solid slategray;
+    background-color: white;
 
-        @content;
-    }
+    @content;
+  }
 
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
     }
 
-    @extend %block-placeholder;
-    @include block-mixin-blockless();
+    100% {
+      opacity: 1;
+    }
+  }
 
-    all: unset;
-    position: absolute;
-    z-index: 1;
-    top: var(--selector_offset-top);
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: $block_size;
-    height: $block_size;
-    margin: $block_margin;
-    padding: $block_padding;
-    border: 1px solid black;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: right;
+  @extend %block-placeholder;
+  @include block-mixin-blockless();
 
-    background-color: lightgrey;
-    color: grey;
+  all: unset;
+  position: absolute;
+  z-index: 1;
+  top: var(--selector_offset-top);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: $block_size;
+  height: $block_size;
+  margin: $block_margin;
+  padding: $block_padding;
+  border: 1px solid black;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: right;
 
-    /**
+  background-color: lightgrey;
+  color: grey;
+
+  /**
      * Element description
      */
 
-    &__element {
+  &__element {
 
-        @extend %block-placeholder;
+    @extend %block-placeholder;
 
-        color: black;
-        /**
+    color: black;
+    /**
          * Element size modifier description
          */
 
-        &--theme-modifier {
-            color: darkblue;
-        }
+    &--theme-modifier {
+      color: darkblue;
     }
+  }
 
-    /* Block size modifier description
+  /* Block size modifier description
        ========================================================================== */
 
-    &--size-modifier {
+  &--size-modifier {
 
-        padding: $block--size_padding;
-        #{$block} {
-            &__element {
+    padding: $block--size_padding;
+    .block {
+      &__element {
 
-                display: flex;
-                margin-bottom: $block--size__element_margin-bottom;
-            }
-        }
+        display: flex;
+        margin-bottom: $block--size__element_margin-bottom;
+      }
+
+      /* Keep dimensions */
+      &__element2 {
+        visibility: hidden;
+      }
     }
-    @include block-mixin-block() {
-        margin: $block_margin-sm;
-    }
+  }
+  @include block-mixin-block() {
+    margin: $block_margin-sm;
+  }
 }
