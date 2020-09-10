@@ -2,7 +2,7 @@
 
 [![NPM version][version-shield]][version-url]
 [![Maintenance][maintenance-shield]][maintenance-url]
-[![Package size][package-size-shield]][package-size-url]
+[![Package size][package-size-shield]][package-size-url] \
 [![Release Status][release-status-shield]][release-status-url]
 [![Dependencies][dependencies-shield]][dependencies-url]
 [![Issues open][issues-shield]][issues-url]
@@ -75,19 +75,19 @@ The following guidelines, methodologies and architectures have been used as insp
 - [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
 - [CSS-Tricks - CSS Style Guides](https://css-tricks.com/css-style-guides/)
 
-[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic
+[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic.svg
 [version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020?color=blue
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
 [maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic/graphs/commit-activity
-[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic?label=size
+[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic.svg?label=size
 [package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic
-[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic/release
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic/release.svg
 [release-status-url]: https://github.com/pvds/stylelint-config-pragmatic/actions?query=workflow%3Arelease
-[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic.svg
 [dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic
-[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic.svg
 [issues-url]: https://github.com/pvds/stylelint-config-pragmatic/issues
-[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic.svg
 [coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic?server=https%3A%2F%2Fsonarcloud.io
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic.svg?server=https%3A%2F%2Fsonarcloud.io
 [quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic
