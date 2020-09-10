@@ -99,19 +99,19 @@ The following guidelines, methodologies and architectures have been used as insp
 
 [idiomatic css]: https://github.com/necolas/idiomatic-css
 [itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order
+[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order.svg
 [version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic-order
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020?color=blue
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
 [maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic-order/graphs/commit-activity
-[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic-order?label=size
+[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic-order.svg?label=size
 [package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic-order
-[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release.svg
 [release-status-url]: https://github.com/pvds/stylelint-config-pragmatic-order/actions?query=workflow%3Arelease
-[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic-order
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic-order.svg
 [dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic-order
-[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic-order
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic-order.svg
 [issues-url]: https://github.com/pvds/stylelint-config-pragmatic-order/issues
-[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic-order
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic-order.svg
 [coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic-order
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic-order?server=https%3A%2F%2Fsonarcloud.io
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic-order.svg?server=https%3A%2F%2Fsonarcloud.io
 [quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic-order
