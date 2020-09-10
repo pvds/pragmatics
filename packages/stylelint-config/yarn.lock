@@ -4532,9 +4532,9 @@ style-search@^0.1.0:
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
 stylelint-config-pragmatic-order@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-pragmatic-order/-/stylelint-config-pragmatic-order-1.1.0.tgz#222e810863d1ccf97876d280d5c460977375065c"
-  integrity sha512-cykUDEc1e1ARoDoQQoZOwFMi1RFPvvDi5DxBcByxHJFtc//7ogcTyn6DiBpc81qEcXxJWkslM5y3jIZn6uh0Fg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-pragmatic-order/-/stylelint-config-pragmatic-order-1.2.0.tgz#7c51c290e952e1b30b470af4fb41217acaa4146c"
+  integrity sha512-0svt1xRzQrfVWRzjIA8Fup9t6tN2hW4TIqxk1QiwYpzjB4rfIhY/OvfxkJaB2zK7bwM/9PiR/jFpxvv3GHXu3g==
   dependencies:
     stylelint-order "^4.1.0"
 
