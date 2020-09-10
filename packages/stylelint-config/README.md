@@ -1,13 +1,13 @@
 # Stylelint Config Pragmatic
 
-[![NPM version][version-img]][npm-url]
-[![Maintenance](https://img.shields.io/maintenance/yes/2020?color=blue)](https://github.com/pvds/stylelint-config-pragmatic/graphs/commit-activity)
-![Package size](https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic?label=size) \
-![Status](https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic/release)
-![Dependencies](https://img.shields.io/david/pvds/stylelint-config-pragmatic)
-![Issues open](https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic)
-[![Code coverage](https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic)](https://codecov.io/gh/pvds/stylelint-config-pragmatic)
-[![Quality Gate Status](https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic?server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic)
+[![NPM version][version-shield]][version-url]
+[![Maintenance][maintenance-shield]][maintenance-url]
+[![Package size][package-size-shield]][package-size-url] \
+[![Release Status][release-status-shield]][release-status-url]
+[![Dependencies][dependencies-shield]][dependencies-url]
+[![Issues open][issues-shield]][issues-url]
+[![Code coverage][coverage-shield]][coverage-url]
+[![Quality Gate Status][quality-shield]][quality-url]
 
 Opinionated stylelint config providing readable pragmatic code style.
 
@@ -63,17 +63,29 @@ We aim for understandable, scannable and consistent code without changing the sp
 
 ## Sources
 
-The following sources have been used as inspiration for this config:
+The following guidelines, methodologies and architectures have been used as inspiration for this config:
 
-- [Idiomatic CSS]
-- [ITCSS]
+- [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+- [Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+- [CSS guidelines](https://cssguidelin.es/)
 - [Code Guide by @mdo](https://codeguide.co/#css)
-- [High-level advice and guidelines for writing sane, manageable, scalable CSS](https://cssguidelin.es/)
-- [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
 - [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css#css)
+- [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
 - [CSS-Tricks - CSS Style Guides](https://css-tricks.com/css-style-guides/)
 
-[idiomatic css]: https://github.com/necolas/idiomatic-css
-[itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[npm-url]: https://www.npmjs.com/package/stylelint-config-pragmatic
-[version-img]: https://img.shields.io/npm/v/stylelint-config-pragmatic.svg?style=flat-square
+[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic
+[version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020?color=blue
+[maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic/graphs/commit-activity
+[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic?label=size
+[package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic/release
+[release-status-url]: https://github.com/pvds/stylelint-config-pragmatic/actions?query=workflow%3Arelease
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic
+[dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic
+[issues-url]: https://github.com/pvds/stylelint-config-pragmatic/issues
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic
+[coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic
