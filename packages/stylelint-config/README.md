@@ -9,19 +9,13 @@
 [![Code coverage][coverage-shield]][coverage-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-**Pragmatic stylelint config enforcing an understandable and consistent code style.**
-
-<a id="aim"></a> Inspired by [pragmatism](https://en.wikipedia.org/wiki/Pragmatism) and [pracmatics](https://en.wikipedia.org/wiki/Pragmatics), the aim of this stylelint config is:
-
-- to format `css`/`scss` to be understandable, scannable and consistent
-- to let developers focus on writing code, instead of adhering to a styleguide
-- to simplify [stylelint configuration](https://stylelint.io/user-guide/configure)
-- to avoid changing [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+Pragmatic stylelint config enforcing an understandable and consistent code style.
 
 ## Summary
 
 - [Getting Started](#getting-started)
 - [Testing](#testing)
+- [Vision](#vision)
 - [Built With](#built-with)
 - [Contributing](#contributing)
 - [Versioning](#versioning)
@@ -89,9 +83,9 @@ endOfLine: auto
 
 #### Automation
 
-We recommend configuring your editor to automatically format your code by on save or.
+We recommend configuring your editor to automatically format your code by on save.
 
-You can use Prettier with a pre-commit tool. This can re-format your files that are marked as “staged” via git add before you commit.
+You can use Prettier and Stylelint with a pre-commit tool. This can re-format your files that are marked as “staged” via git add before you commit.
 
 _Make sure Prettier and Stylelint are installed and in your devDependencies before you proceed_
 
@@ -133,6 +127,15 @@ We are planning to:
 
 - [use Jest snapshots for system tests like Stylelint does](https://github.com/stylelint/stylelint/tree/master/system-tests)
 - add more common use cases.
+
+## Vision
+
+Inspired by [pragmatism](https://en.wikipedia.org/wiki/Pragmatism) and [pracmatics](https://en.wikipedia.org/wiki/Pragmatics), the aim of this stylelint config is:
+
+- to format `css`/`scss` to be understandable, scannable and consistent
+- to let developers focus on writing code, instead of adhering to a styleguide
+- to simplify [stylelint configuration](https://stylelint.io/user-guide/configure)
+- to avoid changing [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 ## Built With
 

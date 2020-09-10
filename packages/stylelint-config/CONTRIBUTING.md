@@ -40,7 +40,7 @@ Besides code quality:
 
 ### Does it move this repository closer to the vision for the repository
 
-The aim of this repository is described in the [readme](README.md#aim)
+The aim of this repository is described in our [vision statement](README.md#vision)
 
 ### Does it follow the contributor covenant
 
