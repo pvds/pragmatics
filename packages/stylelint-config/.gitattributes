@@ -198,14 +198,6 @@ Procfile          text
 # Ignore files (like .npmignore or .gitignore)
 *.*ignore         text
 
-## Diff
-##   Do not try to merge these files
-######################################################################
-
-## Lock files
-package-lock.json -diff
-yarn.lock -diff
-
 ## Linguist-vendored
 ##    Remove assets from github statistics.
 ##    Sometimes we need push files generated, transpiled, minified,
