@@ -17,12 +17,7 @@ jobs:
       run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - uses: actions/setup-node@v1
-      with:
-        registry-url: 'https://npm.pkg.github.com'
-        scope: 'pvds'
-    - run: echo "registry=https://npm.pkg.github.com/pvds" >> .npmrc
     - name: Publish to Github
-      run: yarn publish
+      run: yarn publish --registry https://npm.pkg.github.com/@pvds
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
