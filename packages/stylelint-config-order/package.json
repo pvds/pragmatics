@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pragmatic-order",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Opinionated stylelint config pragmatically ordering css properties",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/pvds/stylelint-config-pragmatic-order#readme",
+  "homepage": "https://www.npmjs.com/package/stylelint-config-pragmatic-order",
   "bugs": {
     "url": "https://github.com/pvds/stylelint-config-pragmatic-order/issues"
   },
@@ -28,7 +28,8 @@
   ],
   "main": "index.js",
   "files": [
-    "index.js"
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md"
   ],
   "scripts": {
     "test": "jest",

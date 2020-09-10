@@ -9,11 +9,27 @@
 [![Code coverage][coverage-shield]][coverage-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-Opinionated stylelint config pragmatically ordering related css properties.
+Pragmatic stylelint config enforcing an understandable and consistent code order.
 
-## Installation
+## Summary
 
-You need to have `stylelint` and this config as part of your `devDependencies`.
+- [Getting Started](#getting-started)
+- [Testing](#testing)
+- [Vision](#vision)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Getting started
+
+### Installation
+
+> `stylelint-config-pragmatic-order` does not install Stylelint for you.
+
+Install `stylelint` and this config as part of your `devDependencies`.
 
 **NPM**
 
@@ -27,9 +43,13 @@ npm i stylelint stylelint-config-pragmatic-order -D
 yarn add stylelint stylelint-config-pragmatic-order -D
 ```
 
-## Usage
+### Usage
 
-Add `stylelint-config-pragmatic-order` your Stylelint config [extends](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configure.md#extends):
+#### Stylelint config
+
+Add `stylelint-config-pragmatic-order` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
+
+JSON example (`.stylelintrc`):
 
 ```json
 {
@@ -37,17 +57,53 @@ Add `stylelint-config-pragmatic-order` your Stylelint config [extends](https://g
 }
 ```
 
+YAML example (`.stylelintrc.yml`)
+
+```yaml
+extends:
+  - stylelint-config-pragmatic-order
+```
+
 > Use [stylelint-config-pragmatic](https://www.npmjs.com/package/stylelint-config-pragmatic) to apply pragmatic code style to the full extend (`stylelint-config-pragmatic-order` is already a part
-> of this config).
+> of that config).
 
 Learn more about [Stylelint](https://stylelint.io/).
 
-## Rationale
+#### Automation
 
-We aim for understandable, scannable and consistent code without changing the specificity.
-A logical ordering of rules and declarations allows you to “scan” quickly.
+We recommend configuring your editor to automatically format your code by on save.
 
-### Properties
+You can use Stylelint with a pre-commit tool. This can re-format your files that are marked as “staged” via git add before you commit.
+
+_Make sure Stylelint is installed and in your devDependencies before you proceed_
+
+```
+npx mrm lint-staged
+```
+
+This will install [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged), then add a configuration to the project’s package.json that will automatically format supported files in a pre-commit
+hook.
+
+## Testing
+
+We use [Jest] for testing, use `npm test` to run all tests.
+
+### System test
+
+By running this stylelint config in `test/system.test.js` on an unformatted `fixture.scss` we test whether it matches our `expected.scss` file.
+We are planning to:
+
+- [use Jest snapshots for system tests like Stylelint does](https://github.com/stylelint/stylelint/tree/master/system-tests)
+- add more common use cases.
+
+## Vision
+
+Inspired by [pragmatism](https://en.wikipedia.org/wiki/Pragmatism) and [pracmatics](https://en.wikipedia.org/wiki/Pragmatics), the aim of this stylelint config is:
+
+- to format `css`/`scss` to be understandable, scannable and consistent
+- to let developers focus on writing code, instead of adhering to a styleguide
+
+### Rationale
 
 Properties with the largest impact (scope and/or importance) are put first.
 Using concepts from both [Idiomatic CSS] and [ITCSS] we setup our config by:
@@ -58,7 +114,7 @@ Using concepts from both [Idiomatic CSS] and [ITCSS] we setup our config by:
 2. **Grouping by relationship**\
    Grouping all properties related to `typography` and `theming` makes them easier to find.
 
-### Groups
+#### Groups
 
 Related property declarations are grouped in the following order:
 
@@ -74,7 +130,36 @@ Related property declarations are grouped in the following order:
 1. **SVG presentation**
 1. **Transition & animation**
 
-## Sources
+## Built With
+
+- [Webstorm](https://www.jetbrains.com/webstorm/) - for development
+- [Github](https://github.com) - for versioning and deployment
+- [Jest](https://jestjs.io/) - for testing
+- [Contributor Covenant](https://www.contributor-covenant.org/) - for the Code of Conduct
+- [Creative Commons](https://creativecommons.org/) - to choose the license
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
+This repository has a [code of conduct](CODE_OF_CONDUCT.md), we will remove things that do not respect it.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning.
+For the available versions, see the [tags on this repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
+
+## Authors
+
+See the list of [contributors](https://github.com/pvds/stylelint-config-pragmatic/contributors)
+who participated in this project.
+
+## License
+
+This project is licensed under the [ISC License](LICENSE.md).
+
+## Acknowledgements
+
+The name is inspired by [pragmatism](https://en.wikipedia.org/wiki/Pragmatism) and [pracmatics](https://en.wikipedia.org/wiki/Pragmatics).
 
 The following guidelines, methodologies and architectures have been used as inspiration for this config:
 
