@@ -4531,10 +4531,10 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
-stylelint-config-pragmatic-order@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-pragmatic-order/-/stylelint-config-pragmatic-order-1.3.0.tgz#77ec5534690f43eda138c0a6d24307511dc803b2"
-  integrity sha512-nhSMvev+2ZmSv0ZmmDQj+SYo7h9ksVpB4JlftO0EIu/d8vqwhMfUCRx3AwMVzPISZ9Q35x3X91kS5tsyWPtQug==
+stylelint-config-pragmatic-order@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-pragmatic-order/-/stylelint-config-pragmatic-order-1.4.0.tgz#86804e3767dea4a5df5fb06ef04893947878d662"
+  integrity sha512-sWFHXCoj6NgjQw5lj2PuvIDAKKDazXE6FDGl9XFIx6ILmOsX5YJSSVm94WTAmFFY0ywp632bENMPrl3/lH24kw==
   dependencies:
     stylelint-order "^4.1.0"
 

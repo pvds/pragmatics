@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pragmatic",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Opinionated stylelint config providing pragmatic code style",
   "repository": {
     "type": "git",
@@ -55,7 +55,7 @@
     "stylelint": ">=13"
   },
   "dependencies": {
-    "stylelint-config-pragmatic-order": "^1.3.0",
+    "stylelint-config-pragmatic-order": "^1.4.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",

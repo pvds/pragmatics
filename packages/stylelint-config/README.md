@@ -27,8 +27,6 @@ Pragmatic stylelint config enforcing an understandable and consistent code style
 
 ### Installation
 
-> `stylelint-config-pragmatic` does not install Stylelint or Prettier for you.
-
 Install `prettier`, `stylelint` and this config as part of your `devDependencies`.
 
 **NPM**
@@ -49,7 +47,7 @@ yarn add prettier stylelint stylelint-config-pragmatic -D
 
 Add `stylelint-config-pragmatic` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
 
-JSON example (`.stylelintrc`):
+JSON (`.stylelintrc`):
 
 ```json
 {
@@ -57,7 +55,7 @@ JSON example (`.stylelintrc`):
 }
 ```
 
-YAML example (`.stylelintrc.yml`)
+YAML (`.stylelintrc.yml`)
 
 ```yaml
 extends:
@@ -118,7 +116,7 @@ Learn more about [Stylelint](https://stylelint.io/).
 
 ## Testing
 
-We use [Jest] for testing, use `npm test` to run all tests.
+We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
 ### System test
 
