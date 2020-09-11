@@ -49,7 +49,7 @@ yarn add stylelint stylelint-config-pragmatic-order -D
 
 Add `stylelint-config-pragmatic-order` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
 
-JSON example (`.stylelintrc`):
+JSON (`.stylelintrc`):
 
 ```json
 {
@@ -57,7 +57,7 @@ JSON example (`.stylelintrc`):
 }
 ```
 
-YAML example (`.stylelintrc.yml`)
+YAML (`.stylelintrc.yml`)
 
 ```yaml
 extends:
@@ -86,7 +86,7 @@ hook.
 
 ## Testing
 
-We use [Jest] for testing, use `npm test` to run all tests.
+We use [Jest](https://jestjs.io/) for testing, use `npm test` to run all tests.
 
 ### System test
 

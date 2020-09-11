@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pragmatic-order",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Opinionated stylelint config pragmatically ordering css properties",
   "repository": {
     "type": "git",
