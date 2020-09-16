@@ -163,12 +163,12 @@ The following sources have been used as inspiration for this package:
 - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
 - [eslint-config-formidable](https://github.com/FormidableLabs/eslint-config-formidable)
 
-[version-shield]: https://img.shields.io/npm/v/%40pragmatics%2eslint-config.svg
-[version-url]: https://www.npmjs.com/package/%40pragmatics%2eslint-config
+[version-shield]: https://img.shields.io/npm/v/@pragmatics/eslint-config.svg
+[version-url]: https://www.npmjs.com/package/@pragmatics/eslint-config
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
 [maintenance-url]: https://github.com/pvds/eslint-config/graphs/commit-activity
-[package-size-shield]: https://img.shields.io/bundlephobia/min/%40pragmatics%2eslint-config.svg?label=size
-[package-size-url]: https://bundlephobia.com/result?p=%40pragmatics%2eslint-config
+[package-size-shield]: https://img.shields.io/bundlephobia/minzip/@pragmatics/eslint-config.svg?label=size
+[package-size-url]: https://bundlephobia.com/result?p=@pragmatics/eslint-config
 [release-status-shield]: https://img.shields.io/github/workflow/status/pvds/eslint-config/release.svg
 [release-status-url]: https://github.com/pvds/eslint-config/actions?query=workflow%3Arelease
 [dependencies-shield]: https://img.shields.io/david/pvds/eslint-config.svg
