@@ -181,4 +181,4 @@ The following guidelines, methodologies and architectures have been used as insp
 [coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-order.svg
 [coverage-url]: https://codecov.io/gh/pvds/stylelint-config-order
 [quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-order.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-order
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic-order
