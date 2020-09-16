@@ -41,7 +41,7 @@ When using a custom configuration install:
 yarn add eslint @pragmatics/eslint-config -D
 ```
 
-Depending on the [configutation](#usage) you choose, might need to install [additional dependencies](#dependencies).
+Depending on the [configutation](#usage), you might need to install [additional dependencies](#dependencies).
 
 ## Usage
 
@@ -52,7 +52,7 @@ For more details about how shareable configs work, see the [ESLint documentation
 
 ```yaml
 ---
-'extends':
+extends:
   - '@pragmatics'
 ```
 
