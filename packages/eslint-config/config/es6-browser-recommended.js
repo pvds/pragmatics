@@ -1,6 +1,6 @@
 'use strict';
 
-const resolvedExtends = ['./config/es6-browser-recommended'].map((extend) =>
+const resolvedExtends = ['./es6-browser', './test', 'eslint-config-prettier'].map((extend) =>
   require.resolve(extend)
 );
 

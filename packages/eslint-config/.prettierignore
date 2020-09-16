@@ -1,2 +1,3 @@
-# compiled output
-dist
+# test sources
+tests/**/expected.js
+tests/**/fixture.js
