@@ -1,16 +1,16 @@
 {
-  "name": "stylelint-config-pragmatic-order",
-  "version": "1.4.0",
+  "name": "@pragmatics/stylelint-config-order",
+  "version": "2.0.0",
   "description": "Opinionated stylelint config pragmatically ordering css properties",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/stylelint-config-pragmatic-order.git"
+    "url": "git+https://github.com/pvds/stylelint-config-order.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://www.npmjs.com/package/stylelint-config-pragmatic-order",
+  "homepage": "https://www.npmjs.com/package/@pragmatics/stylelint-config-order",
   "bugs": {
-    "url": "https://github.com/pvds/stylelint-config-pragmatic-order/issues"
+    "url": "https://github.com/pvds/stylelint-config-order/issues"
   },
   "keywords": [
     "stylelint",
@@ -32,9 +32,12 @@
     "CONTRIBUTING.md"
   ],
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --fix .",
-    "format": "prettier --write **/*.{js,md}"
+    "test": "jest -o",
+    "test:all": "jest",
+    "lint": "run-p lint:*",
+    "lint:js": "eslint . --cache --fix",
+    "lint:css": "stylelint **/*.scss --cache --fix --allow-empty-input",
+    "lint:prettier": "prettier . --write"
   },
   "husky": {
     "hooks": {
@@ -42,17 +45,19 @@
     }
   },
   "lint-staged": {
+    "*.scss": "stylelint --fix",
     "*.js": "eslint --fix",
-    "*.{js,md}": "prettier --write"
+    "*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
+    "@pragmatics/eslint-config": "^0.1.2",
+    "@types/jest": "^26.0.13",
     "eslint": "^7.8.1",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jest": "^24.0.0",
     "husky": "^4.2.5",
     "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.1",
     "stylelint": "^13.7.0"
   },

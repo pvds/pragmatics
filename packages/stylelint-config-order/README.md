@@ -27,33 +27,33 @@ Pragmatic stylelint config enforcing an understandable and consistent code order
 
 ### Installation
 
-> `stylelint-config-pragmatic-order` does not install Stylelint for you.
+> `@pragmatics/stylelint-config-order` does not install Stylelint for you.
 
 Install `stylelint` and this config as part of your `devDependencies`.
 
 **NPM**
 
 ```sh
-npm i stylelint stylelint-config-pragmatic-order -D
+npm i stylelint @pragmatics/stylelint-config-order -D
 ```
 
 **Yarn**
 
 ```sh
-yarn add stylelint stylelint-config-pragmatic-order -D
+yarn add stylelint @pragmatics/stylelint-config-order -D
 ```
 
 ### Usage
 
 #### Stylelint config
 
-Add `stylelint-config-pragmatic-order` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
+Add `@pragmatics/stylelint-config-order` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
 
 JSON (`.stylelintrc`):
 
 ```json
 {
-  "extends": ["stylelint-config-pragmatic-order"]
+  "extends": ["@pragmatics/stylelint-config-order"]
 }
 ```
 
@@ -61,10 +61,10 @@ YAML (`.stylelintrc.yml`)
 
 ```yaml
 extends:
-  - stylelint-config-pragmatic-order
+  - @pragmatics/stylelint-config-order
 ```
 
-> Use [stylelint-config-pragmatic](https://www.npmjs.com/package/stylelint-config-pragmatic) to apply pragmatic code style to the full extend (`stylelint-config-pragmatic-order` is already a part
+> Use [@pragmatics/stylelint-config](https://www.npmjs.com/package/@pragmatics/stylelint-config) to apply pragmatic code style to the full extend (`@pragmatics/stylelint-config-order` is already a part
 > of that config).
 
 Learn more about [Stylelint](https://stylelint.io/).
@@ -150,7 +150,7 @@ For the available versions, see the [tags on this repository](https://github.com
 
 ## Authors
 
-See the list of [contributors](https://github.com/pvds/stylelint-config-pragmatic/contributors)
+See the list of [contributors](https://github.com/pvds/stylelint-config-order/contributors)
 who participated in this project.
 
 ## License
@@ -184,19 +184,19 @@ The following guidelines, methodologies and architectures have been used as insp
 
 [idiomatic css]: https://github.com/necolas/idiomatic-css
 [itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic-order.svg
-[version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic-order
+[version-shield]: https://img.shields.io/npm/v/@pragmatics/stylelint-config-order.svg
+[version-url]: https://www.npmjs.com/package/@pragmatics/stylelint-config-order
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
-[maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic-order/graphs/commit-activity
-[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic-order.svg?label=size
-[package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic-order
-[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic-order/release.svg
-[release-status-url]: https://github.com/pvds/stylelint-config-pragmatic-order/actions?query=workflow%3Arelease
-[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic-order.svg
-[dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic-order
-[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic-order.svg
-[issues-url]: https://github.com/pvds/stylelint-config-pragmatic-order/issues
-[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic-order.svg
-[coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic-order
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic-order.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic-order
+[maintenance-url]: https://github.com/pvds/stylelint-config-order/graphs/commit-activity
+[package-size-shield]: https://img.shields.io/bundlephobia/min/@pragmatics/stylelint-config-order.svg?label=size
+[package-size-url]: https://bundlephobia.com/result?p=@pragmatics/stylelint-config-order
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-order/release.svg
+[release-status-url]: https://github.com/pvds/stylelint-config-order/actions?query=workflow%3Arelease
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-order.svg
+[dependencies-url]: https://github.com/pvds/stylelint-config-order
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-order.svg
+[issues-url]: https://github.com/pvds/stylelint-config-order/issues
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-order.svg
+[coverage-url]: https://codecov.io/gh/pvds/stylelint-config-order
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_@pragmatics/stylelint-config-order.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_@pragmatics/stylelint-config-order

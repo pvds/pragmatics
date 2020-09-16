@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const stylelint = require('stylelint');
 
-const configFile = require(path.join(__dirname, '..', 'index.js'));
-const fixtureFile = path.join(__dirname, 'system/fixture.scss');
-const expectedFile = path.join(__dirname, 'system/expected.scss');
+const configFile = require(path.join(__dirname, '../..', 'index.js'));
+const fixtureFile = path.join(__dirname, 'fixture.scss');
+const expectedFile = path.join(__dirname, 'expected.scss');
 
 describe('configuration', () => {
   test('to load', () => {
