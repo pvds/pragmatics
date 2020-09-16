@@ -1,6 +1,6 @@
 {
   "name": "@pragmatics/stylelint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Opinionated stylelint config providing pragmatic code style",
   "repository": {
     "type": "git",
