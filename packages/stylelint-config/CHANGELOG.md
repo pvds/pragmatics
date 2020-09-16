@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- set correct test file paths
 - bump package dependencies
 
 ## [2.0.0]
@@ -154,19 +155,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - readme
 - license
 
-[stylelint config pragmatic]: https://github.com/pvds/stylelint-config
-[1.0.0]: https://github.com/pvds/stylelint-config/tree/1.0.0
-[1.1.0]: https://github.com/pvds/stylelint-config/tree/1.1.0
-[1.1.1]: https://github.com/pvds/stylelint-config/tree/1.1.1
-[1.1.2]: https://github.com/pvds/stylelint-config/tree/1.1.2
-[1.1.3]: https://github.com/pvds/stylelint-config/tree/1.1.3
-[1.1.4]: https://github.com/pvds/stylelint-config/tree/1.1.4
-[1.1.5]: https://github.com/pvds/stylelint-config/tree/1.1.5
-[1.2.0]: https://github.com/pvds/stylelint-config/tree/1.2.0
-[1.2.1]: https://github.com/pvds/stylelint-config/tree/1.2.1
-[1.2.2]: https://github.com/pvds/stylelint-config/tree/1.2.2
-[1.2.3]: https://github.com/pvds/stylelint-config/tree/1.2.3
-[1.2.4]: https://github.com/pvds/stylelint-config/tree/1.2.4
-[1.3.0]: https://github.com/pvds/stylelint-config/tree/1.3.0
-[1.4.0]: https://github.com/pvds/stylelint-config/tree/1.4.0
 [1.5.0]: https://github.com/pvds/stylelint-config/tree/1.5.0
+[1.4.0]: https://github.com/pvds/stylelint-config/tree/1.4.0
+[1.3.0]: https://github.com/pvds/stylelint-config/tree/1.3.0
+[1.2.4]: https://github.com/pvds/stylelint-config/tree/1.2.4
+[1.2.3]: https://github.com/pvds/stylelint-config/tree/1.2.3
+[1.2.2]: https://github.com/pvds/stylelint-config/tree/1.2.2
+[1.2.1]: https://github.com/pvds/stylelint-config/tree/1.2.1
+[1.2.0]: https://github.com/pvds/stylelint-config/tree/1.2.0
+[1.1.5]: https://github.com/pvds/stylelint-config/tree/1.1.5
+[1.1.4]: https://github.com/pvds/stylelint-config/tree/1.1.4
+[1.1.3]: https://github.com/pvds/stylelint-config/tree/1.1.3
+[1.1.2]: https://github.com/pvds/stylelint-config/tree/1.1.2
+[1.1.1]: https://github.com/pvds/stylelint-config/tree/1.1.1
+[1.1.0]: https://github.com/pvds/stylelint-config/tree/1.1.0
+[1.0.0]: https://github.com/pvds/stylelint-config/tree/1.0.0
+[stylelint config pragmatic]: https://github.com/pvds/stylelint-config
