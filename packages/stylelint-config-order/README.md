@@ -31,14 +31,6 @@ Pragmatic stylelint config enforcing an understandable and consistent code order
 
 Install `stylelint` and this config as part of your `devDependencies`.
 
-**NPM**
-
-```sh
-npm i stylelint @pragmatics/stylelint-config-order -D
-```
-
-**Yarn**
-
 ```sh
 yarn add stylelint @pragmatics/stylelint-config-order -D
 ```
@@ -49,19 +41,9 @@ yarn add stylelint @pragmatics/stylelint-config-order -D
 
 Add `@pragmatics/stylelint-config-order` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
 
-JSON (`.stylelintrc`):
-
-```json
-{
-  "extends": ["@pragmatics/stylelint-config-order"]
-}
-```
-
-YAML (`.stylelintrc.yml`)
-
 ```yaml
 extends:
-  - @pragmatics/stylelint-config-order
+  - '@pragmatics/stylelint-config-order'
 ```
 
 > Use [@pragmatics/stylelint-config](https://www.npmjs.com/package/@pragmatics/stylelint-config) to apply pragmatic code style to the full extend (`@pragmatics/stylelint-config-order` is already a part
@@ -90,7 +72,7 @@ We use [Jest](https://jestjs.io/) for testing, use `npm test` to run all tests.
 
 ### System test
 
-By running this stylelint config in `test/system.test.js` on an unformatted `fixture.scss` we test whether it matches our `expected.scss` file.
+By running this stylelint config in `tests/system/system.test.js` on an unformatted `fixture.scss` we test whether it matches our `expected.scss` file.
 We are planning to:
 
 - [use Jest snapshots for system tests like Stylelint does](https://github.com/stylelint/stylelint/tree/master/system-tests)
@@ -198,5 +180,5 @@ The following guidelines, methodologies and architectures have been used as insp
 [issues-url]: https://github.com/pvds/stylelint-config-order/issues
 [coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-order.svg
 [coverage-url]: https://codecov.io/gh/pvds/stylelint-config-order
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_@pragmatics/stylelint-config-order.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_@pragmatics/stylelint-config-order
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-order.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-order

@@ -1,6 +1,6 @@
 {
   "name": "@pragmatics/stylelint-config-order",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Opinionated stylelint config pragmatically ordering css properties",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     }
   },
   "lint-staged": {
-    "*.scss": "stylelint --fix",
+    "*.scss": "stylelint --fix --allow-empty-input",
     "*.js": "eslint --fix",
     "*": "prettier --write --ignore-unknown"
   },

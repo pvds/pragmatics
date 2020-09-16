@@ -1,16 +1,29 @@
-# Changelog - [@pragmatics/stylelint-config]
+# Changelog - [@pragmatics/stylelint-config-order]
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0]
+
+### Changed
+
+- `test` folder to `tests`
+- only use yarn in readme instructions
+
+### Fixed
+
+- [2.0.0] changelog entry repo and package name typos
+- stylelint pre-commit uses `--allow-empty-input` to avoid errors
+- bump package dependencies
+
 ## [2.0.0]
 
 ### Changed
 
-- repo name from `stylelint-config-pragmatic` to `stylelint-config`
-- package from `stylelint-config-pragmatic` to `@pragmatics/stylelint-config`
+- repo name from `stylelint-config-pragmatic-prder` to `stylelint-config-order`
+- package from `stylelint-config-pragmatic-order` to `@pragmatics/stylelint-config-order`
 - eslint config to use `@pragmatics/eslint-config`
 - release workflow to publish scoped package as public
 
@@ -108,6 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - package dependencies, linters and ignores
 
+[2.1.0]: https://github.com/pvds/stylelint-config-order/tree/2.1.0
 [2.0.0]: https://github.com/pvds/stylelint-config-order/tree/2.0.0
 [1.4.0]: https://github.com/pvds/stylelint-config-order/tree/1.4.0
 [1.3.0]: https://github.com/pvds/stylelint-config-order/tree/1.3.0
@@ -117,4 +131,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.0]: https://github.com/pvds/stylelint-config-order/tree/1.0.0
 [0.1.0]: https://github.com/pvds/stylelint-config-order/tree/0.1.0
 [0.0.0]: https://github.com/pvds/stylelint-config-order/tree/0.0.0
-[@pragmatics/stylelint-config]: https://github.com/pvds/stylelint-config-order
+[@pragmatics/stylelint-config-order]: https://github.com/pvds/stylelint-config-order
