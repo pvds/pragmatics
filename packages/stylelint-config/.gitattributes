@@ -206,4 +206,4 @@ Procfile          text
 ######################################################################
 
 ## Test
-test/**/*.scss linguist-vendored
+tests/**/*.scss linguist-vendored

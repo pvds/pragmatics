@@ -36,7 +36,7 @@ Besides code quality:
 
 - There are no spelling mistakes
 - It reads well
-- For english language contributions: Has a good score on [Grammarly](grammarly.com) or [Hemingway App](http://www.hemingwayapp.com/)
+- For english language contributions: Has a good score on [Grammarly](http://grammarly.com) or [Hemingway App](http://www.hemingwayapp.com/)
 
 ### Does it move this repository closer to the vision for the repository
 

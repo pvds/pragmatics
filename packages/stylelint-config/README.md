@@ -21,7 +21,7 @@ Pragmatic stylelint config enforcing an understandable and consistent code style
 - [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgments](#acknowledgements)
 
 ## Getting started
 
@@ -29,37 +29,19 @@ Pragmatic stylelint config enforcing an understandable and consistent code style
 
 Install `prettier`, `stylelint` and this config as part of your `devDependencies`.
 
-**NPM**
-
 ```sh
-npm i prettier stylelint stylelint-config-pragmatic -D
-```
-
-**Yarn**
-
-```sh
-yarn add prettier stylelint stylelint-config-pragmatic -D
+yarn add prettier stylelint @pragmatics/stylelint-config -D
 ```
 
 ### Usage
 
 #### Stylelint config
 
-Add `stylelint-config-pragmatic` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
-
-JSON (`.stylelintrc`):
-
-```json
-{
-  "extends": ["stylelint-config-pragmatic"]
-}
-```
-
-YAML (`.stylelintrc.yml`)
+Add `@pragmatics/stylelint-config` to your [Stylelint configuration file](https://stylelint.io/user-guide/configure):
 
 ```yaml
 extends:
-  - stylelint-config-pragmatic
+  - '@pragmatics/stylelint-config'
 ```
 
 #### Extend with Prettier config
@@ -72,11 +54,8 @@ Add a [prettier configuration file](https://prettier.io/docs/en/configuration.ht
 ```yaml
 # .prettier.yml
 singleQuote: true
-trailingComma: es5
-arrowParens: always
 tabWidth: 2
 printWidth: 100
-endOfLine: auto
 ```
 
 #### Automation
@@ -103,14 +82,14 @@ Being opinionated it's best to limit the amount of rules you use yourself.
 ```yaml
 extends:
   - stylelint-config-standard
-  - stylelint-config-pragmatic-order
+  - '@pragmatics/stylelint-config-order'
   - stylelint-prettier/recommended
 ```
 
 A number of rules are defined to make Stylelint play nicely with Scss and Prettier.
 We recommend you **add rules which do not manipulate the order or code format** to get maximum benefit of this config.
 
-> Use [stylelint-config-pragmatic-order](https://www.npmjs.com/package/stylelint-config-pragmatic-order) if you only want the ordering rules.
+> Use [@pragmatics/stylelint-config-order](https://www.npmjs.com/package/@pragmatics/stylelint-config-order) if you only want the ordering rules.
 
 Learn more about [Stylelint](https://stylelint.io/).
 
@@ -120,7 +99,7 @@ We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
 ### System test
 
-By running this stylelint config in `test/system.test.js` on an unformatted `fixture.scss` we test whether it matches our `expected.scss` file.
+By running this stylelint config in `tests/system/system.test.js` on an unformatted `fixture.scss` we test whether it matches our `expected.scss` file.
 We are planning to:
 
 - [use Jest snapshots for system tests like Stylelint does](https://github.com/stylelint/stylelint/tree/master/system-tests)
@@ -155,7 +134,7 @@ For the available versions, see the [tags on this repository](https://github.com
 
 ## Authors
 
-See the list of [contributors](https://github.com/pvds/stylelint-config-pragmatic/contributors)
+See the list of [contributors](https://github.com/pvds/stylelint-config/contributors)
 who participated in this project.
 
 ## License
@@ -176,19 +155,19 @@ The following guidelines, methodologies and architectures have been used as insp
 - [Google HTML/CSS Style guide](https://google.github.io/styleguide/htmlcssguide.html#CSS_Formatting_Rules)
 - [CSS-Tricks - CSS Style Guides](https://css-tricks.com/css-style-guides/)
 
-[version-shield]: https://img.shields.io/npm/v/stylelint-config-pragmatic.svg
-[version-url]: https://www.npmjs.com/package/stylelint-config-pragmatic
+[version-shield]: https://img.shields.io/npm/v/@pragmatics/stylelint-config.svg
+[version-url]: https://www.npmjs.com/package/@pragmatics/stylelint-config
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
-[maintenance-url]: https://github.com/pvds/stylelint-config-pragmatic/graphs/commit-activity
-[package-size-shield]: https://img.shields.io/bundlephobia/min/stylelint-config-pragmatic.svg?label=size
-[package-size-url]: https://bundlephobia.com/result?p=stylelint-config-pragmatic
-[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config-pragmatic/release.svg
-[release-status-url]: https://github.com/pvds/stylelint-config-pragmatic/actions?query=workflow%3Arelease
-[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config-pragmatic.svg
-[dependencies-url]: https://github.com/pvds/stylelint-config-pragmatic
-[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config-pragmatic.svg
-[issues-url]: https://github.com/pvds/stylelint-config-pragmatic/issues
-[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config-pragmatic.svg
-[coverage-url]: https://codecov.io/gh/pvds/stylelint-config-pragmatic
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config-pragmatic.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config-pragmatic
+[maintenance-url]: https://github.com/pvds/stylelint-config/graphs/commit-activity
+[package-size-shield]: https://img.shields.io/bundlephobia/min/@pragmatics/stylelint-config.svg?label=size
+[package-size-url]: https://bundlephobia.com/result?p=@pragmatics/stylelint-config
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/stylelint-config/release.svg
+[release-status-url]: https://github.com/pvds/stylelint-config/actions?query=workflow%3Arelease
+[dependencies-shield]: https://img.shields.io/david/pvds/stylelint-config.svg
+[dependencies-url]: https://github.com/pvds/stylelint-config
+[issues-shield]: https://img.shields.io/github/issues/pvds/stylelint-config.svg
+[issues-url]: https://github.com/pvds/stylelint-config/issues
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/stylelint-config.svg
+[coverage-url]: https://codecov.io/gh/pvds/stylelint-config
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_stylelint-config.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_stylelint-config
