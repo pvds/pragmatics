@@ -27,6 +27,8 @@ module.exports = class {
                 config.sourceMap = true
                 config.sourceMapEmbed = true
                 config.outputStyle = 'expanded'
+                config.outFile = path.join(__dirname, `/${ENTRY_FILE_NAME}`)
+                config.sourceMapContents = true
             }
             return sass.render(config, (err, result) => {
                 if (err) {
@@ -100,15 +102,14 @@ module.exports = class {
     async render({ entryPath }) {
         try {
             const css = await this.compile({ file: entryPath })
-            const result = await this.minify(css)
-            return result
+            return await this.minify(css)
         } catch (err) {
             // if things go wrong
             if (isProd) {
                 // throw and abort in production
                 throw new Error(err)
             } else {
-                // otherwise display the error overly
+                // otherwise display the error overlay
                 console.error(err)
                 const msg = err.formatted || err.message
                 return this.renderError(msg)
