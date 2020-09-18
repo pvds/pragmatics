@@ -1,11 +1,14 @@
-# [Project name]
+# Pragmatics Eleventy boilerplate
 
+[![Release version][release-version-shield]][release-version-url]
 [![Release status][deploy-status-shield]][deploy-status-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 [![Dependencies][dependencies-shield]][dependencies-url]
 [![Issues open][issues-shield]][issues-url]
 
-[project description]
+Pragmatics boilerplate for 11ty projects.
+
+[![Demo Site][demo-shield]][demo-url] [![Deploy to Netlify][deploy-netlify-shield]][deploy-netlify-url]
 
 ## Summary
 
@@ -76,11 +79,17 @@ The following guidelines, methodologies and architectures have been used as insp
 
 [list of acknowledgement links]
 
-[deploy-status-shield]: https://img.shields.io/netlify/50580df5-8edc-4abe-8dfd-325ce3874f3f.svg?label=deploy
-[deploy-status-url]: https://app.netlify.com/sites/eleventy-boilerplate/deploys
-[dependencies-shield]: https://img.shields.io/david/pvds/eleventy-boilerplate.svg
+[release-version-shield]: https://img.shields.io/github/v/release/pvds/eleventy-boilerplate.svg
+[release-version-url]: https://github.com/pvds/eleventy-boilerplate
+[deploy-status-shield]: https://img.shields.io/netlify/ebe17a53-61ef-4e3f-bd50-baa4f503ad3a.svg?label=deploy
+[deploy-status-url]: https://app.netlify.com/sites/pragmatics/deploys
+[dependencies-shield]: https://img.shields.io/librariesio/github/pvds/eleventy-boilerplate.svg
 [dependencies-url]: https://github.com/pvds/eleventy-boilerplate
 [issues-shield]: https://img.shields.io/github/issues/pvds/eleventy-boilerplate.svg
 [issues-url]: https://github.com/pvds/eleventy-boilerplate/issues
 [quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_eleventy-boilerplate.svg?server=https%3A%2F%2Fsonarcloud.io
 [quality-url]: https://sonarcloud.io/dashboard?id=pvds_eleventy-boilerplate
+[deploy-netlify-shield]: https://img.shields.io/badge/Deploy%20to%20Netlify-blue?style=for-the-badge&logo=netlify&logoColor=white
+[deploy-netlify-url]: https://app.netlify.com/start/deploy?repository=https://github.com/pvds/eleventy-boilerplate
+[demo-shield]: https://img.shields.io/badge/Demo%20site-blueviolet?style=for-the-badge&logo=netlify&logoColor=white
+[demo-url]: https://app.netlify.com/sites/pragmatics
