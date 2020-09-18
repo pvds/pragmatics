@@ -1,24 +1,38 @@
-const { DateTime } = require('luxon')
+const { DateTime } = require('luxon');
 
 module.exports = {
-    dateToFormat: function (date, format) {
-        return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(
-            String(format)
-        )
-    },
+  /**
+   * Format date to given format
+   * @param {string} date
+   * @param {string} format
+   * @return {string}
+   */
+  dateToFormat: function (date, format) {
+    return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(String(format));
+  },
 
-    dateToISO: function (date) {
-        return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
-            includeOffset: false,
-            suppressMilliseconds: true
-        })
-    },
+  /**
+   * Format date to ISO format
+   * @param {string} date
+   * @return {string}
+   */
+  dateToISO: function (date) {
+    return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
+      includeOffset: false,
+      suppressMilliseconds: true,
+    });
+  },
 
-    obfuscate: function (str) {
-        const chars = []
-        for (var i = str.length - 1; i >= 0; i--) {
-            chars.unshift(['&#', str[i].charCodeAt(), ';'].join(''))
-        }
-        return chars.join('')
+  /**
+   * Obfuscate string
+   * @param {string} str
+   * @return {string}
+   */
+  obfuscate: function (str) {
+    const chars = [];
+    for (let i = str.length - 1; i >= 0; i--) {
+      chars.unshift(['&#', str[i].charCodeAt(), ';'].join(''));
     }
-}
+    return chars.join('');
+  },
+};
