@@ -13,8 +13,8 @@ Pragmatics boilerplate for 11ty projects.
 ## Summary
 
 - [Getting Started](#getting-started)
+- [Features](#features)
 - [Testing](#testing)
-- [Vision](#vision)
 - [Built With](#built-with)
 - [Contributing](#contributing)
 - [Versioning](#versioning)
@@ -37,13 +37,17 @@ yarn
 - Run `yarn start` for a development server and live reloading
 - Run `yarn build` to generate a production build
 
+## Features
+
+- HTML Minification
+- CSS Pipeline (Sass, CleanCSS, Critical CSS)
+- JS Bundling (Webpack)
+- SVG Icon Sprite Generation
+- No external builds, everything runs through 11ty
+
 ## Testing
 
 We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
-
-## Vision
-
-[project vision]
 
 ## Built With
 
