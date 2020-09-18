@@ -1,19 +1,27 @@
-# Pragmatics Eleventy boilerplate
+# [Project name]
 
-A simple Eleventy Starter Kit, my base for all new 11ty projects. ([Demo Site](https://eleventy-boilerplate.netlify.com))
+[![Release status][deploy-status-shield]][deploy-status-url]
+[![Quality Gate Status][quality-shield]][quality-url]
+[![Dependencies][dependencies-shield]][dependencies-url]
+[![Issues open][issues-shield]][issues-url]
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f78ec52d-8328-4e40-b6da-a0f9164e80d1/deploy-status)](https://app.netlify.com/sites/eleventy-boilerplate/deploys)
+[project description]
 
-## Features
+## Summary
 
-- CSS Pipeline (Sass, CleanCSS)
-- JS Bundling (Webpack)
-- SVG Icon Sprite Generation
-- Critical CSS
-- HTML Minification
-- No external builds, everything runs through 11ty
+- [Getting Started](#getting-started)
+- [Testing](#testing)
+- [Vision](#vision)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgements)
 
-## Getting Started
+## Getting started
+
+### Installation
 
 To install the necessary packages, run this command in the root folder of the site:
 
@@ -21,37 +29,58 @@ To install the necessary packages, run this command in the root folder of the si
 yarn
 ```
 
-### Commands
+### Usage
 
 - Run `yarn start` for a development server and live reloading
 - Run `yarn build` to generate a production build
 
-## Deploy a fork of this template to Netlify
+## Testing
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pvds/eleventy-boilerplate)
+We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
-## CSS
+## Vision
 
-Styling works with Sass. The main index file is in `src/assets/styles/main.scss`. Import any SCSS code you want in there; it will be processed and optimized. The output is in `dist/assets/styles/main.css`
+[project vision]
 
-## JS
+## Built With
 
-Javascript can be written in ES6 syntax. The main index file is in `src/assets/scripts/main.js`. It will be transpiled to ES5 with babel, bundled together with webpack, and minified in production. The output is in `dist/assets/scripts/main.js`
+- [Eleventy](https://11ty.dev) - for static site generation
+- [Webstorm](https://www.jetbrains.com/webstorm) - for development
+- [Github](https://github.com) - for versioning and deployment
+- [Jest](https://jestjs.io/) - for testing
+- [Contributor Covenant](https://www.contributor-covenant.org/) - for the Code of Conduct
+- [Creative Commons](https://creativecommons.org/) - to choose the license
 
-## SVG Icons
+## Contributing
 
-All SVG files added to `src/assets/icons` will be bundled into a `symbol` sprite file. The SVG filename will then be used as the symbol identifier and the icon can be used as a shortcode.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
+This repository has a [code of conduct](CODE_OF_CONDUCT.md), we will remove things that do not respect it.
 
-For example, if you have a `github.svg` file in that folder, you can display it anywhere by using `{% icon "github" %}` in your templates.
+## Versioning
 
-## Critical CSS
+We use [SemVer](http://semver.org/) for versioning.
+For the available versions, see the [tags on this repository](https://github.com/pvds/eleventy-boilerplate/tags).
 
-Currently, critical CSS will only be inlined in the head of the homepage. This is done by using the [critical](https://github.com/addyosmani/critical) package in an automatic transform.
+## Authors
 
-## Credits
+See the list of [contributors](https://github.com/pvds/package-boilerplate/contributors)
+who participated in this project.
 
-My heartfelt thanks to these people, whom I shamelessly copied ideas from:
+## License
 
-- Phil Hawksworth: [EleventyOne](https://github.com/philhawksworth/eleventyone)
-- Mike Riethmuller: [Supermaya](https://github.com/MadeByMike/supermaya)
-- Zach Leatherman: [zachleat.com](https://github.com/zachleat/zachleat.com)
+This project is licensed under the [ISC License](LICENSE.md).
+
+## Acknowledgements
+
+The following guidelines, methodologies and architectures have been used as inspiration for this package:
+
+[list of acknowledgement links]
+
+[deploy-status-shield]: https://img.shields.io/netlify/50580df5-8edc-4abe-8dfd-325ce3874f3f.svg?label=deploy
+[deploy-status-url]: https://app.netlify.com/sites/eleventy-boilerplate/deploys
+[dependencies-shield]: https://img.shields.io/david/pvds/eleventy-boilerplate.svg
+[dependencies-url]: https://github.com/pvds/eleventy-boilerplate
+[issues-shield]: https://img.shields.io/github/issues/pvds/eleventy-boilerplate.svg
+[issues-url]: https://github.com/pvds/eleventy-boilerplate/issues
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_eleventy-boilerplate.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_eleventy-boilerplate
