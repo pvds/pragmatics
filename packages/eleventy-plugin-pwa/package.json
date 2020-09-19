@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/pvds/eleventy-plugin-pwa.git"
   },
+  "homepage": "https://github.com/pvds/eleventy-plugin-pwa",
   "keywords": [
     "pragmatics",
     "eleventy-plugin",
