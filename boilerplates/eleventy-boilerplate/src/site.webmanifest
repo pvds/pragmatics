@@ -13,6 +13,17 @@
       "src": "/assets/images/favicon/android-chrome-384x384.png",
       "sizes": "384x384",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "theme_color": "#1a1a1a",
