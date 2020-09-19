@@ -12,10 +12,7 @@ module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
-  config.addPlugin(pluginPWA, {
-    swDest: './dist/sw.js',
-    globDirectory: './dist',
-  });
+  config.addPlugin(pluginPWA);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
