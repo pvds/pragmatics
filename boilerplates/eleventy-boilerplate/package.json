@@ -2,6 +2,24 @@
   "name": "@pragmatics/eleventy-boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate for eleventy websites",
+  "homepage": "https://pragmatics.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/pvds/eleventy-boilerplate"
+  },
+  "keywords": [
+    "pragmatics",
+    "eleventy",
+    "eleventy pwa",
+    "eleventy starter",
+    "eleventy boilerplate",
+    "11ty",
+    "11ty pwa",
+    "11ty starter",
+    "11ty boilerplate"
+  ],
+  "author": "Peter van der Steen",
+  "license": "MIT",
   "browserslist": [
     "defaults"
   ],
@@ -18,12 +36,6 @@
     "test": "jest",
     "test:changed": "jest -o"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/pvds/eleventy-boilerplate"
-  },
-  "author": "Peter van der Steen",
-  "license": "MIT",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
