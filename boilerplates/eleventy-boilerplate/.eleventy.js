@@ -1,6 +1,6 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
-const pluginPWA = require('eleventy-plugin-pwa');
+const pluginPWA = require('@pragmatics/eleventy-plugin-pwa');
 const markdownIt = require('markdown-it');
 
 const filters = require('./utils/filters.js');
@@ -8,11 +8,16 @@ const transforms = require('./utils/transforms.js');
 const shortcodes = require('./utils/shortcodes.js');
 const iconsprite = require('./utils/iconsprite.js');
 
+const isProd = process.env.ELEVENTY_ENV === 'production';
+
 module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
-  config.addPlugin(pluginPWA);
+  config.addPlugin(pluginPWA, {
+    inlineWorkboxRuntime: true,
+    sourcemap: !isProd,
+  });
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
