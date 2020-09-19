@@ -1,5 +1,6 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
+const pluginPWA = require('eleventy-plugin-pwa');
 const markdownIt = require('markdown-it');
 
 const filters = require('./utils/filters.js');
@@ -11,6 +12,10 @@ module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
+  config.addPlugin(pluginPWA, {
+    swDest: './dist/sw.js',
+    globDirectory: './dist',
+  });
 
   // Filters
   Object.keys(filters).forEach((filterName) => {

@@ -6,6 +6,10 @@
     <title>{{ meta.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+    <script>
+        if ("serviceWorker" in navigator)
+            navigator.serviceWorker.register("/sw.js");
+    </script>
     {% include "meta.njk" %}
 </head>
 <body>
