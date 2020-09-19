@@ -22,9 +22,6 @@ module.exports = class {
     };
   }
 
-  // Compile Sass to CSS,
-  //
-
   /**
    * Compile Sass to CSS,
    * Embed Source Map in Development
