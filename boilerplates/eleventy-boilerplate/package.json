@@ -43,6 +43,7 @@
     "@babel/preset-env": "^7.11.0",
     "@pragmatics/eslint-config": "^1.0.1",
     "@pragmatics/stylelint-config": "^2.0.2",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "clean-css": "^4.2.3",
     "critical": "^2.0.3",
