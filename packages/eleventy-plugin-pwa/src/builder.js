@@ -2,9 +2,8 @@ const fs = require("fs");
 const workbox = require("workbox-build");
 
 module.exports = async (options, outputDir) => {
-  appId = "eleventy-plugin-pwa";
-  defaultOptions = {
-    importWorkboxFrom: "local",
+  const appId = "eleventy-plugin-pwa";
+  const defaultOptions = {
     cacheId: appId,
     skipWaiting: true,
     clientsClaim: true,
@@ -16,11 +15,11 @@ module.exports = async (options, outputDir) => {
     runtimeCaching: [
       {
         urlPattern: /^.*\.(html|jpg|png|gif|webp|ico|svg|woff2|woff|eot|ttf|otf|ttc|json)$/,
-        handler: `staleWhileRevalidate`
+        handler: `StaleWhileRevalidate`
       },
       {
         urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-        handler: `staleWhileRevalidate`
+        handler: `StaleWhileRevalidate`
       }
     ]
   };
@@ -29,7 +28,7 @@ module.exports = async (options, outputDir) => {
   let files;
   try {
     files = fs.readdirSync(opts.globDirectory);
-    if (files && files.length == 0)
+    if (files && files.length === 0)
       throw new Error(
         `No files that can be cached on '${opts.globDirectory}', ignoring.`
       );
