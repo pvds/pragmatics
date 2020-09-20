@@ -15,10 +15,11 @@ module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginRss);
   config.addPlugin(pluginNavigation);
-  config.addPlugin(pluginPWA, {
-    inlineWorkboxRuntime: true,
-    sourcemap: !isProd,
-  });
+
+  if (isProd)
+    config.addPlugin(pluginPWA, {
+      inlineWorkboxRuntime: true,
+    });
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
