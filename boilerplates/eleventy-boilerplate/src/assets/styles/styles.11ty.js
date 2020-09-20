@@ -100,7 +100,7 @@ module.exports = class {
         }
         body::after { 
             content: '${cssesc(error)}'; 
-            white-space: pre;
+            white-space: pre-wrap;
             display: block;
             top: 0; 
             padding: 30px;
