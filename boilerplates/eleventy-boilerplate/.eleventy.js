@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const pluginPWA = require('@pragmatics/eleventy-plugin-pwa');
 const markdownIt = require('markdown-it');
+const yaml = require('js-yaml');
 
 const filters = require('./utils/filters.js');
 const transforms = require('./utils/transforms.js');
@@ -50,6 +51,9 @@ module.exports = function (config) {
       typographer: true,
     })
   );
+
+  // Data extensions
+  config.addDataExtension('yml', (contents) => yaml.safeLoad(contents));
 
   // Layouts
   config.addLayoutAlias('base', 'base.njk');
