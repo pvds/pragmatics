@@ -2,7 +2,7 @@
     Universal focus state
     ========================================================================== */
 
-/* Polyfill for focus:visible */
+/* override default focus-visible for a focusable element */
 @mixin focus-visible {
   .js-focus-visible & {
     &.focus-visible {

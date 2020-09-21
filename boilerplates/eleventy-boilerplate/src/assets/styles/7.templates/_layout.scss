@@ -1,7 +1,6 @@
-// Main Site Layout
-body {
-  overflow-x: hidden;
-}
+/*  ==========================================================================
+    Screen readers
+    ========================================================================== */
 
 .layout {
   position: relative;
@@ -27,11 +26,4 @@ body {
       visibility: hidden;
     }
   }
-}
-
-.container {
-  width: 90%;
-  max-width: $container-max-width;
-  margin-right: auto;
-  margin-left: auto;
 }

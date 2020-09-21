@@ -1,13 +1,11 @@
 /*  ==========================================================================
-    Header
+    Focus
     ========================================================================== */
 
-.header {
-  padding: grid-unit(2) 0;
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
 
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.js-focus-visible .focus-visible {
+  box-shadow: focus-shadow();
 }

@@ -1,22 +1,22 @@
-// =================
-// DEFAULT FOCUS STYLES
-// =================
+/*  ==========================================================================
+    Focus
+    ========================================================================== */
+
 a:focus,
 button:focus,
 input:focus {
   outline: 5px solid $color-focus;
 }
 
-// =================
-// EXCEPTIONS
-// =================
+/*  Exceptions
+    ========================================================================== */
 
-// sections excluded from the tabindex
+/* sections excluded from the tabindex */
 [tabindex='-1']:focus {
   outline: none !important;
 }
 
-// links that are both focused AND hovered
+/* links that are both focused and hovered */
 a:focus:hover {
   outline: none;
 }
