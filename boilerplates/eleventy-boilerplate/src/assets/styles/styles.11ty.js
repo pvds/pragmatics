@@ -3,12 +3,26 @@ const sass = require('node-sass');
 const cssesc = require('cssesc');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
+const purgecss = require('@fullhuman/postcss-purgecss');
 const autoprefixer = require('autoprefixer');
 
 const isProd = process.env.ELEVENTY_ENV === 'production';
 
 // main entry point name
 const ENTRY_FILE_NAME = 'main.scss';
+
+// configs
+const purgecssConfig = {
+  content: ['./dist/**/*.html', './src/**/*.js', './src/**/*.njk'],
+  safelist: {
+    standard: [':before', ':after'],
+    deep: [/focus-visible$/],
+  },
+};
+
+const cssNanoConfig = {
+  preset: ['default', { discardComments: { removeAll: true } }],
+};
 
 module.exports = class {
   /**
@@ -57,7 +71,7 @@ module.exports = class {
     if (!isProd) {
       return css;
     }
-    return await postcss([cssnano, autoprefixer])
+    return await postcss([cssnano(cssNanoConfig), purgecss(purgecssConfig), autoprefixer])
       .process(css, { from: undefined })
       .then((result) => {
         return result.css;

@@ -52,6 +52,7 @@
     "@babel/core": "^7.11.4",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@pragmatics/eleventy-plugin-pwa": "^1.1.1",
     "@pragmatics/eslint-config": "^1.0.1",
     "@pragmatics/stylelint-config": "^2.0.2",

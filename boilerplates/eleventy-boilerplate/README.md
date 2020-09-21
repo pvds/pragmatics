@@ -40,7 +40,7 @@ yarn
 ## Features
 
 - HTML Minification
-- CSS Pipeline (Sass, CleanCSS, Critical CSS)
+- CSS Pipeline (Sass, CSSNano, PurgeCSS, Autoprefixer, Critical CSS)
 - JS Bundling (Webpack)
 - SVG Icon Sprite Generation
 - No external builds, everything runs through 11ty
