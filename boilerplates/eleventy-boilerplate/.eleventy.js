@@ -56,6 +56,11 @@ module.exports = function (config) {
   // Data extensions
   config.addDataExtension('yml', (contents) => yaml.safeLoad(contents));
 
+  // Browsersync config
+  config.setBrowserSyncConfig({
+    open: true,
+  });
+
   // Layouts
   config.addLayoutAlias('base', 'base.njk');
   config.addLayoutAlias('post', 'post.njk');
