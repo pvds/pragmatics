@@ -24,25 +24,25 @@
 @mixin trigger-style() {
   border-radius: $border-radius;
   color: $color-text-soft;
-  fill: $color-text-soft;
+  fill: currentColor;
 
   &:hover {
     background: $color-hover-background;
     color: $color-hover-text;
-    fill: $color-hover-text;
+    fill: currentColor;
   }
 
   &:active,
   &.is-active {
     background: $color-pressed-background;
     color: $color-pressed-text;
-    fill: $color-pressed-text;
+    fill: currentColor;
   }
 
   &:disabled,
   &.is-disabled {
     color: color-disabled($color-text-soft);
-    fill: color-disabled($color-text-soft);
+    fill: currentColor;
   }
 }
 

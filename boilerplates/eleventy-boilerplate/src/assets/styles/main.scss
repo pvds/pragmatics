@@ -35,11 +35,14 @@
 @import '2.tools/mixins/utilities/font';
 @import '2.tools/mixins/utilities/image';
 @import '2.tools/mixins/utilities/layout';
+@import '2.tools/mixins/utilities/link';
+@import '2.tools/mixins/utilities/list';
 @import '2.tools/mixins/utilities/media';
+@import '2.tools/mixins/utilities/plain-text';
 @import '2.tools/mixins/utilities/pointer';
 @import '2.tools/mixins/utilities/screen-reader';
 @import '2.tools/mixins/utilities/states';
-@import '2.tools/mixins/utilities/text';
+@import '2.tools/mixins/utilities/typography';
 @import '2.tools/mixins/utilities/triggers';
 @import '2.tools/mixins/components/panel';
 
@@ -85,7 +88,10 @@
 
 /* helpers - decorated patterns */
 @import '5.classes/helpers/focus';
+@import '5.classes/helpers/list';
+@import '5.classes/helpers/plain-text';
 @import '5.classes/helpers/screenreader';
+@import '5.classes/helpers/typography';
 
 /* 6. components
       reusable modular UI components

@@ -25,17 +25,12 @@ $z-layers: (overlay-global, nav, overlay-content) !default;
 /* Spacing
    ========================================================================== */
 
-$grid-unit: 1rem !default;
-
-/* Typography
-   ========================================================================== */
-
-$font-size-base: 1rem !default;
+$grid-unit: 0.8rem !default;
 
 /* Colors
    ========================================================================== */
 
-$color-black: hsl(0, 0%, 10%) !default;
+$color-black: hsl(0, 0%, 15%) !default;
 $color-white: hsl(360, 100%, 100%) !default;
 $color-blue: hsl(204, 100%, 10%) !default;
 $color-purple: hsl(286, 100%, 10%) !default;
@@ -45,15 +40,11 @@ $color-green: hsl(104, 100%, 10%) !default;
 
 $color-opacity-max: 0.95 !default;
 $color-opacity-high: 0.9 !default;
-$color-opacity-medium: 0.6 !default;
+$color-opacity-medium: 0.7 !default;
 $color-opacity-low: 0.4 !default;
-
-$color-text: rgba($color-black, $color-opacity-high) !default;
-$color-text-soft: rgba($color-black, $color-opacity-medium) !default;
-$color-text-muted: rgba($color-black, $color-opacity-low) !default;
 
 /* Theming
    ========================================================================== */
 
-$border-radius: 0.25rem !default;
+$border-radius: 0.5rem !default;
 $box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);

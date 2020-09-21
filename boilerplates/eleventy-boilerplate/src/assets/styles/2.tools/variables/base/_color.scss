@@ -74,6 +74,11 @@ $color-green-100: get-color-scale($color-green, 100);
 /*  Color implementation
     ========================================================================== */
 
+/* text */
+$color-text: rgba($color-black, $color-opacity-high);
+$color-text-soft: rgba($color-black, $color-opacity-medium);
+$color-text-muted: rgba($color-black, $color-opacity-low);
+
 /* Distinction */
 $color-divider: $color-black-100;
 $color-overlay: $color-black-900;
@@ -82,11 +87,11 @@ $color-shadow-dark: $color-overlay;
 
 /* States */
 $color-selected: $color-blue-900;
-$color-focus: $color-orange-800;
+$color-focus: $color-orange-600;
 $color-disabled: color-disabled();
 
-$color-text-selection-bg: $color-blue-800;
-$color-text-selection-text: $color-white;
+$color-selection-bg: $color-blue-800;
+$color-selection-text: $color-white;
 
 $color-hover-text: $color-blue-800;
 $color-hover-background: $color-blue-200;

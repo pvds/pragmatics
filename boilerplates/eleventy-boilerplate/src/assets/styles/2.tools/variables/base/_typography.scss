@@ -18,21 +18,60 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 /* Size */
-$font-size-root: 100%;
-$font-size-xs: 1rem;
-$font-size-sm: 1.2rem;
-$font-size-md: 1.4rem;
-$font-size-lg: 1.6rem;
-$font-size-xl: 2rem;
-$font-size-2xl: 2.4rem;
+$font-size-root: 62.5%;
+$font-size-2xs: 1.2rem;
+$font-size-xs: 1.4rem;
+$font-size-sm: 1.6rem;
+$font-size-md: 2rem;
+$font-size-lg: 2.4rem;
+$font-size-xl: 2.8rem;
+$font-size-2xl: 3.2rem;
+$font-size-3xl: 4rem;
 
 /*  Line height
     ========================================================================== */
 
-$line-height: 1.625;
-$line-height-xs: 1.2rem;
-$line-height-sm: 1.4rem;
-$line-height-md: 1.6rem;
-$line-height-lg: 2rem;
-$line-height-xl: 2.4rem;
-$line-height-xl: 2.8rem;
+$line-height: 1.4;
+$line-height-2xs: 1.4rem;
+$line-height-xs: 1.6rem;
+$line-height-sm: 2rem;
+$line-height-md: 2.4rem;
+$line-height-lg: 2.8rem;
+$line-height-xl: 3.2rem;
+$line-height-2xl: 3.6rem;
+$line-height-3xl: 4.8rem;
+
+/*  Text
+    ========================================================================== */
+
+$text-size: (
+  xs: (
+    size: $font-size-xs,
+    height: $line-height-xs,
+  ),
+  sm: (
+    size: $font-size-sm,
+    height: $line-height-sm,
+  ),
+  md: (
+    size: $font-size-md,
+    height: $line-height-md,
+  ),
+  lg: (
+    size: $font-size-lg,
+    height: $line-height-lg,
+  ),
+  xl: (
+    size: $font-size-xl,
+    height: $line-height-xl,
+  ),
+  2xl: (
+    size: $font-size-2xl,
+    height: $line-height-2xl,
+  ),
+  3xl: (
+    size: $font-size-3xl,
+    height: $line-height-3xl,
+    weight: $font-weight-bold,
+  ),
+);

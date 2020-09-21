@@ -1,32 +1,62 @@
 .nav {
-  &__menu {
-    position: absolute;
-    right: 0;
-    left: 0;
-    display: none;
-    background-color: $color-white;
-  }
+  &__item {
+    &--active {
+      .nav {
+        &__link {
+          @include property-states(background-color, $color-black-700);
 
-  &__link {
-    display: block;
-    padding: 0.5em 1em;
-  }
-
-  @include mq-down(lg) {
-    &.is-open &__menu {
-      display: block;
+          color: $color-white;
+        }
+      }
     }
   }
 
-  @include mq(lg) {
+  &__link {
+    @include trigger-layout;
+    @include property-states(background-color, inherit, $color-black-100, $color-black-200);
+
+    padding: grid-unit(1) grid-unit(2);
+  }
+
+  &__toggle {
+    @include trigger;
+  }
+
+  @include mq-down(md) {
+    &.is-open &__menu {
+      display: block;
+    }
+
+    &__menu {
+      position: absolute;
+      right: 0;
+      left: 0;
+      display: none;
+      padding: grid-unit(1) 0 grid-unit(2);
+      background-color: $color-white;
+    }
+
+    &__item {
+      & + & {
+        margin-top: grid-unit(1);
+      }
+    }
+  }
+
+  @include mq(md) {
     &__toggle {
       display: none;
     }
 
     &__menu {
-      position: static;
       display: flex;
       background-color: transparent;
+    }
+
+    &__item {
+      & + & {
+        margin-left: grid-unit(1);
+      }
     }
   }
 }

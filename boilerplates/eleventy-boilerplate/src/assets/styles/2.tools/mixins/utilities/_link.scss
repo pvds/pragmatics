@@ -1,0 +1,13 @@
+/*  ==========================================================================
+    Link
+    ========================================================================== */
+
+@mixin link() {
+  @include property-states('color', inherit, $color-blue-800, $color-blue-900);
+
+  text-decoration: underline;
+
+  @include focus-visible {
+    box-shadow: focus-shadow(false);
+  }
+}

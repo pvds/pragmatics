@@ -10,6 +10,7 @@
 
 a,
 button {
+  border-radius: $border-radius;
   color: inherit; /* 1 */
   cursor: pointer; /* 2 */
   transition: $animate-duration; /* 3 */

@@ -18,8 +18,8 @@
 
 /* Text selection */
 ::selection {
-  background-color: $color-text-selection-bg;
-  color: $color-text-selection-text;
+  background-color: $color-selection-bg;
+  color: $color-selection-text;
 }
 
 html {
@@ -31,7 +31,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-size: $font-size-md;
   line-height: $line-height;
   background-color: $color-white;
   color: $color-text;

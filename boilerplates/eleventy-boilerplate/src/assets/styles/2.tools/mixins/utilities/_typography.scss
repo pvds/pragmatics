@@ -2,6 +2,19 @@
     Text
     ========================================================================== */
 
+@mixin text($name, $weight: null) {
+  $size: map-deep-get($text-size, $name, size);
+  $height: map-deep-get($text-size, $name, height);
+  $weight: map-deep-get($text-size, $name, weight);
+
+  font-size: $size;
+  line-height: $height;
+
+  @if ($weight) {
+    font-weight: $weight;
+  }
+}
+
 @mixin hyphenate() {
   hyphens: auto;
   word-wrap: break-word;

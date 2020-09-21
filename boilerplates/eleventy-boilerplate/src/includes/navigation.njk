@@ -16,7 +16,7 @@
     </button>
 
     {# Nav Links  #}
-    <ul class="nav__menu js-nav-menu" id="nav-menu">
+    <ul class="nav__menu js-nav-menu container" id="nav-menu">
     {%- for item in collections.all | eleventyNavigation -%}
         {%- set isCurrent = (item.url == page.url) -%}
         {%- set isParent = item.url != '/' and item.url in page.url -%}

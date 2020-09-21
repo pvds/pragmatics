@@ -11,7 +11,10 @@ samp {
 
 /* Inline code */
 code {
+  padding: 2px 4px;
+  border-radius: $border-radius;
   font-size: 90%;
+  background-color: $color-black-100;
 }
 
 /* User input typically entered via keyboard */
@@ -28,12 +31,14 @@ kbd {
 /* Blocks of code */
 pre {
   display: block;
+  padding: grid-unit(1);
+  border-radius: $border-radius;
   word-break: break-all;
   word-wrap: break-word;
+  background-color: $color-black-100;
 
   // Account for some code outputs that place code tags in pre tags
   code {
-    font-size: inherit;
     white-space: pre-wrap;
     background-color: transparent;
     color: inherit;

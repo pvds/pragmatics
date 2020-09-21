@@ -9,6 +9,6 @@
   @if type-of($multiplier) == 'number' and round($multiplier * 2) == $multiplier * 2 {
     @return $unit * $multiplier;
   } @else {
-    @warn "`#{$multiplier}` given, grid-unit only accepts whole or half units (eg. 3 or 4.5, not 1.25 or 0.2)";
+    @error "`#{$multiplier}` given, grid-unit only accepts whole or half units (eg. 3 or 4.5, not 1.25 or 0.2)";
   }
 }

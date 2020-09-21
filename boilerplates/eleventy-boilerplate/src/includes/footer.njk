@@ -1,8 +1,8 @@
 <footer class="footer" role="contentinfo">
     <div class="footer__inner container">
         <span>&copy; copyright {{ build.timestamp | dateToFormat('yyyy') }}</span>
-        <a href="http://github.com/pvds/eleventy-boilerplate">
-            {% icon "github" %}Repository
+        <a class="footer__link" href="http://github.com/pvds/eleventy-boilerplate">
+            {% icon "github" %}<span class="footer__link-label">Github</span>
         </a>
     </div>
 </footer>

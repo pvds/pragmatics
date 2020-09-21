@@ -1,12 +1,7 @@
 /*  ==========================================================================
-    Focus
+    Lists
     ========================================================================== */
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
-.js-focus-visible .focus-visible {
-  outline: none;
-  box-shadow: focus-shadow();
+.is-list {
+  @include list();
 }
