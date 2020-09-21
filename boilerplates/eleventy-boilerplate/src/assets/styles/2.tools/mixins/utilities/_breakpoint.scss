@@ -18,7 +18,7 @@
   $min: breakpoint-min($name, $breakpoints);
 
   @if $min {
-    @media (max-width: ($min - 1px)) {
+    @media (max-width: ($min - $breakpoint-max-modifier)) {
       @content;
     }
   } @else {
