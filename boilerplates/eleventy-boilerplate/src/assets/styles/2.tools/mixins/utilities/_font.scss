@@ -2,24 +2,34 @@
     Font
     ========================================================================== */
 
-/*  Custom font loading
-    ========================================================================== */
+/**
+ * generate @font-face declaration
+ * example:
+ *    @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+ */
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
 
-@mixin fontdef($font-path, $font-name, $font-type, $font-version) {
-  src: url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.woff2?v=#{$font-version}')
-      format('woff2'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.woff?v=#{$font-version}')
-      format('woff'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.ttf?v=#{$font-version}')
-      format('truetype'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.svg?v=#{$font-version}##{$font-type}')
-      format('svg');
-}
+  $extmods: (
+    eot: '?',
+    svg: '#' + str-replace($name, ' ', '_'),
+  );
 
-@mixin fontdef-icon($font-path, $font-name, $font-type, $font-version) {
-  src: url('#{$font-path}/#{$font-name}/#{$font-name}.woff2?v=#{$font-version}') format('woff2'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}.ttf?v=#{$font-version}') format('truetype'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}.woff?v=#{$font-version}') format('woff'),
-    url('#{$font-path}/#{$font-name}/#{$font-name}.svg?v=#{$font-version}##{$font-type}')
-      format('svg');
+  $formats: (
+    otf: 'opentype',
+    ttf: 'truetype',
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + '.' + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
 }
