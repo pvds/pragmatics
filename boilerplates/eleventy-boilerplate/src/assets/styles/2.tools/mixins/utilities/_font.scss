@@ -1,0 +1,25 @@
+/*  ==========================================================================
+    Font
+    ========================================================================== */
+
+/*  Custom font loading
+    ========================================================================== */
+
+@mixin fontdef($font-path, $font-name, $font-type, $font-version) {
+  src: url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.woff2?v=#{$font-version}')
+      format('woff2'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.woff?v=#{$font-version}')
+      format('woff'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.ttf?v=#{$font-version}')
+      format('truetype'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}-#{$font-type}.svg?v=#{$font-version}##{$font-type}')
+      format('svg');
+}
+
+@mixin fontdef-icon($font-path, $font-name, $font-type, $font-version) {
+  src: url('#{$font-path}/#{$font-name}/#{$font-name}.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}.ttf?v=#{$font-version}') format('truetype'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}.woff?v=#{$font-version}') format('woff'),
+    url('#{$font-path}/#{$font-name}/#{$font-name}.svg?v=#{$font-version}##{$font-type}')
+      format('svg');
+}

@@ -1,0 +1,27 @@
+/*  ==========================================================================
+    Breakpoints
+    ========================================================================== */
+
+@mixin mq($name) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin mq-down($name) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (max-width: ($min - 1px)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

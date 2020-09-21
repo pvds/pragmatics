@@ -1,0 +1,23 @@
+/* Resets
+   ========================================================================== */
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+/* Horizontal rule */
+hr {
+  margin: grid-unit(2) 0;
+  border: 0;
+  border-top: 1px solid darken($color-white, 5);
+}
+
+/* Marked content */
+mark {
+  background-color: $color-orange-200;
+}

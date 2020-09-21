@@ -1,36 +1,105 @@
-// ---------------------------------
-// MASTER STYLESHEET INDEX
-// ---------------------------------
+/* ==========================================================================
+   Main barrel - import sass partials here
+   ========================================================================== */
 
-//--------------------
-// UTILITIES
-//--------------------
+/* 1. settings
+      project-wide configuration and variables
+   ========================================================================== */
 
-@import 'utils/functions';
-@import 'utils/variables';
-@import 'utils/mixins';
+@import '1.settings/config';
+@import '1.settings/global';
 
-//--------------------
-// BASE MODULES
-// partials with global scope
-//--------------------
+/* 2. tools
+      reset and/or normalize styles, box-sizing definition
+   ========================================================================== */
 
-@import 'base/fonts';
-@import 'base/normalize';
-@import 'base/reboot';
-@import 'base/layout';
-@import 'base/typography';
-@import 'base/focus';
-@import 'base/utilities';
-@import 'base/screenreader';
-@import 'base/animation';
+/**
+ * functions
+ */
+@import '2.tools/functions/border-radius';
+@import '2.tools/functions/box-shadow';
+@import '2.tools/functions/breakpoint';
+@import '2.tools/functions/color';
+@import '2.tools/functions/focus';
+@import '2.tools/functions/grid';
+@import '2.tools/functions/sass';
+@import '2.tools/functions/z-index';
 
-//--------------------
-// COMPONENTS
-// partials with local scope to a component
-//--------------------
+/**
+ * mixins
+ */
+@import '2.tools/mixins/utilities/border-radius';
+@import '2.tools/mixins/utilities/box-shadow';
+@import '2.tools/mixins/utilities/breakpoint';
+@import '2.tools/mixins/utilities/custom-property';
+@import '2.tools/mixins/utilities/focus';
+@import '2.tools/mixins/utilities/font';
+@import '2.tools/mixins/utilities/image';
+@import '2.tools/mixins/utilities/layout';
+@import '2.tools/mixins/utilities/pointer';
+@import '2.tools/mixins/utilities/screen-reader';
+@import '2.tools/mixins/utilities/states';
+@import '2.tools/mixins/utilities/text';
+@import '2.tools/mixins/utilities/triggers';
+@import '2.tools/mixins/components/panel';
 
-@import 'components/header';
-@import 'components/nav';
-@import 'components/footer';
-@import 'components/icon';
+/**
+ * variables
+ */
+
+/* base - declared first so they can be used in other variable partials */
+@import '2.tools/variables/base/animate';
+@import '2.tools/variables/base/color';
+@import '2.tools/variables/base/spacing';
+@import '2.tools/variables/base/typography';
+
+/* utilities */
+@import '2.tools/variables/utilities/box-shadow';
+
+/* 3. generic
+      reset and/or normalize styles, box-sizing definition
+   ========================================================================== */
+
+@import '3.generic/normalize';
+
+/* 4. elements
+      styling for bare HTML elements
+   ========================================================================== */
+
+@import '4.elements/animation';
+@import '4.elements/base';
+@import '4.elements/code';
+@import '4.elements/focus';
+@import '4.elements/interactive';
+@import '4.elements/list';
+@import '4.elements/table';
+@import '4.elements/typography';
+
+/* 5. objects
+      class-based selectors which define undecorated design patterns
+   ========================================================================== */
+
+@import '5.objects/focus';
+@import '5.objects/fonts';
+@import '5.objects/screenreader';
+
+/* 6. components
+      reusable modular UI components
+   ========================================================================== */
+
+@import '6.components/footer';
+@import '6.components/header';
+@import '6.components/icon';
+@import '6.components/nav';
+
+/* 7. templates
+      reusable UI templates
+   ========================================================================== */
+
+@import '7.templates/layout';
+
+/* 8. utilities
+      utility classes with ability to override anything
+   ========================================================================== */
+
+@import '8.utilities/hide';

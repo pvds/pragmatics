@@ -1,0 +1,35 @@
+/*  ==========================================================================
+    Sass functions
+    ========================================================================== */
+
+/*  Map
+    ========================================================================== */
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+/*  String
+    ========================================================================== */
+
+@function string-contains($string, $find) {
+  @return if($string, str-index($string, $find), null);
+}
+
+@function string-ends-with($string, $find) {
+  @return str-slice($string, (str-length($string) - str-length($find) + 1)) == $find;
+}
+
+/*  Conversion
+    ========================================================================== */
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

@@ -1,0 +1,54 @@
+/*  ==========================================================================
+    Triggers
+
+    Styling for interaction areas
+    ========================================================================== */
+
+@mixin touch-target() {
+  min-width: $min-touch-area;
+  min-height: $min-touch-area;
+  cursor: pointer;
+}
+
+@mixin trigger-layout() {
+  @include touch-target;
+
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: left;
+}
+
+@mixin trigger-style() {
+  border-radius: $border-radius;
+  color: $color-text-soft;
+  fill: $color-text-soft;
+
+  &:hover {
+    background: $color-hover-background;
+    color: $color-hover-text;
+    fill: $color-hover-text;
+  }
+
+  &:active,
+  &.is-active {
+    background: $color-pressed-background;
+    color: $color-pressed-text;
+    fill: $color-pressed-text;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    color: color-disabled($color-text-soft);
+    fill: color-disabled($color-text-soft);
+  }
+}
+
+@mixin trigger {
+  @include trigger-layout;
+  @include trigger-style;
+}

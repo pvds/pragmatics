@@ -1,0 +1,12 @@
+/*  ==========================================================================
+    Universal focus state
+    ========================================================================== */
+
+/* Polyfill for focus:visible */
+@mixin focus-visible {
+  .js-focus-visible & {
+    &.focus-visible {
+      @content;
+    }
+  }
+}

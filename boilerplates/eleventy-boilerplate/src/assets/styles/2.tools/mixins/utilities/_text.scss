@@ -1,0 +1,15 @@
+/*  ==========================================================================
+    Text
+    ========================================================================== */
+
+@mixin hyphenate() {
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@mixin truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

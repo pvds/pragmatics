@@ -1,0 +1,19 @@
+/*  ==========================================================================
+    Color
+    ========================================================================== */
+
+@function get-color-scale($color, $scale) {
+  $scales: 900, 800, 700, 600, 500, 400, 300, 200, 100;
+  $lightness-factor: 9;
+  $scale-index: index($scales, $scale) - 1;
+
+  @return lighten($color, $scale-index * $lightness-factor);
+}
+
+@function color-disabled($color: $color-text) {
+  @if type-of($color) != 'color' or ($color == transparent) {
+    @error '#{$color} is not a valid color argument';
+  } @else {
+    @return rgba($color, $color-opacity-low);
+  }
+}

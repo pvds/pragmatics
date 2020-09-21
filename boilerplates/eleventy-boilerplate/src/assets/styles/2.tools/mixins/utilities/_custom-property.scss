@@ -1,0 +1,12 @@
+/*  ==========================================================================
+    Custom property
+    ========================================================================== */
+
+@mixin custom-property($property, $custom-property, $fallback-value) {
+  @if ($fallback-value) {
+    #{$property}: $fallback-value;
+    #{$property}: var($custom-property, $fallback-value);
+  } @else {
+    #{$property}: var($custom-property);
+  }
+}

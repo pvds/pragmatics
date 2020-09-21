@@ -1,0 +1,8 @@
+/**
+ * Touch area
+ * Touch optimized interactive areas (https://material.io/design/layout/spacing-methods.html#touch-click-targets)
+ * Based on 48px minimum touch area (visual area can be smaller eg 36px + 6px margin)
+ */
+$touch-area: grid-unit(6);
+$min-touch-area: grid-unit(4.5);
+$min-touch-area-spacing: ($touch-area - $min-touch-area) / 2;

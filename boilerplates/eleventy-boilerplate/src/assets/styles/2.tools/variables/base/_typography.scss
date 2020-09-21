@@ -1,0 +1,34 @@
+/*  ==========================================================================
+    Typography
+    ========================================================================== */
+
+/*  Font properties
+    ========================================================================== */
+
+/* Family */
+$font-family-base: 'Helvetica Neue', arial, sans-serif;
+$font-family-headings: 'Helvetica Neue', arial, sans-serif;
+$font-family-monospace: menlo, monaco, consolas, 'Courier New', monospace;
+
+/* Weight */
+$font-weight-regular: 500;
+$font-weight-semibold: 700;
+$font-weight-bold: 900;
+
+/* Size */
+$font-size-xs: 1rem;
+$font-size-sm: 1.2rem;
+$font-size-md: 1.4rem;
+$font-size-lg: 1.6rem;
+$font-size-xl: 2rem;
+$font-size-2xl: 2.4rem;
+
+/*  Line height
+    ========================================================================== */
+
+$line-height-xs: 1.2rem;
+$line-height-sm: 1.4rem;
+$line-height-md: 1.6rem;
+$line-height-lg: 2rem;
+$line-height-xl: 2.4rem;
+$line-height-xl: 2.8rem;

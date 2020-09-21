@@ -1,0 +1,14 @@
+/*  ==========================================================================
+    Universal focus state
+    ========================================================================== */
+
+/* Focus shadow */
+@function focus-shadow($use-inset: true, $color: $color-focus) {
+  $inset: inset;
+
+  @if ($use-inset == false) {
+    $inset: null;
+  }
+
+  @return $inset 0 0 0 1px $color;
+}

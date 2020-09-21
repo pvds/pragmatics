@@ -1,0 +1,32 @@
+.nav {
+  &__menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: $color-white;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5em 1em;
+  }
+
+  @include mq-down(lg) {
+    &.is-open &__menu {
+      display: block;
+    }
+  }
+
+  @include mq(lg) {
+    &__toggle {
+      display: none;
+    }
+
+    &__menu {
+      position: static;
+      display: flex;
+      background-color: transparent;
+    }
+  }
+}
