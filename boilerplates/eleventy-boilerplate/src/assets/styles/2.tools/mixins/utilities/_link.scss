@@ -6,6 +6,7 @@
   @include property-states('color', inherit, $color-blue-800, $color-blue-900);
 
   text-decoration: underline;
+  fill: currentColor;
 
   @include focus-visible {
     box-shadow: focus-shadow(false);
