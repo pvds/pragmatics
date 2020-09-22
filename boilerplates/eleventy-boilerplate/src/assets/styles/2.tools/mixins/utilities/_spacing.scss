@@ -2,7 +2,7 @@
     Spacing
     ========================================================================== */
 
-@mixin spacing($prop, $units: 6, $breakpoints-map: $breakpoints) {
+@mixin spacing($prop, $units: 6, $breakpoints-map: $breakpoints-infix) {
   @each $breakpoint in map-keys($breakpoints-map) {
     $bp: breakpoint-infix($breakpoint, $breakpoints-map);
 
