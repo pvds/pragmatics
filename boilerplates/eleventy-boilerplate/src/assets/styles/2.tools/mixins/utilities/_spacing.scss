@@ -1,0 +1,43 @@
+/*  ==========================================================================
+    Spacing
+    ========================================================================== */
+
+@mixin spacing($prop, $units: 6, $breakpoints-map: $breakpoints) {
+  @each $breakpoint in map-keys($breakpoints-map) {
+    $bp: breakpoint-infix($breakpoint, $breakpoints-map);
+
+    @for $unit from 0 through $units {
+      $value: grid-unit($unit);
+
+      .#{$prop}-#{$unit}#{$bp} {
+        #{$prop}: $value !important;
+      }
+
+      .#{$prop}-horizontal-#{$unit}#{$bp} {
+        #{$prop}-right: $value !important;
+        #{$prop}-left: $value !important;
+      }
+
+      .#{$prop}-vertical-#{$unit}#{$bp} {
+        #{$prop}-top: $value !important;
+        #{$prop}-bottom: $value !important;
+      }
+
+      .#{$prop}-top-#{$unit}#{$bp} {
+        #{$prop}-top: $value !important;
+      }
+
+      .#{$prop}-right-#{$unit}#{$bp} {
+        #{$prop}-right: $value !important;
+      }
+
+      .#{$prop}-bottom-#{$unit}#{$bp} {
+        #{$prop}-bottom: $value !important;
+      }
+
+      .#{$prop}-left-#{$unit}#{$bp} {
+        #{$prop}-left: $value !important;
+      }
+    }
+  }
+}

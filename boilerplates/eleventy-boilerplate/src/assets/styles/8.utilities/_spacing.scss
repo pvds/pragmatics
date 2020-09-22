@@ -1,11 +1,6 @@
 /*  ==========================================================================
-    Breakpoint
+    Spacing
     ========================================================================== */
 
-$breakpoint-max-modifier: 0.02px;
-$breakpoints-infix: map-merge(
-  (
-    base: 0,
-  ),
-  $breakpoints
-);
+/* generate margin classes */
+@include spacing(margin);

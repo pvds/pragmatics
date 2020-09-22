@@ -41,6 +41,7 @@
 @import '2.tools/mixins/utilities/plain-text';
 @import '2.tools/mixins/utilities/pointer';
 @import '2.tools/mixins/utilities/screen-reader';
+@import '2.tools/mixins/utilities/spacing';
 @import '2.tools/mixins/utilities/states';
 @import '2.tools/mixins/utilities/typography';
 @import '2.tools/mixins/utilities/triggers';
@@ -114,3 +115,4 @@
    ========================================================================== */
 
 @import '8.utilities/hide';
+@import '8.utilities/spacing';
