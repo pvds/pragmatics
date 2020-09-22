@@ -1,9 +1,12 @@
 ---
+tags: posts
 layout: post
 permalink: /about/
 eleventyNavigation:
   key: About
+  order: 3
 title: About
+snippet: Learn more about the pragmatics boilerplate for eleventy
 ---
 
 [![Release version][release-version-shield]][release-version-url]

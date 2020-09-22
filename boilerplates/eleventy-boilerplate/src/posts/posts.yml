@@ -1,2 +1,6 @@
 tags: posts
 layout: post
+eleventyComputed:
+  eleventyNavigation:
+    key: '{{ title }}'
+    parent: Posts
