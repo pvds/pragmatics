@@ -1,0 +1,20 @@
+---
+layout: base
+permalink: /posts/
+eleventyNavigation:
+  key: Posts
+title: Posts
+---
+
+<div class="container">
+  <h1 class="emphasis-3xl">{{ title }}</h1>
+  <ul class="post-list margin-top-3">
+    {%- for post in collections.posts | reverse -%}
+      <li class="post-list__item">
+        <h2 class="post-list__title emphasis-lg"><a class="link" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p class="post-list__date">{{ post.date | dateToFormat('d MMMM y - HH:mm') }}</p>
+        <p class="post-list__snippet">{{ post.data.snippet }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

@@ -1,0 +1,24 @@
+/*  ==========================================================================
+    Post list
+    ========================================================================== */
+
+.post-list {
+  &__item {
+    & + & {
+      margin-top: grid-unit(3);
+    }
+  }
+
+  &__title {
+    @include text(lg);
+
+    margin-bottom: grid-unit(1);
+  }
+
+  &__date {
+    @include text(sm);
+
+    margin-bottom: grid-unit(0.5);
+    color: $color-text-soft;
+  }
+}
