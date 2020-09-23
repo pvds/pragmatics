@@ -82,7 +82,7 @@ $color-text-muted: rgba($color-black, $color-opacity-low);
 /* Distinction */
 $color-divider: $color-black-100;
 $color-overlay: $color-black-900;
-$color-shadow: $color-blue-800;
+$color-shadow: $color-black;
 $color-shadow-dark: $color-overlay;
 
 /* States */
@@ -93,10 +93,10 @@ $color-disabled: color-disabled();
 $color-selection-bg: $color-blue-800;
 $color-selection-text: $color-white;
 
-$color-hover-text: $color-blue-800;
-$color-hover-background: $color-blue-200;
-$color-pressed-text: $color-blue-900;
-$color-pressed-background: $color-blue-300;
+$color-hover-text: $color-black-800;
+$color-hover-background: $color-black-100;
+$color-pressed-text: $color-black-900;
+$color-pressed-background: $color-black-200;
 
 /* Status */
 $color-info: $color-blue-700;
