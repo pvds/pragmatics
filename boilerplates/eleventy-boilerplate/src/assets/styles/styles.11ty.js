@@ -15,7 +15,24 @@ const ENTRY_FILE_NAME = 'main.scss';
 const purgecssConfig = {
   content: ['./dist/**/*.html', './src/**/*.js', './src/**/*.njk'],
   safelist: {
-    standard: [':before', ':after'],
+    standard: [
+      'h1',
+      'h2',
+      'h3',
+      'h4',
+      'h5',
+      'h6',
+      'p',
+      'ul',
+      'ol',
+      'hr',
+      'pre',
+      'code',
+      'blockquote',
+      'img',
+      ':before',
+      ':after',
+    ],
     deep: [/focus-visible$/],
   },
 };
