@@ -2,15 +2,7 @@
     Triggers
     ========================================================================== */
 
-@mixin touch-target() {
-  min-width: $min-touch-area;
-  min-height: $min-touch-area;
-  cursor: pointer;
-}
-
-@mixin trigger-layout() {
-  @include touch-target;
-
+@mixin trigger-layout($size: $min-touch-area) {
   position: relative;
   display: flex;
   flex-shrink: 0;
@@ -18,35 +10,41 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
+  min-width: $size;
+  min-height: $size;
   text-align: left;
+  cursor: pointer;
 }
 
 @mixin trigger-style() {
+  $trigger_color: $color-text;
+  $trigger_background: $color-white;
+  $trigger-hover_background: $color-hover-background;
+  $trigger-pressed_background: $color-pressed-background;
+
   border-radius: $border-radius;
-  color: $color-text-soft;
+  background-color: $trigger_background;
   fill: currentColor;
 
   &:hover {
-    background: $color-hover-background;
-    color: $color-hover-text;
+    background-color: $trigger-hover_background;
     fill: currentColor;
   }
 
   &:active,
   &.is-active {
-    background: $color-pressed-background;
-    color: $color-pressed-text;
+    background-color: $trigger-pressed_background;
     fill: currentColor;
   }
 
   &:disabled,
   &.is-disabled {
-    color: color-disabled($color-text-soft);
+    color: color-disabled($trigger_color);
     fill: currentColor;
   }
 }
 
-@mixin trigger {
-  @include trigger-layout;
-  @include trigger-style;
+@mixin trigger($size: null) {
+  @include trigger-layout($size);
+  @include trigger-style();
 }
