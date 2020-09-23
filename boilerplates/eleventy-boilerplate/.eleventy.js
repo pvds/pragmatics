@@ -12,6 +12,13 @@ const iconsprite = require('./utils/iconsprite.js');
 
 const isProd = process.env.ELEVENTY_ENV === 'production';
 
+const markdownItConfig = {
+  html: true,
+  breaks: false,
+  linkify: true,
+  typographer: true,
+};
+
 module.exports = function (config) {
   // Plugins
   config.addPlugin(pluginRss);
@@ -44,15 +51,7 @@ module.exports = function (config) {
   config.addWatchTarget('./src/assets');
 
   // Markdown
-  config.setLibrary(
-    'md',
-    markdownIt({
-      html: true,
-      breaks: true,
-      linkify: true,
-      typographer: true,
-    }).use(markdownItImsize)
-  );
+  config.setLibrary('md', markdownIt(markdownItConfig).use(markdownItImsize));
 
   // Data extensions
   config.addDataExtension('yml', (contents) => yaml.safeLoad(contents));
