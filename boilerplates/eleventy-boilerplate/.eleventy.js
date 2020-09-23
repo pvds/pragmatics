@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const pluginPWA = require('@pragmatics/eleventy-plugin-pwa');
 const markdownIt = require('markdown-it');
+const markdownItImsize = require('markdown-it-imsize');
 const yaml = require('js-yaml');
 
 const filters = require('./utils/filters.js');
@@ -50,7 +51,7 @@ module.exports = function (config) {
       breaks: true,
       linkify: true,
       typographer: true,
-    })
+    }).use(markdownItImsize)
   );
 
   // Data extensions
