@@ -21,3 +21,10 @@ hr {
 mark {
   background-color: $color-orange-200;
 }
+
+/* Quotes */
+blockquote {
+  padding: grid-unit(1) grid-unit(2);
+  border-left: grid-unit(1) solid $color-text-soft;
+  background: $color-black-100;
+}
