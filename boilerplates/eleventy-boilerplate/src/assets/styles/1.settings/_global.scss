@@ -20,7 +20,7 @@ $container-max-width: 1600px !default;
 /* Z-index
    ========================================================================== */
 
-$z-layers: (overlay-global, nav, overlay-content) !default;
+$z-layers: (above, snackbar) !default;
 
 /* Spacing
    ========================================================================== */
@@ -47,4 +47,4 @@ $color-opacity-low: 0.4 !default;
    ========================================================================== */
 
 $border-radius: 0.5rem !default;
-$box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+$box-shadow: 0 0.2rem 1.6rem rgba(0, 0, 0, 0.15);

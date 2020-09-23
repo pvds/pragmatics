@@ -3,9 +3,11 @@
     ========================================================================== */
 
 @function z($layer) {
-  @if map-has-key($z-layers, $layer) == false {
-    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  $index: index($z-layers, $layer);
+
+  @if $index == false {
+    @warn "No layer found for `#{$layer}` in $z-layers list. Property omitted.";
   }
 
-  @return map-get($z-layers, $layer);
+  @return $index;
 }
