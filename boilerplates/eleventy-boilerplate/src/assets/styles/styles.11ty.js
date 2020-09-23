@@ -13,7 +13,7 @@ const ENTRY_FILE_NAME = 'main.scss';
 
 // configs
 const purgecssConfig = {
-  content: ['./dist/**/*.html', './src/**/*.js', './src/**/*.njk'],
+  content: ['./dist/**/*.html', './src/**/*.js', './utils/**/*.js', './src/**/*.njk'],
   safelist: {
     standard: [
       'h1',
