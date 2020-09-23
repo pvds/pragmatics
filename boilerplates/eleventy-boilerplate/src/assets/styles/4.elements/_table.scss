@@ -5,9 +5,18 @@
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  text-align: left;
 }
 
 td,
 th {
-  padding: 0;
+  padding: grid-unit(0.5) grid-unit(1.5);
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
