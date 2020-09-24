@@ -47,6 +47,7 @@
 @import '2.tools/mixins/utilities/triggers';
 @import '2.tools/mixins/components/panel';
 @import '2.tools/mixins/components/snackbar';
+@import '2.tools/mixins/components/offcanvas';
 
 /**
  * variables
@@ -103,10 +104,9 @@
 @import '6.components/footer';
 @import '6.components/header';
 @import '6.components/icon';
-@import '6.components/install-promotion';
 @import '6.components/menu-icon';
 @import '6.components/nav';
-@import '6.components/offline-notification';
+@import '6.components/offcanvas';
 @import '6.components/post-list';
 @import '6.components/snackbar';
 

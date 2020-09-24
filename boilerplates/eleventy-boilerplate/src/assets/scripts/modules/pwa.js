@@ -1,6 +1,6 @@
 /* custom PWA installation triggers */
-export const pwaInstallCta = document.getElementById('install-promotion-cta');
-export const pwaInstallDismiss = document.getElementById('install-promotion-dismiss');
+export const pwaInstallCta = document.getElementById('pwa-install-cta');
+export const pwaInstallDismiss = document.getElementById('pwa-install-dismiss');
 
 /* used to stach deferredPrompt event */
 export let deferredPrompt;
@@ -10,10 +10,17 @@ export let deferredPrompt;
  * @param {Event} e
  */
 export function handleNetworkChange(e) {
+  const mode = 'is-offline';
+
+  const notificationElement = document.getElementById('offline-offcanvas-item');
+  const notificationElementVisible = 'is-visible';
+
   if (navigator.onLine) {
-    document.body.classList.remove('offline-mode');
+    document.body.classList.remove(mode);
+    notificationElement.classList.remove(notificationElementVisible);
   } else {
-    document.body.classList.add('offline-mode');
+    document.body.classList.add(mode);
+    notificationElement.classList.add(notificationElementVisible);
   }
 }
 
@@ -32,9 +39,9 @@ export function customInstallPrompt(e) {
       // Stash the event so it can be triggered later.
       deferredPrompt = e;
       // Update UI notify the user they can install the PWA
-      handleInstallPromotion(true);
+      handleInstallPrompt(true);
     }
-  }, 10000);
+  }, 6000);
 
   clearTimeout();
 }
@@ -44,7 +51,7 @@ export function customInstallPrompt(e) {
  */
 export function installPwa() {
   // Hide the app provided install promotion
-  handleInstallPromotion(false);
+  handleInstallPrompt(false);
 
   if (deferredPrompt) {
     // Show the install prompt
@@ -65,17 +72,24 @@ export function installPwa() {
  */
 export function installPwaDismiss() {
   // Hide the app provided install promotion
-  handleInstallPromotion(false);
+  handleInstallPrompt(false);
 }
 
 /**
  * Toggle install promotion visibility
  * @param {boolean} show
  */
-export function handleInstallPromotion(show) {
+export function handleInstallPrompt(show) {
+  const mode = 'has-install-pwa-prompt';
+
+  const promptElement = document.getElementById('pwa-install-offcanvas-item');
+  const promptElementVisible = 'is-visible';
+
   if (show) {
-    document.body.classList.add('show-install-promotion');
+    document.body.classList.remove(mode);
+    promptElement.classList.remove(promptElementVisible);
   } else {
-    document.body.classList.remove('show-install-promotion');
+    document.body.classList.add(mode);
+    promptElement.classList.add(promptElementVisible);
   }
 }

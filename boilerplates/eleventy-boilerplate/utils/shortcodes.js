@@ -47,7 +47,7 @@ module.exports = {
           </svg>
         </button>`;
     return `
-      <div class="${instance} snackbar" role="alert">
+      <div class="snackbar" role="alert">
         ${cta}
         <div class="snackbar__text">${message}</div>
         ${dismiss}

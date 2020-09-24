@@ -1,0 +1,103 @@
+/*  ==========================================================================
+    Offcanvas
+    ========================================================================== */
+
+@mixin offcanvas(
+  $directions: (
+    top,
+    right,
+    bottom,
+    left,
+  ),
+  $positions: (
+    start,
+    end,
+  )
+) {
+  $offcanvas-direction: (
+    top: (
+      hide: translateY(-100%),
+      show: translateY(100%),
+      size: width,
+      item: bottom,
+      flex: row,
+    ),
+    right: (
+      hide: translateX(100%),
+      show: translateX(-100%),
+      item: left,
+      size: height,
+      flex: column,
+    ),
+    bottom: (
+      hide: translateY(100%),
+      show: translateY(-100%),
+      item: top,
+      size: width,
+      flex: row,
+    ),
+    left: (
+      hide: translateX(-100%),
+      show: translateX(100%),
+      item: right,
+      size: height,
+      flex: column,
+    ),
+  );
+
+  .offcanvas {
+    position: fixed;
+    z-index: z(offcanvas);
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &__item {
+      position: absolute;
+      max-width: 100%;
+      opacity: 0;
+      transform: none;
+      transition: transform $animate-duration-medium ease-in-out,
+        opacity $animate-duration-medium ease-in-out;
+
+      &.is-visible {
+        opacity: 1;
+        transition: transform $animate-duration-medium ease-in-out,
+          opacity $animate-duration-short $animate-duration-short ease-in-out;
+      }
+    }
+
+    @each $direction in $directions {
+      @if (map-get($offcanvas-direction, $direction) == null) {
+        @error '#{$direction} is not a valid direction, use top, right, bottom or left';
+      }
+
+      $size-prop: map-deep-get($offcanvas-direction, $direction, size);
+      $flex-direction: map-deep-get($offcanvas-direction, $direction, flex);
+      $item-direction: map-deep-get($offcanvas-direction, $direction, item);
+
+      &--#{$direction} {
+        #{$direction}: 0;
+        flex-direction: $flex-direction;
+        justify-content: center;
+        #{$size-prop}: 100%;
+        transform: map-deep-get($offcanvas-direction, $direction, hide);
+
+        .offcanvas__item {
+          #{$item-direction}: 0;
+
+          &.is-visible {
+            transform: map-deep-get($offcanvas-direction, $direction, show);
+          }
+        }
+      }
+
+      @each $position in $positions {
+        &--#{$position} {
+          justify-content: flex-#{$position};
+        }
+      }
+    }
+  }
+}

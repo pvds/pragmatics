@@ -2,44 +2,24 @@
     Snackbar
     ========================================================================== */
 
-@mixin snackbar-layout($offset: grid-unit(4.5)) {
-  position: fixed;
-  z-index: z(snackbar);
-  bottom: $offset;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, calc(100% + #{$offset}));
-  transition: transform $animate-duration-medium ease-in-out,
-    opacity $animate-duration-medium ease-in-out;
-}
-
-@mixin snackbar-trigger($show-trigger) {
-  .#{$show-trigger} & {
-    opacity: 1;
-    transform: translate(-50%, 0);
-    transition: transform $animate-duration-medium ease-in-out,
-      opacity $animate-duration-short $animate-duration-short ease-in-out;
-  }
-}
-
-@mixin snackbar-style {
+@mixin snackbar {
   $snackbar_padding-v: grid-unit(1);
   $snackbar_padding-h: grid-unit(2);
   $snackbar_padding: $snackbar_padding-v $snackbar_padding-h;
   $snackbar__trigger-size: grid-unit(3);
 
   @include box-shadow(8);
-
   @include text(xs);
 
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: fit-content;
+  min-height: grid-unit(5);
+  margin-right: grid-unit(2);
+  margin-bottom: grid-unit(4.5);
+  margin-left: grid-unit(2);
   padding: $snackbar_padding;
   border-radius: $line-height-md + ($snackbar_padding-v * 2);
   font-weight: $font-weight-semibold;
-  white-space: nowrap;
   background-color: $color-black;
 
   &__cta {

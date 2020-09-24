@@ -3,6 +3,5 @@
     ========================================================================== */
 
 .snackbar {
-  @include snackbar-layout();
-  @include snackbar-style();
+  @include snackbar();
 }

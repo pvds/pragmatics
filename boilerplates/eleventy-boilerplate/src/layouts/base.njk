@@ -24,8 +24,14 @@
   {% include "footer.njk" %}
 </div>
 
-{% snackbar "offline-notification", "You are currenlty offline" %}
-{% snackbar "install-promotion", "for easy access", true, "Install", true, "Dismiss install" %}
+<div class="offcanvas offcanvas--bottom">
+  <div id="offline-offcanvas-item" class="offcanvas__item">
+    {% snackbar "offline", "You are currenlty offline" %}
+  </div>
+  <div id="pwa-install-offcanvas-item" class="offcanvas__item">
+    {% snackbar "pwa-install", "for easy access", true, "Install", true, "Dismiss install" %}
+  </div>
+</div>
 
 <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
 </body>
