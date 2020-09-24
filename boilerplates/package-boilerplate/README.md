@@ -76,8 +76,8 @@ The following guidelines, methodologies and architectures have been used as insp
 
 [list of acknowledgement links]
 
-[version-shield]: https://img.shields.io/npm/v/package-boilerplate.svg
-[version-url]: https://www.npmjs.com/package/package-boilerplate
+[version-shield]: https://img.shields.io/npm/v/@pragmatics/package-boilerplate.svg
+[version-url]: https://www.npmjs.com/package/@pragmatics/package-boilerplate
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
 [maintenance-url]: https://github.com/pvds/package-boilerplate/graphs/commit-activity
 [package-size-shield]: https://img.shields.io/bundlephobia/min/package-boilerplate.svg?label=size
