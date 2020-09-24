@@ -44,7 +44,7 @@
   }
 }
 
-@mixin trigger($size: null) {
+@mixin trigger($size: $min-touch-area) {
   @include trigger-layout($size);
   @include trigger-style();
 }
