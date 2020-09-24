@@ -28,7 +28,7 @@
 ### Installation
 
 ```sh
-yarn add package-boilerplate -D
+yarn add package-boilerplate
 ```
 
 ### Usage
