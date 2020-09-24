@@ -197,13 +197,3 @@ Procfile          text
 
 # Ignore files (like .npmignore or .gitignore)
 *.*ignore         text
-
-## Linguist-vendored
-##    Remove assets from github statistics.
-##    Sometimes we need push files generated, transpiled, minified,
-##    etc, and we need them not to be taken into consideration for the
-##    repository statistics.
-######################################################################
-
-## Test
-test/**/*.scss linguist-vendored
