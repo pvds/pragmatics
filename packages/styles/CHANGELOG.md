@@ -1,4 +1,4 @@
-# Changelog - [Package name]
+# Changelog - [@pragmatics/styles]
 
 All notable changes to this project will be documented in this file.
 
@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0]
 
-### Added
+### Changed
 
-[commit description]
+- refactor boilerplate code
 
-[0.1.0]: https://github.com/pvds/package-boilerplate/tree/0.1.0
-[package-boilerplate]: https://github.com/pvds/package-boilerplate
+[0.1.0]: https://github.com/pvds/styles/tree/0.1.0
+[@pragmatics/styles]: https://github.com/pvds/styles

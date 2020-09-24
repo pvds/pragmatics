@@ -1,17 +1,20 @@
 {
-  "name": "@pragmatics/package-boilerplate",
+  "name": "@pragmatics/styles",
   "version": "0.1.0",
   "description": "Pragmatics package boilerplate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/package-boilerplate.git"
+    "url": "git+https://github.com/pvds/styles.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/pvds/package-boilerplate",
+  "homepage": "https://github.com/pvds/styles",
   "bugs": {},
   "keywords": [
-    "pragmatics"
+    "pragmatics",
+    "styles",
+    "sass",
+    "scss"
   ],
   "main": "index.js",
   "files": [
