@@ -4,6 +4,8 @@ const buildDir = 'dist';
 
 const shouldTransformHTML = (outputPath) => outputPath && outputPath.endsWith('.html');
 
+const isProd = process.env.ELEVENTY_ENV === 'production';
+
 const isHomePage = (outputPath) => outputPath === `${buildDir}/index.html`;
 
 process.setMaxListeners(Infinity);
@@ -32,7 +34,7 @@ module.exports = {
    * @return {Promise<Object.html|*>}
    */
   critical: async function (content, outputPath) {
-    if (shouldTransformHTML(outputPath) && isHomePage(outputPath)) {
+    if (shouldTransformHTML(outputPath) && isHomePage(outputPath) && isProd) {
       try {
         const config = {
           base: `${buildDir}/`,
