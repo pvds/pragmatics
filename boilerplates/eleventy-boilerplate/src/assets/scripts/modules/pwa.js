@@ -86,10 +86,10 @@ export function handleInstallPrompt(show) {
   const promptElementVisible = 'is-visible';
 
   if (show) {
-    document.body.classList.remove(mode);
-    promptElement.classList.remove(promptElementVisible);
-  } else {
     document.body.classList.add(mode);
     promptElement.classList.add(promptElementVisible);
+  } else {
+    document.body.classList.remove(mode);
+    promptElement.classList.remove(promptElementVisible);
   }
 }
