@@ -28,6 +28,7 @@
     "prestart": "yarn clean",
     "start": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:serve": "cross-env ELEVENTY_ENV=production eleventy --serve",
     "lint": "run-p lint:*",
     "lint:js": "eslint . --cache --fix",
     "lint:css": "stylelint **/*.scss --cache --fix --allow-empty-input",
