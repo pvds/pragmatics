@@ -11,5 +11,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [commit description]
 
-[package-boilerplate]: https://github.com/pvds/package-boilerplate
 [0.1.0]: https://github.com/pvds/package-boilerplate/tree/0.1.0
+[package-boilerplate]: https://github.com/pvds/package-boilerplate
