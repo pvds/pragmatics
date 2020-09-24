@@ -1,15 +1,2 @@
-env:
-  browser: true
-  commonjs: true
-  es2021: true
-  jest: true
-  node: true
-plugins:
-  - jest
 extends:
-  - google
-  - plugin:jest/recommended
-  - plugin:jest/style
-  - prettier
-parserOptions:
-  ecmaVersion: 12
+  - '@pragmatics'
