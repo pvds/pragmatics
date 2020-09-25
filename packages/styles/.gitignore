@@ -4,6 +4,8 @@
 dist
 tmp
 coverage
+styles/**/*.css
+styles/**/*.css.map
 
 # package managers
 node_modules/
