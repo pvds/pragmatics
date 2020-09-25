@@ -1,6 +1,6 @@
 {
   "name": "@pragmatics/styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pragmatics configurable sass library",
   "repository": {
     "type": "git",
@@ -17,12 +17,12 @@
   ],
   "main": "index.scss",
   "scripts": {
-    "clean": "del-cli ./dist/",
+    "clean": "del-cli dist",
     "sass": "sass styles --style compressed",
     "precopy": "yarn clean",
     "copy": "run-p copy:*",
-    "copy:styles": "copyfiles -u 1 'styles/**/*.scss' ./dist/",
-    "copy:misc": "copyfiles package.json '*.md' ./dist/",
+    "copy:styles": "copyfiles -u 1 \"styles/**/*.scss\" dist",
+    "copy:misc": "copyfiles package.json \"*.md\" dist",
     "start": "yarn sass --watch",
     "build": "yarn copy",
     "test": "run-p test:*",
