@@ -43,7 +43,7 @@ module.exports = {
           width: 1280,
           height: 800,
           penthouse: {
-            forceInclude: ['/^.offcanvas/'],
+            forceInclude: [/^\.offcanvas/],
           },
         };
         const { html } = await critical.generate(config);
