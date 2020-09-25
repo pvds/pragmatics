@@ -1,7 +1,7 @@
 {
   "name": "@pragmatics/styles",
   "version": "1.0.0",
-  "description": "Pragmatics configurable sass styles",
+  "description": "Pragmatics configurable sass library",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pvds/styles.git"
