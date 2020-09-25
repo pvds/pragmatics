@@ -1,0 +1,12 @@
+@if render-partial(elements/animation) {
+  /*  ==========================================================================
+      Animation
+      ========================================================================== */
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition-duration: 0.01s !important;
+      animation-duration: 0.01s !important;
+    }
+  }
+}

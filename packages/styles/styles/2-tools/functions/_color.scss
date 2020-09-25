@@ -1,0 +1,27 @@
+/*  ==========================================================================
+    Color
+    ========================================================================== */
+
+/**
+ * Color value by scale
+ * example:
+ *    $color-black-900: color-scale($color-black, 900);
+ */
+@function color-scale($color, $scale, $increment: $color-increment) {
+  $scale-index: index($color-scales, $scale) - 1;
+
+  @return lighten($color, $scale-index * $increment);
+}
+
+/**
+ * Disabled version of color
+ * example:
+ *    color: color-disabled($color-text);
+ */
+@function color-disabled($color: $color-text) {
+  @if type-of($color) != 'color' or ($color == transparent) {
+    @error '#{$color} is not a valid color argument';
+  } @else {
+    @return rgba($color, $color-opacity-low);
+  }
+}

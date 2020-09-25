@@ -1,0 +1,23 @@
+/*  ==========================================================================
+    Breakpoints
+    ========================================================================== */
+
+/**
+ * Get breakpoint value
+ * example:
+ *    $min: breakpoint(md, $breakpoints);
+ */
+@function breakpoint($name, $breakpoints: $breakpoints) {
+  $min: map-get($breakpoints, $name);
+
+  @return if($min != 0, $min, null);
+}
+
+/**
+ * Get breakpoint name to use as part of a selector
+ * example:
+ *    $bp: breakpoint-infix(md, $breakpoints-map);
+ */
+@function breakpoint-infix($name, $breakpoints: $breakpoints-infix) {
+  @return if(breakpoint($name, $breakpoints) == null, '', '-#{$name}');
+}

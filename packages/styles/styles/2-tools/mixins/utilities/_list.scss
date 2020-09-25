@@ -1,0 +1,13 @@
+/*  ==========================================================================
+    Lists
+    ========================================================================== */
+
+@mixin list($indent: grid-unit(2)) {
+  margin-left: grid-unit(0.5);
+  padding-left: $indent;
+  list-style-type: initial;
+
+  li {
+    display: list-item;
+  }
+}

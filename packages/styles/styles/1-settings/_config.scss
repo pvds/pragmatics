@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Project-wide configuration
+   ========================================================================== */
+
+$config-output-custom: (
+  generic: (
+    normalize: null,
+  ),
+  elements: (
+    animation: null,
+    base: null,
+    code: null,
+    focus: null,
+    interactive: null,
+    list: null,
+    table: null,
+    typography: null,
+  ),
+  helpers: (
+    focus: null,
+    link: null,
+    list: null,
+    plain-text: null,
+    screen-reader: null,
+    typography: null,
+  ),
+  objects: (
+    container: null,
+  ),
+  components: (
+    offcanvas: null,
+    snackbar: null,
+  ),
+  utilities: (
+    spacing: null,
+  ),
+) !default;
+
+$config: (
+  debug: false,
+  output: (
+    all: false,
+    custom: $config-output-custom,
+  ),
+) !default;
+
+/**
+ * Retrieve config values by using `config(key)`
+ * example:
+ *    @if (config(debug) == true) { ... }
+ */
+@function config($key) {
+  $output: null;
+  $separator: '/';
+
+  @if str-index($key, $separator) {
+    $keys: str-split($key, $separator);
+
+    $output: map-deep-get($config, $keys...);
+  } @else {
+    $output: map-get($config, $key);
+  }
+
+  @return map-merge();
+}

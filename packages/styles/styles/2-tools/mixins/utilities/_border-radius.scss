@@ -1,0 +1,43 @@
+/*  ==========================================================================
+    Single side border radius
+    ========================================================================== */
+
+/**
+ * Shortcut for top border-radius
+ * example:
+ *    .selector { $include border-top-radius }
+ */
+@mixin border-top-radius($radius: $border-radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+/**
+ * Shortcut for right border-radius
+ * example:
+ *    .selector { $include border-right-radius }
+ */
+@mixin border-right-radius($radius: $border-radius) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+/**
+ * Shortcut for bottom border-radius
+ * example:
+ *    .selector { $include border-bottom-radius }
+ */
+@mixin border-bottom-radius($radius: $border-radius) {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+/**
+ * Shortcut for left border-radius
+ * example:
+ *    .selector { $include border-left-radius }
+ */
+@mixin border-left-radius($radius: $border-radius) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}

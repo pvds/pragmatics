@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Evaluate conditions
+   ========================================================================== */
+
+/**
+ * Evaluate multiple conditions based on config
+ * example:
+ *    @if evaluate(all, true, 'output/all', 'output/custom/utilities/spacing')
+ */
+@function evaluate($match: one, $operator: true, $conditions...) {
+  $evaluated-conditions: ();
+
+  @if $match != all and $match != one {
+    @error "match should be 'all' or 'one'";
+  }
+
+  @each $name in $conditions {
+    $evaluated: config($name) == $operator;
+    $evaluated-conditions: map-merge(
+      $evaluated-conditions,
+      (
+        $name: $evaluated,
+      )
+    );
+
+    @if $evaluated == false and $match == all {
+      @if debug() {
+        @warn '#{$name} condition not met';
+        @debug $evaluated-conditions;
+      }
+
+      @return false;
+    }
+
+    @if $evaluated == true and $match == one {
+      @if debug() {
+        @debug '#{$name} condition met';
+        @debug $evaluated-conditions;
+      }
+
+      @return true;
+    }
+  }
+
+  @if ($match == one) {
+    @if debug() {
+      @warn 'No conditions met';
+      @debug $evaluated-conditions;
+    }
+
+    @return false;
+  }
+
+  @if debug() {
+    @debug 'All conditions met';
+    @debug $evaluated-conditions;
+  }
+
+  @return true;
+}
+
+/**
+ * Shortcut for evaluating whether any condition is true
+ * example:
+ *    @if any-true('output/all', 'output/custom/utilities/spacing')
+ */
+@function any-true($conditions...) {
+  @return evaluate(one, true, $conditions...);
+}
+
+/**
+ * Shortcut for evaluating whether all conditions are true
+ * example:
+ *    @if all-true('output/all', 'output/custom/utilities/spacing')
+ */
+@function all-true($conditions...) {
+  @return evaluate(all, true, $conditions...);
+}
+
+/**
+ * Shortcut for evaluating whether any condition is false
+ * example:
+ *    @if any-false('output/all', 'output/custom/utilities/spacing')
+ */
+@function any-false($conditions...) {
+  @return evaluate(one, false, $conditions...);
+}
+
+/**
+ * Shortcut for evaluating whether all conditions are false
+ * example:
+ *    @if all-false(('output/all', 'output/custom/utilities/spacing'))
+ */
+@function all-false($conditions...) {
+  @return evaluate(all, false, $conditions...);
+}

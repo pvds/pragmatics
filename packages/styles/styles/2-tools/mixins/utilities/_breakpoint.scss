@@ -1,0 +1,43 @@
+/*  ==========================================================================
+    Breakpoints
+    ========================================================================== */
+
+/**
+ * Width and height media queries
+ * example:
+ *    .selector { @include mq(md) { ... } }
+ */
+@mixin mq($name, $limit: min, $dimension: width) {
+  $offset: if($limit == min, 0, $breakpoint-max-modifier);
+  $bp: breakpoint($name, $breakpoints);
+
+  @if $bp {
+    @media (#{$limit}-#{$dimension}: $bp - $offset) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+/**
+ * Shortcut for min-* queries
+ * example:
+ *    .selector { @include mq-up(md) { ... } }
+ */
+@mixin mq-up($name, $dimension: width) {
+  @include mq($name, min, $dimension) {
+    @content;
+  }
+}
+
+/**
+ * Shortcut for max-* queries
+ * example:
+ *    .selector { @include mq-down(md) { ... } }
+ */
+@mixin mq-down($name, $dimension: width) {
+  @include mq($name, max, $dimension) {
+    @content;
+  }
+}

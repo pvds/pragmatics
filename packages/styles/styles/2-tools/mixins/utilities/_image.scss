@@ -1,0 +1,21 @@
+/*  ==========================================================================
+    Image mixins
+    ========================================================================== */
+
+/* Responsive image > keep images from scaling beyond the width of their parents. */
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Retina image > setting background-image and -size */
+@mixin img-retina($image, $image-2x, $width, $height) {
+  background-image: url($image);
+
+  @include target-retina() {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image-2x);
+    background-size: $width $height;
+  }
+}

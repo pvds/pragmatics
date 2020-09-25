@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Render conditions
+   ========================================================================== */
+
+/**
+ * Render partial according to config
+ * example:
+ *    @if render-partial(utilities/spacing) { ... }
+ */
+@function render-partial($partial) {
+  $custom-output: 'output/custom/#{$partial}';
+  $render: (config(output/all) == true and config($custom-output) == null) or
+    (config($custom-output) == true);
+
+  @if debug() {
+    @debug 'Render #{$partial}: #{$render}';
+  }
+
+  @return $render;
+}

@@ -1,0 +1,26 @@
+/*  ==========================================================================
+    Screen reader
+    ========================================================================== */
+
+@mixin sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+@mixin sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    clip: auto;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    white-space: normal;
+  }
+}

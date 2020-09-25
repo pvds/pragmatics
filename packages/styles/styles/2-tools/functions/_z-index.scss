@@ -1,0 +1,18 @@
+/*  ==========================================================================
+    Z-index
+    ========================================================================== */
+
+/**
+ * relative z-index value according to list position
+ * example:
+ *    z-index: z(offcanvas);
+ */
+@function z($layer) {
+  $index: index($z-layers, $layer);
+
+  @if $index == false {
+    @warn "No layer found for `#{$layer}` in $z-layers list. Property omitted.";
+  }
+
+  @return $index;
+}

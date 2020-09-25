@@ -1,0 +1,23 @@
+@if render-partial(helpers/plain-text) {
+  /*  ==========================================================================
+    Plain text
+
+    Styling & formatting of plain text content
+    ========================================================================== */
+
+  .plain-text {
+    @include plain-text-spacing();
+    @include plain-text-sizing();
+
+    a {
+      @include link;
+
+      display: inline-block;
+    }
+
+    ol,
+    ul {
+      @include list;
+    }
+  }
+}

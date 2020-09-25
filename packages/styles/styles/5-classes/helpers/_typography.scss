@@ -1,0 +1,11 @@
+@if render-partial(helpers/typography) {
+  /*  ==========================================================================
+    Typography
+    ========================================================================== */
+
+  @each $size, $value in $text-size {
+    .emphasis-#{$size} {
+      @include text($size);
+    }
+  }
+}

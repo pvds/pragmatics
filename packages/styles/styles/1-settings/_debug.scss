@@ -1,0 +1,11 @@
+@function debug() {
+  @return config(debug);
+}
+
+@mixin debug($messages...) {
+  @if debug {
+    @each $message in $messages {
+      @debug $message;
+    }
+  }
+}

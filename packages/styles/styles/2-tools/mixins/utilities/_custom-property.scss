@@ -1,0 +1,17 @@
+/*  ==========================================================================
+    Custom property
+    ========================================================================== */
+
+/**
+ * Use custom property with optional fallback value
+ * example:
+ *    @include custom-property(width, my-custom-property, 100%)
+ */
+@mixin custom-property($property, $custom-property, $fallback-value: null) {
+  @if ($fallback-value) {
+    #{$property}: $fallback-value;
+    #{$property}: var(--$custom-property, $fallback-value);
+  } @else {
+    #{$property}: var(--$custom-property);
+  }
+}

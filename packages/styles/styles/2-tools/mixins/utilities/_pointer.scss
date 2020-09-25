@@ -1,0 +1,72 @@
+/*  ==========================================================================
+    Pointer
+
+    CSS pointer on target element's ":after" with optional border on ":before"
+    ========================================================================== */
+
+@mixin pointer($direction, $size, $background, $border-width: 0, $color-black-400: false) {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+
+    @if $direction == 'top' {
+      bottom: 100%;
+      left: 50%;
+    } @else if $direction == 'bottom' {
+      top: 100%;
+      left: 50%;
+    } @else if $direction == 'left' {
+      top: 50%;
+      right: 100%;
+    } @else if $direction == 'right' {
+      top: 50%;
+      left: 100%;
+    }
+  }
+
+  @if $border-width != 0 {
+    $border-size: $size + $border-width + 1px;
+
+    &::before {
+      border-width: $border-size;
+      border-color: rgba($color-black-400, 0);
+
+      @if $direction == 'top' {
+        margin-left: -$border-size;
+        border-bottom-color: $color-black-400;
+      } @else if $direction == 'bottom' {
+        margin-left: -$border-size;
+        border-top-color: $color-black-400;
+      } @else if $direction == 'left' {
+        margin-top: -$border-size;
+        border-right-color: $color-black-400;
+      } @else if $direction == 'right' {
+        margin-top: -$border-size;
+        border-left-color: $color-black-400;
+      }
+    }
+  }
+
+  &::after {
+    border-width: $size;
+    border-color: rgba($background, 0);
+
+    @if $direction == 'top' {
+      margin-left: -$size;
+      border-bottom-color: $background;
+    } @else if $direction == 'bottom' {
+      margin-left: -$size;
+      border-top-color: $background;
+    } @else if $direction == 'left' {
+      margin-top: -$size;
+      border-right-color: $background;
+    } @else if $direction == 'right' {
+      margin-top: -$size;
+      border-left-color: $background;
+    }
+  }
+}
