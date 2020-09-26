@@ -8,7 +8,8 @@
 [![Issues open][issues-shield]][issues-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-> Pragmatics configurable sass library.
+Pragmatics configurable sass library.
+
 > Zero css output by default
 
 ## Summary
@@ -27,7 +28,7 @@
 ### Installation
 
 ```sh
-yarn add @pragmatics/styles
+yarn add @pragmatics/styles -D
 ```
 
 ### Usage
@@ -35,7 +36,7 @@ yarn add @pragmatics/styles
 Import the library
 
 ```scss
-@import '@pragmatics/styles';
+@import 'node_modules/@pragmatics/styles/index';
 ```
 
 ### Configure
@@ -47,11 +48,13 @@ Override the default variables according to your needs.
 ##### Override default variables
 
 Override breakpoints, colors, z-index and many more variables.
-Refer to [\_global.scss](1-settings/_global.scss) for an overview off all `!default` variables.
+
+> Refer to [\_global.scss](1-settings/_global.scss) for an overview off all `!default` variables.
 
 #### Configuration map
 
 By default `@pragmatics/styles` only outputs `sass` which does not render `css` (functions/mixins/variables).
+
 Copy the default config below and tweak according to your needs.
 
 ```scss
