@@ -9,14 +9,13 @@
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
   "homepage": "https://github.com/pvds/package-boilerplate",
-  "bugs": {},
+  "bugs": "https://github.com/pvds/package-boilerplate/issues",
   "keywords": [
     "pragmatics"
   ],
   "main": "index.js",
   "files": [
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md"
+    "docs"
   ],
   "scripts": {
     "start": "echo \"Error: no start specified\" && exit 1",
