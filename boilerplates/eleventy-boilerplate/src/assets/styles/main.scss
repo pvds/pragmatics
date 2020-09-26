@@ -9,7 +9,8 @@
 @import '1.settings/config';
 @import '1.settings/global';
 
-@import 'node_modules/@pragmatics/styles/index.scss';
+/* Use pragmatics sass library */
+@import 'node_modules/@pragmatics/styles/index';
 
 /* 2. tools
       reset and/or normalize styles, box-sizing definition

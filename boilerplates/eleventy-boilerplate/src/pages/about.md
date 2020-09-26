@@ -69,8 +69,8 @@ We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
-This repository has a [code of conduct](CODE_OF_CONDUCT.md), we will remove things that do not respect it.
+Please read [CONTRIBUTING.md](https://github.com/pvds/package-boilerplate/docs/CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
+This repository has a [code of conduct](https://github.com/pvds/package-boilerplate/docs/CODE_OF_CONDUCT.md), we will remove things that do not respect it.
 
 ## Versioning
 
@@ -84,7 +84,7 @@ who participated in this project.
 
 ## License
 
-This project is licensed under the [ISC License](LICENSE.md).
+This project is licensed under the [ISC License](https://github.com/pvds/package-boilerplate/docs/LICENSE.md).
 
 ## Acknowledgements
 
