@@ -19,8 +19,10 @@
     "CONTRIBUTING.md"
   ],
   "scripts": {
-    "test": "jest -o",
-    "test:all": "jest",
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "build": "echo \"Error: no build specified\" && exit 1",
+    "test": "jest",
+    "test:changed": "yarn test -o",
     "lint": "run-p lint:*",
     "lint:js": "eslint . --cache --fix",
     "lint:css": "stylelint **/*.scss --cache --fix --allow-empty-input",
