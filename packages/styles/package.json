@@ -26,7 +26,7 @@
     "precopy": "yarn clean",
     "copy": "run-p copy:*",
     "copy:styles": "copyfiles -u 1 \"styles/**/*.scss\" dist",
-    "copy:misc": "copyfiles package.json \"*.md\" dist",
+    "copy:misc": "copyfiles package.json \"docs/**/*\" \"*.md\" dist",
     "start": "yarn sass --watch",
     "build": "yarn copy",
     "test": "run-p test:*",
