@@ -37,6 +37,15 @@
     "*.js": "eslint --fix",
     "*": "prettier --write --ignore-unknown"
   },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "coverageProvider": "v8",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/*.(spec|test).[tj]s?(x)]"
+    ]
+  },
   "devDependencies": {
     "@pragmatics/eslint-config": "^1.0.0",
     "@pragmatics/stylelint-config": "^2.0.0",
