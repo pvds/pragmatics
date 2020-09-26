@@ -1,0 +1,4 @@
+# test sources
+dist
+**/tests/**/expected.*
+**/tests/**/fixture.*
