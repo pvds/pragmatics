@@ -1,6 +1,6 @@
 {
   "name": "@pragmatics/styles",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Pragmatics configurable sass library",
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
   "homepage": "https://github.com/pvds/styles",
+  "bugs": "https://github.com/pvds/styles/issues",
   "keywords": [
     "pragmatics",
     "styles",
@@ -16,6 +17,9 @@
     "scss"
   ],
   "main": "index.scss",
+  "files": [
+    "docs"
+  ],
   "scripts": {
     "clean": "del-cli dist",
     "sass": "sass styles --style compressed",
@@ -42,6 +46,15 @@
     "*.scss": "stylelint --fix --allow-empty-input",
     "*.js": "eslint --fix",
     "*": "prettier --write --ignore-unknown"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "coverageProvider": "v8",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/*.(spec|test).[tj]s?(x)]"
+    ]
   },
   "devDependencies": {
     "@pragmatics/eslint-config": "^1.0.0",
