@@ -27,6 +27,43 @@ $z-layers: (above, hover, focus, popover, offcanvas, dialog) !default;
 
 $grid-unit: 0.8rem !default;
 
+/* Typography
+   ========================================================================== */
+
+/* Family */
+$font-family-base: system, -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI',
+  'Helvetica Neue', 'Lucida Grande', sans-serif !default;
+$font-family-monospace: consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+  'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+  'Nimbus Mono L', monaco, 'Courier New', courier, monospace !default;
+
+/* Weight */
+$font-weight-regular: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+
+/* Size */
+$font-size-root: 62.5% !default;
+$font-size-2xs: 1.2rem !default;
+$font-size-xs: 1.4rem !default;
+$font-size-sm: 1.6rem !default;
+$font-size-md: 2rem !default;
+$font-size-lg: 2.4rem !default;
+$font-size-xl: 2.8rem !default;
+$font-size-2xl: 3.2rem !default;
+$font-size-3xl: 4rem !default;
+
+/* height */
+$line-height: 1.4 !default;
+$line-height-2xs: 1.4rem !default;
+$line-height-xs: 1.6rem !default;
+$line-height-sm: 2rem !default;
+$line-height-md: 2.4rem !default;
+$line-height-lg: 2.8rem !default;
+$line-height-xl: 3.2rem !default;
+$line-height-2xl: 3.6rem !default;
+$line-height-3xl: 4.8rem !default;
+
 /* Colors
    ========================================================================== */
 $color-scales: 900, 800, 700, 600, 500, 400, 300, 200, 100 !default;
