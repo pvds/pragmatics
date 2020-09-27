@@ -9,6 +9,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          # pulls all commits (needed for lerna to correctly version)
+          fetch-depth: '0'
+
+      - name: Fetch tags
+        # pulls all tags (needed for lerna to correctly version)
+        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
+      - name: Set user
+        # configures git user (needed for lerna to push commit as user)
+        run: |
+          git config --global user.name 'Peter van der Steen'
+          git config --global user.email 'pvdsteen@gmail.com'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup node
         uses: actions/setup-node@v2-beta
@@ -21,13 +36,6 @@ jobs:
 
       - name: Run build
         run: yarn build
-
-      - name: Git Identity
-        run: |
-          git config --global user.name 'pvds'
-          git config --global user.email 'pvdsteen@gmail.com'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run publish
         run: yarn publish-ci
