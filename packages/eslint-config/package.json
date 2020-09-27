@@ -4,14 +4,12 @@
   "description": "Pragmatic eslint config enforcing an understandable and consistent code style.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/eslint-config.git"
+    "url": "git+https://github.com/pvds/pragmatics.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://www.npmjs.com/package/@pragmatics/eslint-config",
-  "bugs": {
-    "url": "https://github.com/pvds/eslint-config/issues"
-  },
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/eslint-config",
+  "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20eslint-config",
   "keywords": [
     "pragmatics",
     "eslint",

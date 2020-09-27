@@ -4,12 +4,12 @@
   "description": "Pragmatics configurable sass library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/styles.git"
+    "url": "git+https://github.com/pvds/pragmatics.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/pvds/styles",
-  "bugs": "https://github.com/pvds/styles/issues",
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/styles",
+  "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20styles",
   "keywords": [
     "pragmatics",
     "styles",

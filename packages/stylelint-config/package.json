@@ -4,14 +4,12 @@
   "description": "Opinionated stylelint config providing pragmatic code style",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/stylelint-config.git"
+    "url": "git+https://github.com/pvds/pragmatics.git"
   },
   "author": "pvds <pvdsteen@gmail.com>",
   "license": "ISC",
-  "homepage": "https://www.npmjs.com/package/@pragmatics/stylelint-config",
-  "bugs": {
-    "url": "https://github.com/pvds/stylelint-config/issues"
-  },
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/stylelint-config",
+  "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20stylelint-config",
   "keywords": [
     "stylelint",
     "stylelint-config",
