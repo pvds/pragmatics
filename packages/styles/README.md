@@ -8,7 +8,7 @@
 [![Issues open][issues-shield]][issues-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-Configurable sass library
+Configurable sass library.
 
 > Zero css output by default
 
