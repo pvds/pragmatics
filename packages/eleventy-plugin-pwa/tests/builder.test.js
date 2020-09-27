@@ -2,7 +2,7 @@ const fs = require('fs');
 const rimraf = require('rimraf');
 const path = require('path');
 const buildr = require('../src/builder');
-const stub = path.resolve(__dirname, 'stub');
+const stub = path.join(__dirname, 'stub');
 
 afterAll(() => {
   const opt = { glob: true };
