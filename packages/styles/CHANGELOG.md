@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@1.4.1...@pragmatics/styles@1.4.2) (2020-09-27)
+
+
+### Bug Fixes
+
+* ignore compiled css ([8d32d90](https://github.com/pvds/pragmatics/commit/8d32d905b2b712560da12185ab295ac5961c3633))
+
+
+
+
+
 ## 1.4.1 (2020-09-27)
 
 **Note:** Version bump only for package @pragmatics/styles
