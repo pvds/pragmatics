@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "@pragmatics/package-boilerplate",
+  "version": "0.1.0",
+  "description": "Pragmatics package boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvds/pragmatics.git"
+  },
+  "author": "Peter van der Steen <pvdsteen@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/boilerplates/package",
+  "bugs": "https://github.com/pvds/pragmatics/labels/boilerplate%3A%20package",
+  "keywords": [
+    "pragmatics"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "clean": "del-cli dist",
+    "precopy": "yarn clean",
+    "copy": "run-p copy:*",
+    "copy:package": "copyfiles package.json index.js \"*.md\" dist",
+    "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" boilerplates/package/dist",
+    "build": "yarn copy"
+  }
+}
