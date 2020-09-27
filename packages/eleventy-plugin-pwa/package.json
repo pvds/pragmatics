@@ -2,12 +2,12 @@
   "name": "@pragmatics/eleventy-plugin-pwa",
   "version": "1.1.1",
   "description": "An Eleventy plugin to generate service worker for PWA using Google Workbox",
-  "main": ".eleventy.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pvds/eleventy-plugin-pwa.git"
+    "url": "git+https://github.com/pvds/pragmatics.git"
   },
-  "homepage": "https://github.com/pvds/eleventy-plugin-pwa",
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/eleventy-plugin-pwa",
+  "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20eleventy-plugin-pwa",
   "keywords": [
     "pragmatics",
     "eleventy-plugin",
@@ -21,34 +21,20 @@
     "Nanda Oktavera <codeharuka.yusa@gmail.com> (https://okitavera.me)"
   ],
   "license": "MIT",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "jest -o",
-    "test:all": "jest",
-    "lint": "run-p lint:*",
-    "lint:js": "eslint . --cache --fix",
-    "lint:prettier": "prettier . --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --fix",
-    "*": "prettier --write --ignore-unknown"
+    "clean": "del-cli dist",
+    "precopy": "yarn clean",
+    "copy": "run-p copy:*",
+    "copy:package": "copyfiles package.json eleventy.js \"src/**/*\" \"*.md\" dist",
+    "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" packages/eleventy-plugin-pwa/dist",
+    "build": "yarn copy"
   },
   "dependencies": {
     "shimmer": "^1.2.1",
     "workbox-build": "^5.1.4"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@pragmatics/eslint-config": "^1.0.1",
-    "eslint": "^7.9.0",
-    "eslint-plugin-jest": "^24.0.1",
-    "jest": "^26.4.2",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.2"
+    "@11ty/eleventy": "^0.11.0"
   }
 }
