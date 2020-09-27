@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.4.1 (2020-09-27)
+
+**Note:** Version bump only for package @pragmatics/styles
+
+
+
+
+
 # [1.4.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@1.3.1...@pragmatics/styles@1.4.0) (2020-09-27)
 
 
