@@ -155,7 +155,7 @@ For the available versions, see the [tags on this repository](https://github.com
 
 ## Authors
 
-See the list of [contributors](https://github.com/pvds/styles/contributors)
+See the list of [contributors](https://github.com/pvds/pragmatics/contributors)
 who participated in this project.
 
 ## License
@@ -195,16 +195,16 @@ The following guidelines, methodologies and architectures have been used as insp
 [version-shield]: https://img.shields.io/npm/v/@pragmatics/styles.svg
 [version-url]: https://www.npmjs.com/package/@pragmatics/styles
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?color=blue
-[maintenance-url]: https://github.com/pvds/styles/graphs/commit-activity
+[maintenance-url]: https://github.com/pvds/pragmatics/graphs/commit-activity
 [package-size-shield]: https://img.shields.io/bundlephobia/min/@pragmatics/styles.svg?label=size
 [package-size-url]: https://bundlephobia.com/result?p=@pragmatics/styles
-[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/styles/release.svg
-[release-status-url]: https://github.com/pvds/styles/actions?query=workflow%3Arelease
-[dependencies-shield]: https://img.shields.io/david/pvds/styles.svg
-[dependencies-url]: https://github.com/pvds/styles
-[issues-shield]: https://img.shields.io/github/issues/pvds/styles.svg
-[issues-url]: https://github.com/pvds/styles/issues
-[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/styles.svg
-[coverage-url]: https://codecov.io/gh/pvds/styles
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_styles.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_styles
+[release-status-shield]: https://img.shields.io/github/workflow/status/pvds/pragmatics/release.svg
+[release-status-url]: https://github.com/pvds/pragmatics/actions?query=workflow%3Arelease
+[dependencies-shield]: https://img.shields.io/david/pvds/pragmatics.svg
+[dependencies-url]: https://github.com/pvds/pragmatics
+[issues-shield]: https://img.shields.io/github/issues/pvds/pragmatics.svg
+[issues-url]: https://github.com/pvds/pragmatics/issues
+[coverage-shield]: https://img.shields.io/codecov/c/github/pvds/pragmatics.svg
+[coverage-url]: https://codecov.io/gh/pvds/pragmatics
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_pragmatics.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_pragmatics
