@@ -1,8 +1,6 @@
 # Pragmatics monorepo
 
-[![NPM version][version-shield]][version-url]
 [![Maintenance][maintenance-shield]][maintenance-url]
-[![Package size][package-size-shield]][package-size-url] \
 [![Release Status][release-status-shield]][release-status-url]
 [![Dependencies][dependencies-shield]][dependencies-url]
 [![Issues open][issues-shield]][issues-url]
