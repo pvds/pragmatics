@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@1.3.1...@pragmatics/styles@1.4.0) (2020-09-27)
+
+
+### Features
+
+* make typography variables configurable ([4cf053d](https://github.com/pvds/pragmatics/commit/4cf053de163255b935d61d39af6a439221491280))
+
+
+
+
+
 ## [1.3.1](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@1.3.0...@pragmatics/styles@1.3.1) (2020-09-27)
 
 **Note:** Version bump only for package @pragmatics/styles
