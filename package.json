@@ -60,7 +60,8 @@
     ]
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "boilerplates/*"
   ],
   "dependencies": {
     "@commitlint/cli": "^11.0.0",
