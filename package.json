@@ -17,7 +17,7 @@
     "postinstall": "manypkg check",
     "start": "lerna run start",
     "build": "lerna run build",
-    "publish-ci": "lerna publish from-package -y --contents dist --no-commit-hooks",
+    "publish-ci": "lerna publish -y --contents dist --no-commit-hooks",
     "test": "jest --passWithNoTests",
     "test:changed": "yarn test -o",
     "lint": "run-p lint:*",
