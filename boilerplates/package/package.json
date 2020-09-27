@@ -14,5 +14,13 @@
   "keywords": [
     "pragmatics"
   ],
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "clean": "del-cli dist",
+    "precopy": "yarn clean",
+    "copy": "run-p copy:*",
+    "copy:package": "copyfiles package.json index.js \"*.md\" dist",
+    "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" boilerplates/package/dist",
+    "build": "yarn copy"
+  }
 }
