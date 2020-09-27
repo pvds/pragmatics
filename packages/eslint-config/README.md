@@ -1,4 +1,4 @@
-# ESlint config pragmatic
+# ESlint config
 
 [![NPM version][version-shield]][version-url]
 [![Maintenance][maintenance-shield]][maintenance-url]
@@ -9,7 +9,7 @@
 [![Code coverage][coverage-shield]][coverage-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-Pragmatic stylelint config enforcing an understandable and consistent code style.
+Stylelint config enforcing an understandable and consistent code style.
 
 ## Summary
 

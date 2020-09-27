@@ -1,6 +1,6 @@
 {
   "name": "@pragmatics/stylelint-config",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Opinionated stylelint config providing pragmatic code style",
   "repository": {
     "type": "git",
@@ -21,49 +21,27 @@
     "code style"
   ],
   "main": "index.js",
-  "files": [
-    "CODE_OF_CONDUCT.md",
-    "CONTRIBUTING.md"
-  ],
   "scripts": {
-    "test": "jest -o",
-    "test:all": "jest",
-    "lint": "run-p lint:*",
-    "lint:js": "eslint . --cache --fix",
-    "lint:css": "stylelint **/*.scss --cache --fix --allow-empty-input",
-    "lint:prettier": "prettier . --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.scss": "stylelint --fix --allow-empty-input",
-    "*.js": "eslint --fix",
-    "*": "prettier --write --ignore-unknown"
-  },
-  "devDependencies": {
-    "@pragmatics/eslint-config": "^1.0.0",
-    "@types/jest": "^26.0.14",
-    "eslint": "^7.8.1",
-    "eslint-plugin-jest": "^24.0.0",
-    "husky": "^4.2.5",
-    "jest": "^26.4.2",
-    "lint-staged": "^10.4.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.1",
-    "stylelint": "^13.7.0"
+    "clean": "del-cli dist",
+    "precopy": "yarn clean",
+    "copy": "run-p copy:*",
+    "copy:package": "copyfiles package.json index.js \"*.md\" dist",
+    "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" packages/stylelint-config/dist",
+    "build": "yarn copy"
   },
   "peerDependencies": {
     "prettier": ">=2",
     "stylelint": ">=13"
   },
   "dependencies": {
-    "@pragmatics/stylelint-config-order": "^2.0.0",
+    "@pragmatics/stylelint-config-order": "^2.2.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.0"
   }
 }

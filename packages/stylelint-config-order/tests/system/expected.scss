@@ -19,6 +19,7 @@
     cursor: pointer;
     user-select: none;
   }
+
   @mixin block-mixin-blockless() {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
@@ -61,7 +62,6 @@
   font-size: 14px;
   line-height: 1.2;
   text-align: right;
-
   background-color: lightgrey;
   color: grey;
 
@@ -70,10 +70,10 @@
      */
 
   &__element {
-
     @extend %block-placeholder;
 
     color: black;
+
     /**
          * Element size modifier description
          */
@@ -87,11 +87,10 @@
        ========================================================================== */
 
   &--size-modifier {
-
     padding: $block--size_padding;
+
     .block {
       &__element {
-
         display: flex;
         margin-bottom: $block--size__element_margin-bottom;
       }
@@ -102,6 +101,7 @@
       }
     }
   }
+
   @include block-mixin-block() {
     margin: $block_margin-sm;
   }

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const eslint = require('eslint');
+const defaultConfigFile = require(path.join(__dirname, '../../index.js'));
 
 describe('configuration', () => {
   const configFolder = '../../config/';
@@ -16,8 +17,6 @@ describe('configuration', () => {
   ];
 
   describe('default', () => {
-    const defaultConfigFile = require(path.join(__dirname, '../../index.js'));
-
     test('to load', () => {
       expect(defaultConfigFile).toBeTruthy();
     });
@@ -85,10 +84,10 @@ describe('linted fixture', () => {
 
   const CLIEngine = eslint.CLIEngine;
   const lint = new CLIEngine({
-    configFile: 'index.js',
+    configFile: path.join(__dirname, '../../index.js'),
   });
   const lintFix = new CLIEngine({
-    configFile: 'index.js',
+    configFile: path.join(__dirname, '../../index.js'),
     fix: true,
   });
 

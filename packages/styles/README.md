@@ -8,7 +8,7 @@
 [![Issues open][issues-shield]][issues-url]
 [![Quality Gate Status][quality-shield]][quality-url]
 
-Pragmatics configurable sass library.
+Configurable sass library
 
 > Zero css output by default
 
@@ -160,7 +160,7 @@ who participated in this project.
 
 ## License
 
-This project is licensed under the [ISC License](docs/LICENSE.md).
+This project is licensed under the [ISC License](LICENSE.md).
 
 ## Acknowledgements
 
