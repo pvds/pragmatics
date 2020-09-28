@@ -1,6 +1,5 @@
 [build]
     command = "yarn build"
-    publish = "boilerplates/eleventy/dist"
 
 [context.production.environment]
     ELEVENTY_ENV = "production"
