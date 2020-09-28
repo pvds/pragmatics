@@ -19,7 +19,7 @@
   "main": "lib/index.scss",
   "scripts": {
     "clean": "del-cli dist",
-    "sass": "sass lib --style compressed",
+    "sass": "sass lib",
     "precopy": "yarn clean",
     "copy": "run-p copy:*",
     "copy:package": "copyfiles package.json \"lib/**/*.scss\" \"*.md\" dist",

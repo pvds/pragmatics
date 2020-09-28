@@ -2,6 +2,12 @@
     Box shadow
     ========================================================================== */
 
+$shadow-elevation-umbra-opacity: 0.09;
+$shadow-elevation-penumbra-opacity: 0.06;
+$shadow-elevation-ambient-opacity: 0.03;
+$shadow-focus: inset 0 0 0 1px $color-shadow;
+$shadow-opacity-boost: 1;
+
 /* prettier-ignore */
 $shadow-elevation-umbra-map: (
   0: (0 0 0 0),
@@ -89,7 +95,8 @@ $shadow-elevation-ambient-map: (
   24: (0 9 46 9)
 );
 
-$shadow-elevation-umbra-opacity: 0.09;
-$shadow-elevation-penumbra-opacity: 0.06;
-$shadow-elevation-ambient-opacity: 0.03;
-$shadow-opacity-boost: 1;
+$shadow-map: (
+  ($shadow-elevation-umbra-map, $shadow-elevation-umbra-opacity),
+  ($shadow-elevation-penumbra-map, $shadow-elevation-penumbra-opacity),
+  ($shadow-elevation-ambient-map, $shadow-elevation-ambient-opacity)
+);

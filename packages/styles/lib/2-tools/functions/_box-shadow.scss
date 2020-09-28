@@ -5,36 +5,31 @@
 /**
  * Convert shadow level and direction to box-shadow values
  * example:
- *    $shadow-value: shadow-values(4, bottom);
+ *    $shadow-value: shadow-values(4, left);
  */
 @function shadow-values($level, $direction: bottom) {
-  $cross-offset-raw: nth($level, 1);
-  $main-offset-raw: nth($level, 2);
-  $blur-raw: nth($level, 3);
-  $spread-raw: nth($level, 4);
+  $cross-offset: nth($level, 1) + px;
+  $main-offset: nth($level, 2) + px;
+  $blur: nth($level, 3) + px;
+  $spread: nth($level, 4) + px;
 
-  $h-offset-raw: $cross-offset-raw;
-  $v-offset-raw: $main-offset-raw;
+  $h-offset: $cross-offset;
+  $v-offset: $main-offset;
 
   @if $direction == top {
-    $h-offset-raw: $cross-offset-raw;
-    $v-offset-raw: $main-offset-raw * -1;
+    $h-offset: $cross-offset;
+    $v-offset: -$main-offset;
   }
 
   @if $direction == right {
-    $h-offset-raw: $main-offset-raw;
-    $v-offset-raw: $cross-offset-raw;
+    $h-offset: $main-offset;
+    $v-offset: $cross-offset;
   }
 
   @if $direction == left {
-    $h-offset-raw: $main-offset-raw * -1;
-    $v-offset-raw: $cross-offset-raw;
+    $h-offset: -$main-offset;
+    $v-offset: $cross-offset;
   }
-
-  $h-offset: $h-offset-raw + px;
-  $v-offset: $v-offset-raw + px;
-  $blur: $blur-raw + px;
-  $spread: $spread-raw + px;
 
   @return #{$h-offset $v-offset $blur $spread};
 }
@@ -42,7 +37,7 @@
 /**
  * Box shadow
  * example:
- *    box-shadow: shadow(4);
+ *    box-shadow: shadow(4, left, $shadow-color: black);
  */
 @function shadow(
   $level,
@@ -52,37 +47,26 @@
   $shadow-color: $color-shadow,
   $important: null
 ) {
-  @if type-of($level) != number or not unitless($level) {
-    @error "$z-value must be a unitless number, but received "#{$level}"";
+  $focus-shadow: if($focus, $shadow-focus, null);
+  $shadows: (#{$focus-shadow});
+  $important: if($important, !important, null);
+
+  @each $shadow in $shadow-map {
+    $shadow-raw: nth($shadow, 1);
+    $shadow-keys-raw: map-keys($shadow-raw);
+    $first-level: nth($shadow-keys-raw, 1);
+    $last-level: nth($shadow-keys-raw, length($shadow-keys-raw));
+
+    @if (type-of($level) != number or not unitless($level)) or
+      ($level < $first-level or $level > $last-level)
+    {
+      @error '$level must be a unitless number between #{$first-level} and #{$last-level}, but received "#{$level}"';
+    }
+
+    $shadow-values: shadow-values(map-get($shadow-raw, $level), $direction);
+    $shadow-color: rgba($shadow-color, nth($shadow, 2) * $opacity-boost);
+    $shadows: join($shadows, #{$shadow-values $shadow-color}, comma);
   }
 
-  @if $level < 0 or $level > 24 {
-    @error "$z-value must be between 0 and 24, but received "#{$level}"";
-  }
-
-  @if $important {
-    $important: !important;
-  }
-
-  $inset: null;
-
-  @if ($focus == true or $focus == 'inset') {
-    $inset: 'inset';
-  }
-
-  $umbra-level: shadow-values(map-get($shadow-elevation-umbra-map, $level), $direction);
-  $penumbra-level: shadow-values(map-get($shadow-elevation-penumbra-map, $level), $direction);
-  $ambient-level: shadow-values(map-get($shadow-elevation-ambient-map, $level), $direction);
-
-  $umbra-color: rgba($shadow-color, $shadow-elevation-umbra-opacity * $opacity-boost);
-  $penumbra-color: rgba($shadow-color, $shadow-elevation-penumbra-opacity * $opacity-boost);
-  $ambient-color: rgba($shadow-color, $shadow-elevation-ambient-opacity * $opacity-boost);
-
-  @if ($focus) {
-    @return $inset 0 0 0 1px $color-focus, $umbra-level $umbra-color,
-      $penumbra-level $penumbra-color, $ambient-level $ambient-color $important;
-  } @else {
-    @return $umbra-level $umbra-color, $penumbra-level $penumbra-color,
-      $ambient-level $ambient-color $important;
-  }
+  @return $shadows $important;
 }
