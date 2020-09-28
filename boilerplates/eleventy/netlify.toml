@@ -3,6 +3,9 @@
     command = "yarn build"
     publish = "boilerplates/eleventy/dist"
 
+[build.environment]
+    NETLIFY_USE_YARN = true
+
 [context.production.environment]
     ELEVENTY_ENV = "production"
 
