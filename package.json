@@ -69,6 +69,7 @@
     "@manypkg/cli": "^0.16.1",
     "@pragmatics/eslint-config": "^1.0.1",
     "@pragmatics/stylelint-config": "^2.0.2",
+    "@pragmatics/styles": "^2.0.0",
     "@types/jest": "^26.0.14",
     "copyfiles": "^2.3.0",
     "del-cli": "^3.0.1",
