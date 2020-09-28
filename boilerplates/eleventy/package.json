@@ -1,11 +1,13 @@
 {
+  "private": true,
   "name": "@pragmatics/eleventy-boilerplate",
   "version": "0.1.0",
   "description": "A boilerplate for eleventy websites",
   "homepage": "https://pragmatics.netlify.app",
+  "bugs": "https://github.com/pvds/pragmatics/labels/boilerplate%3A%20eleventy",
   "repository": {
     "type": "git",
-    "url": "http://github.com/pvds/eleventy-boilerplate"
+    "url": "git+https://github.com/pvds/pragmatics.git"
   },
   "keywords": [
     "pragmatics",
@@ -28,32 +30,7 @@
     "prestart": "yarn clean",
     "start": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "build": "cross-env ELEVENTY_ENV=production eleventy",
-    "build:serve": "cross-env ELEVENTY_ENV=production eleventy --serve",
-    "lint": "run-p lint:*",
-    "lint:js": "eslint . --cache --fix",
-    "lint:css": "stylelint **/*.scss --cache --fix --allow-empty-input",
-    "lint:format": "prettier . --write",
-    "test": "jest",
-    "test:changed": "jest -o"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.scss": "stylelint --fix --allow-empty-input",
-    "*.js": "eslint --fix",
-    "*": "prettier --write --ignore-unknown"
-  },
-  "jest": {
-    "coverageDirectory": "coverage",
-    "coverageProvider": "v8",
-    "testEnvironment": "node",
-    "testMatch": [
-      "**/__tests__/**/*.[jt]s?(x)",
-      "**/*.(spec|test).[tj]s?(x)]"
-    ]
+    "build:serve": "cross-env ELEVENTY_ENV=production eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
@@ -63,10 +40,7 @@
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@fullhuman/postcss-purgecss": "^3.0.0",
-    "@pragmatics/eleventy-plugin-pwa": "^1.1.1",
-    "@pragmatics/eslint-config": "^1.0.1",
-    "@pragmatics/stylelint-config": "^2.0.2",
-    "@pragmatics/styles": "^1.0.2",
+    "@pragmatics/styles": "^1.4.2",
     "autoprefixer": "^10.0.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -74,25 +48,16 @@
     "cross-env": "^7.0.2",
     "cssesc": "^3.0.0",
     "cssnano": "^4.1.10",
-    "del-cli": "^3.0.1",
-    "eslint": "^7.9.0",
-    "eslint-plugin-jest": "^24.0.2",
     "focus-trap": "^6.1.0",
     "focus-visible": "^5.1.0",
     "html-minifier": "^4.0.0",
-    "husky": "^4.3.0",
-    "jest": "^26.4.2",
     "js-yaml": "^3.14.0",
-    "lint-staged": "^10.4.0",
     "luxon": "^1.24.1",
     "markdown-it": "^11.0.0",
     "markdown-it-imsize": "^2.0.1",
     "memfs": "^3.2.0",
     "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.0.9",
-    "prettier": "^2.1.2",
-    "stylelint": "^13.7.2",
     "svg-sprite": "^1.5.0",
     "webpack": "^4.44.2"
   }

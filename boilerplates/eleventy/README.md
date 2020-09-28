@@ -1,13 +1,4 @@
----
-tags: posts
-layout: post
-permalink: /about/
-eleventyNavigation:
-  key: About
-  order: 3
-title: About
-snippet: Learn more about the pragmatics boilerplate for eleventy
----
+# Pragmatics Eleventy boilerplate
 
 [![Release version][release-version-shield]][release-version-url]
 [![Release status][deploy-status-shield]][deploy-status-url]
@@ -49,7 +40,7 @@ yarn
 ## Features
 
 - HTML Minification
-- CSS Pipeline (Sass, CleanCSS, Critical CSS)
+- CSS Pipeline (Sass, CSSNano, PurgeCSS, Autoprefixer, Critical CSS)
 - JS Bundling (Webpack)
 - SVG Icon Sprite Generation
 - No external builds, everything runs through 11ty
@@ -69,8 +60,8 @@ We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/pvds/package-boilerplate/docs/CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
-This repository has a [code of conduct](https://github.com/pvds/package-boilerplate/docs/CODE_OF_CONDUCT.md), we will remove things that do not respect it.
+Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
+This repository has a [code of conduct](docs/CODE_OF_CONDUCT.md), we will remove things that do not respect it.
 
 ## Versioning
 
@@ -79,12 +70,12 @@ For the available versions, see the [tags on this repository](https://github.com
 
 ## Authors
 
-See the list of [contributors](https://github.com/pvds/package-boilerplate/contributors)
+See the list of [contributors](https://github.com/pvds/pragmatics/contributors)
 who participated in this project.
 
 ## License
 
-This project is licensed under the [ISC License](https://github.com/pvds/package-boilerplate/docs/LICENSE.md).
+This project is licensed under the [ISC License](LICENSE.md).
 
 ## Acknowledgements
 
@@ -100,9 +91,9 @@ The following guidelines, methodologies and architectures have been used as insp
 [dependencies-url]: https://github.com/pvds/eleventy-boilerplate
 [issues-shield]: https://img.shields.io/github/issues/pvds/eleventy-boilerplate.svg
 [issues-url]: https://github.com/pvds/eleventy-boilerplate/issues
-[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_eleventy-boilerplate.svg?server=https%3A%2F%2Fsonarcloud.io
-[quality-url]: https://sonarcloud.io/dashboard?id=pvds_eleventy-boilerplate
+[quality-shield]: https://img.shields.io/sonar/quality_gate/pvds_pragmatics.svg?server=https%3A%2F%2Fsonarcloud.io
+[quality-url]: https://sonarcloud.io/dashboard?id=pvds_pragmatics
 [deploy-netlify-shield]: https://img.shields.io/badge/Deploy%20to%20Netlify-blue?style=for-the-badge&logo=netlify&logoColor=white
-[deploy-netlify-url]: https://app.netlify.com/start/deploy?repository=https://github.com/pvds/eleventy-boilerplate
+[deploy-netlify-url]: https://app.netlify.com/start/deploy?repository=https://github.com/pvds/pragmatics
 [demo-shield]: https://img.shields.io/badge/Demo%20site-blueviolet?style=for-the-badge&logo=netlify&logoColor=white
 [demo-url]: https://app.netlify.com/sites/pragmatics

@@ -1,4 +1,13 @@
-# Pragmatics Eleventy boilerplate
+---
+tags: posts
+layout: post
+permalink: /about/
+eleventyNavigation:
+  key: About
+  order: 3
+title: About
+snippet: Learn more about the pragmatics boilerplate for eleventy
+---
 
 [![Release version][release-version-shield]][release-version-url]
 [![Release status][deploy-status-shield]][deploy-status-url]
@@ -40,7 +49,7 @@ yarn
 ## Features
 
 - HTML Minification
-- CSS Pipeline (Sass, CSSNano, PurgeCSS, Autoprefixer, Critical CSS)
+- CSS Pipeline (Sass, CleanCSS, Critical CSS)
 - JS Bundling (Webpack)
 - SVG Icon Sprite Generation
 - No external builds, everything runs through 11ty
@@ -60,8 +69,8 @@ We use [Jest](https://jestjs.io/) for testing, run `npm test` to run all tests.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
-This repository has a [code of conduct](docs/CODE_OF_CONDUCT.md), we will remove things that do not respect it.
+Please read [CONTRIBUTING.md](https://github.com/pvds/pragmatics/docs/CONTRIBUTING.md) for details on our the process for submitting issues and pull requests to us.
+This repository has a [code of conduct](https://github.com/pvds/pragmatics/docs/CODE_OF_CONDUCT.md), we will remove things that do not respect it.
 
 ## Versioning
 
@@ -70,12 +79,12 @@ For the available versions, see the [tags on this repository](https://github.com
 
 ## Authors
 
-See the list of [contributors](https://github.com/pvds/package-boilerplate/contributors)
+See the list of [contributors](https://github.com/pvds/pragmatics/contributors)
 who participated in this project.
 
 ## License
 
-This project is licensed under the [ISC License](docs/LICENSE.md).
+This project is licensed under the [ISC License](https://github.com/pvds/pragmatics/docs/LICENSE.md).
 
 ## Acknowledgements
 

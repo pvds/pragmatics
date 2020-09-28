@@ -1,6 +1,7 @@
 [build]
+    base = "boilerplates/eleventy"
     command = "yarn build"
-    publish = "dist"
+    publish = "boilerplates/eleventy/dist"
 
 [context.production.environment]
     ELEVENTY_ENV = "production"
@@ -15,7 +16,7 @@
 
 # [[redirects]]
 #     from = "https://pragmatics.netlify.com/*"
-#     to = "https://pragmatics.dev/:thump
+#     to = "https://pragmatics.dev/:splat
 #     status = 301
 #     force = true
 
