@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.0.0 (2020-09-28)
+
+
+### Code Refactoring
+
+* use lib folder to keep same structure in source and dist ([407e269](https://github.com/pvds/pragmatics/commit/407e269fc33e3f65a3076396e4439fce90ad2eac))
+
+
+### BREAKING CHANGES
+
+* sass partial import breaks because of rename from `styles` folder to `lib`
+
+
+
+
+
 ## [1.4.2](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@1.4.1...@pragmatics/styles@1.4.2) (2020-09-27)
 
 
