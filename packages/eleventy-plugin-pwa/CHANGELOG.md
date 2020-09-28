@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.3 (2020-09-28)
+
+
+### Bug Fixes
+
+* correct main entry file in copy script ([8b98e58](https://github.com/pvds/pragmatics/commit/8b98e587a67430f04902933e0b7bddbceb757c0a))
+
+
+
+
+
 ## 1.1.2 (2020-09-27)
 
 
