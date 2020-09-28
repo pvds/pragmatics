@@ -16,15 +16,14 @@
     "sass",
     "scss"
   ],
-  "main": "index.scss",
+  "main": "lib/index.scss",
   "scripts": {
     "clean": "del-cli dist",
-    "sass": "sass styles --style compressed",
+    "sass": "sass lib --style compressed",
     "precopy": "yarn clean",
     "copy": "run-p copy:*",
-    "copy:styles": "copyfiles -u 1 \"styles/**/*.scss\" dist",
+    "copy:package": "copyfiles package.json \"lib/**/*.scss\" \"*.md\" dist",
     "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" packages/styles/dist",
-    "copy:misc": "copyfiles package.json \"*.md\" dist",
     "start": "yarn sass --watch",
     "build": "yarn copy"
   },
