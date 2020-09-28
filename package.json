@@ -14,9 +14,6 @@
     "pragmatics"
   ],
   "scripts": {
-    "localinstall": "run-p localinstall:*",
-    "localinstall:eleventy": "cd boilerplates/eleventy && yarn",
-    "localinstall:package": "cd boilerplates/package && yarn",
     "postinstall": "manypkg check",
     "start": "lerna run start",
     "build": "lerna run build",
@@ -63,15 +60,13 @@
     ]
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "boilerplates/*"
   ],
   "dependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@manypkg/cli": "^0.16.1",
-    "@pragmatics/eslint-config": "^1.0.1",
-    "@pragmatics/stylelint-config": "^2.0.2",
-    "@pragmatics/styles": "^2.0.0",
     "@types/jest": "^26.0.14",
     "copyfiles": "^2.3.0",
     "del-cli": "^3.0.1",
