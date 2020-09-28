@@ -1,0 +1,30 @@
+/*  ==========================================================================
+    Screen readers
+    ========================================================================== */
+
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+
+  .header,
+  .footer {
+    flex: none;
+  }
+
+  &__main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding-bottom: grid-unit(6);
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+}

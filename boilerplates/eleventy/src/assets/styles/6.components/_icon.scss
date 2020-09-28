@@ -1,0 +1,13 @@
+/*  ==========================================================================
+    icon
+    ========================================================================== */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: $font-size-lg;
+  vertical-align: middle;
+  pointer-events: none;
+  fill: currentColor;
+}

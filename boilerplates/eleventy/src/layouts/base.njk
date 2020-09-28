@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ meta.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+  <script>
+      if ("serviceWorker" in navigator)
+          navigator.serviceWorker.register("/service-worker.js");
+  </script>
+  {% include "meta.njk" %}
+</head>
+<body>
+<div hidden>{% iconsprite %}</div>
+<a href="#main" class="sr-skip-link">skip to main content</a>
+
+<div class="layout" role="document">
+  {% include "header.njk" %}
+  <main id="main" class="layout__main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+</div>
+
+<div class="offcanvas offcanvas--bottom">
+  <div id="offline-offcanvas-item" class="offcanvas__item">
+    {% snackbar "offline", "You are currenlty offline" %}
+  </div>
+  <div id="pwa-install-offcanvas-item" class="offcanvas__item">
+    {% snackbar "pwa-install", "for easy access", true, "Install", true, "Dismiss install" %}
+  </div>
+</div>
+
+<script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
+</body>
+</html>
