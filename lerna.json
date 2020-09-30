@@ -12,6 +12,11 @@
       "includeMergedTags": true,
       "message": "chore(release): publish"
     },
-    "ignoreChanges": ["**/__tests__/**", "**/tests/**", "**/*.(spec|test).[tj]s?(x)"]
+    "ignoreChanges": [
+      "**/__tests__/**",
+      "**/tests/**",
+      "**/*.(spec|test).[tj]s?(x)",
+      "**/*.CHANGELOG.MD"
+    ]
   }
 }
