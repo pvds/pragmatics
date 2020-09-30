@@ -16,7 +16,7 @@
       "**/__tests__/**",
       "**/tests/**",
       "**/*.(spec|test).[tj]s?(x)",
-      "**/*.CHANGELOG.MD"
+      "**/CHANGELOG.md"
     ]
   }
 }
