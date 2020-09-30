@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/pvds/pragmatics.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/conventional-changelog",
   "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20conventional-changelog",
   "keywords": [
