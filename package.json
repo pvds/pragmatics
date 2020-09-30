@@ -30,6 +30,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
+      "pre-push": "validate-branch-name",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -37,6 +38,10 @@
     "*.scss": "stylelint --fix --allow-empty-input",
     "*.js": "eslint --fix",
     "*": "prettier --write --ignore-unknown"
+  },
+  "validate-branch-name": {
+    "pattern": "^(master|develop){1}$|^(feature|fix|hotfix|release)/.+$",
+    "errorMsg": "Branch name should start with one of (feature|fix|hotfix|release)/"
   },
   "commitlint": {
     "extends": [
@@ -78,6 +83,7 @@
     "lint-staged": "^10.4.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
-    "stylelint": "^13.7.0"
+    "stylelint": "^13.7.0",
+    "validate-branch-name": "^1.0.6"
   }
 }
