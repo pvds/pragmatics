@@ -5,20 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 1.1.0 (2020-09-30)
 
-
-### Documentation
-
-* clear changelog and add reference the original changelog ([3fba5b4](https://github.com/pvds/pragmatics/commit/3fba5b4a71052f7aeaae3f6a782db39100593451))
-
-
 ### Features
 
-* add initial conventional-changelog package ([2733628](https://github.com/pvds/pragmatics/commit/273362893571e3aacd0823e99530a070a6ab1ab5))
-* do not log chore commits in changelog ([2685fd2](https://github.com/pvds/pragmatics/commit/2685fd227f23a7b4a9ded6721e89652229201811))
-
-
-
-
+- do not log chore commits in changelog ([2685fd2](https://github.com/pvds/pragmatics/commit/2685fd227f23a7b4a9ded6721e89652229201811))
 
 ## 1.0.0 (2020-09-30)
 
