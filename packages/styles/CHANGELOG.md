@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.1.0 (2020-09-30)
+
+
+### Features
+
+* make focus-shadow width configurable ([1cee8f4](https://github.com/pvds/pragmatics/commit/1cee8f490db7a221abc5a19ef3449cb74909ea55))
+
+
+### Styles
+
+* use inline if statement for focus-shadow inset ([ccbefd5](https://github.com/pvds/pragmatics/commit/ccbefd5f8a4dd4a1bdfab2f5fde517be54e75d82))
+
+
+
+
+
 ## [2.0.1](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.0.0...@pragmatics/styles@2.0.1) (2020-09-28)
 
 **Note:** Version bump only for package @pragmatics/styles
