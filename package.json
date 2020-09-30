@@ -17,7 +17,7 @@
     "postinstall": "manypkg check",
     "start": "lerna run start",
     "build": "lerna run build",
-    "version-ci": "lerna version -y --no-private --no-commit-hooks",
+    "version-ci": "lerna version -y --no-private",
     "prepublish-ci": "run-s version-ci build",
     "publish-ci": "lerna publish from-package -y --contents dist --no-commit-hooks",
     "test": "jest --passWithNoTests",
