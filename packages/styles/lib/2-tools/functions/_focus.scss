@@ -7,8 +7,8 @@
  * example:
  *    box-shadow: focus-shadow(false);
  */
-@function focus-shadow($use-inset: true, $color: $color-focus) {
+@function focus-shadow($use-inset: true, $color: $color-focus, $width: 2px) {
   $inset: if($use-inset, inset, null);
 
-  @return $inset 0 0 0 2px $color;
+  @return $inset 0 0 0 $width $color;
 }
