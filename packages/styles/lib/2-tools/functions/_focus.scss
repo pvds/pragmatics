@@ -8,11 +8,7 @@
  *    box-shadow: focus-shadow(false);
  */
 @function focus-shadow($use-inset: true, $color: $color-focus) {
-  $inset: inset;
-
-  @if ($use-inset == false) {
-    $inset: null;
-  }
+  $inset: if($use-inset, inset, null);
 
   @return $inset 0 0 0 2px $color;
 }
