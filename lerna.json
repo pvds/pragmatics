@@ -8,9 +8,10 @@
       "registry": "https://registry.npmjs.org/",
       "access": "public",
       "conventionalCommits": true,
+      "changelogPreset": "@pragmatics/preset",
       "includeMergedTags": true,
       "message": "chore(release): publish"
     },
-    "ignoreChanges": ["**/__tests__/**", "**/tests/**"]
+    "ignoreChanges": ["**/__tests__/**", "**/tests/**", "**/*.(spec|test).[tj]s?(x)"]
   }
 }
