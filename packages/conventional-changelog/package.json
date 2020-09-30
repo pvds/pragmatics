@@ -1,0 +1,37 @@
+{
+  "name": "@pragmatics/conventional-changelog-preset",
+  "version": "1.0.0",
+  "description": "conventional-changelog pragmatics preset",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvds/pragmatics.git"
+  },
+  "homepage": "https://github.com/pvds/pragmatics/tree/master/packages/conventional-changelog",
+  "bugs": "https://github.com/pvds/pragmatics/labels/package%3A%20conventional-changelog",
+  "keywords": [
+    "conventional-changelog",
+    "pragmatics",
+    "preset"
+  ],
+  "author": "Peter van der Steen <pvdsteen@gmail.com> (https://pvdsteen.com)",
+  "contributors": [
+    "Steve Mao"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del-cli dist",
+    "precopy": "yarn clean",
+    "copy": "run-p copy:*",
+    "copy:package": "copyfiles \"**/*\" dist",
+    "copy:docs": "cd ../../ && copyfiles \"docs/**/*\" packages/conventional-changelog/dist",
+    "build": "yarn copy"
+  },
+  "dependencies": {
+    "compare-func": "^2.0.0",
+    "q": "^1.5.1"
+  }
+}
