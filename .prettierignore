@@ -1,1 +1,3 @@
 dist
+*.hbs
+CHANGELOG.md
