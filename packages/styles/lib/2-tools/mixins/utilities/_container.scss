@@ -1,0 +1,10 @@
+/*  ==========================================================================
+    Container
+    ========================================================================== */
+
+@mixin container($width: 90%, $max-width: $container-max-width) {
+  width: $width;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
