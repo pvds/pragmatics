@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.2.0...@pragmatics/styles@2.2.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* libsass adds a trailing comma when joining an empty list ([d42d3dc](https://github.com/pvds/pragmatics/commit/d42d3dc1fb859625b1f221f5d197b9e5c8c0f850))
+
+
+
+
+
 ## [2.2.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.1.0...@pragmatics/styles@2.2.0) (2020-10-02)
 
 
