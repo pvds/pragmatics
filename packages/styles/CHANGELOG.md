@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.1.0...@pragmatics/styles@2.2.0) (2020-10-02)
+
+
+### Features
+
+* add container mixin ([89d54bc](https://github.com/pvds/pragmatics/commit/89d54bc5a6f3b1427b98e1b22103e467ea58680a))
+
+
+
+
+
 ## 2.1.0 (2020-09-30)
 
 
