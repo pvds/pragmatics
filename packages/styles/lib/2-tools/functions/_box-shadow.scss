@@ -51,7 +51,7 @@
   $shadows: if($focus-shadow, (#{$focus-shadow}), null);
   $important: if($important, !important, null);
 
-  @each $shadow in $shadow-map {
+  @each $key, $shadow in $shadow-map {
     $shadow-raw: nth($shadow, 1);
     $shadow-keys-raw: map-keys($shadow-raw);
     $first-level: nth($shadow-keys-raw, 1);

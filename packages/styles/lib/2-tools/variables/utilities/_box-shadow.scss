@@ -95,8 +95,9 @@ $shadow-elevation-ambient-map: (
   24: (0 9 46 9)
 );
 
+/* prettier-ignore */
 $shadow-map: (
-  ($shadow-elevation-umbra-map, $shadow-elevation-umbra-opacity),
-  ($shadow-elevation-penumbra-map, $shadow-elevation-penumbra-opacity),
-  ($shadow-elevation-ambient-map, $shadow-elevation-ambient-opacity)
+  1: ($shadow-elevation-umbra-map, $shadow-elevation-umbra-opacity),
+  2: ($shadow-elevation-penumbra-map, $shadow-elevation-penumbra-opacity),
+  3: ($shadow-elevation-ambient-map, $shadow-elevation-ambient-opacity)
 );
