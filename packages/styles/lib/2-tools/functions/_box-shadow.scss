@@ -48,7 +48,7 @@
   $important: null
 ) {
   $focus-shadow: if($focus, $shadow-focus, null);
-  $shadows: (#{$focus-shadow});
+  $shadows: if($focus-shadow, (#{$focus-shadow}), null);
   $important: if($important, !important, null);
 
   @each $shadow in $shadow-map {
@@ -65,7 +65,10 @@
 
     $shadow-values: shadow-values(map-get($shadow-raw, $level), $direction);
     $shadow-color: rgba($shadow-color, nth($shadow, 2) * $opacity-boost);
-    $shadows: join($shadows, #{$shadow-values $shadow-color}, comma);
+    $current-shadow: (#{$shadow-values $shadow-color});
+
+    /* Do not join an empty list because libsass adds a trailing comma (see: https://github.com/sass/libsass/issues/2471) */
+    $shadows: if($shadows, join($shadows, $current-shadow, comma), $current-shadow);
   }
 
   @return $shadows $important;
