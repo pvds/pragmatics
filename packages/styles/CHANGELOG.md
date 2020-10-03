@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.3.0...@pragmatics/styles@2.4.0) (2020-10-03)
+
+
+### Bug Fixes
+
+* allow single shadows by forcing `$shadow-map` to be a map ([f9244c0](https://github.com/pvds/pragmatics/commit/f9244c0cb1b4c0c02ac30b7ade56c86ca6edf715))
+
+
+### Features
+
+* add variables for 50 scale to all base colors ([4249da0](https://github.com/pvds/pragmatics/commit/4249da05483499fda30de48780f0ca857f5bfed7))
+* make color scales more flexible ([b723119](https://github.com/pvds/pragmatics/commit/b7231199030bba788693ad6feb932c71148d6c14))
+
+
+
+
+
 ## [2.3.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.2.2...@pragmatics/styles@2.3.0) (2020-10-03)
 
 
