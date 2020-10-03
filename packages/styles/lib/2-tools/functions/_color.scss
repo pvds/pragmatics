@@ -8,7 +8,8 @@
  *    $color-black-900: color-scale($color-black, 900);
  */
 @function color-scale($color, $scale, $increment: $color-increment) {
-  $scale-index: index($color-scales, $scale) - 1;
+  $color-scale-max: ($color-scale-step * $color-scale-count) + $color-scale-step;
+  $scale-index: ($color-scale-max - $scale) / $color-scale-step;
 
   @return lighten($color, $scale-index * $increment);
 }

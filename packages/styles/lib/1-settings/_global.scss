@@ -65,17 +65,24 @@ $line-height-2xl: 3.6rem !default;
 $line-height-3xl: 4.8rem !default;
 
 /* Colors
+      NB! lightness value of your colors should not exceed 100%:
+        Formula:
+          ($color-scale-count * $color-increment) + $color-base-lightness < 100
+        Example: $color-black-100 =
+          (9 * 9) + 9% = 90% < 100%
    ========================================================================== */
-$color-scales: 900, 800, 700, 600, 500, 400, 300, 200, 100 !default;
+$color-scale-step: 100 !default;
+$color-scale-count: 9 !default;
 $color-increment: 9 !default;
+$color-base-lightness: 9%;
 
-$color-black: hsl(0, 0%, 15%) !default;
+$color-black: hsl(0, 0%, $color-base-lightness) !default;
 $color-white: hsl(360, 100%, 100%) !default;
-$color-blue: hsl(204, 100%, 10%) !default;
-$color-purple: hsl(286, 100%, 10%) !default;
-$color-red: hsl(0, 100%, 10%) !default;
-$color-orange: hsl(26, 100%, 10%) !default;
-$color-green: hsl(104, 100%, 10%) !default;
+$color-blue: hsl(204, 100%, $color-base-lightness) !default;
+$color-purple: hsl(286, 100%, $color-base-lightness) !default;
+$color-red: hsl(0, 100%, $color-base-lightness) !default;
+$color-orange: hsl(26, 100%, $color-base-lightness) !default;
+$color-green: hsl(104, 100%, $color-base-lightness) !default;
 
 $color-opacity-max: 0.95 !default;
 $color-opacity-high: 0.9 !default;
