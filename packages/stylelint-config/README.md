@@ -46,8 +46,7 @@ extends:
 
 #### Extend with Prettier config
 
-In order to [play nicely with Prettier](https://prettier.io/docs/en/integrating-with-linters.html) we use [stylelint-prettier](https://github.com/prettier/stylelint-prettier) to run Prettier as a Stylelint rule.
-We disable all formatting related Stylelint rules with [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier).
+In order to [play nicely with Prettier](https://prettier.io/docs/en/integrating-with-linters.html) we disable all formatting related Stylelint rules with [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier).
 
 Add a [prettier configuration file](https://prettier.io/docs/en/configuration.html) with your formatting preferences, for example:
 

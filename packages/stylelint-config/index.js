@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     '@pragmatics/stylelint-config-order',
-    'stylelint-prettier/recommended',
+    'stylelint-config-prettier',
   ],
   rules: {
     // Disabled for SCSS as it prevents SCSS specific @ rules (such as @if)
