@@ -16,35 +16,70 @@
   cursor: pointer;
 }
 
-@mixin trigger-style() {
-  $trigger_color: $color-text;
-  $trigger_background: $color-white;
-  $trigger-hover_background: $color-hover-background;
-  $trigger-pressed_background: $color-pressed-background;
-
-  border-radius: $border-radius;
-  background-color: $trigger_background;
+@mixin trigger-style(
+  $trigger_color: null,
+  $trigger-hover_color: $trigger_color,
+  $trigger-pressed_color: $trigger_color,
+  $trigger_background: null,
+  $trigger-hover_background: $trigger_background,
+  $trigger-pressed_background: $trigger_background,
+  $trigger-radius: null
+) {
   fill: currentColor;
 
+  @if ($trigger_background) {
+    background-color: $trigger_background;
+  }
+
+  @if ($trigger_color) {
+    color: $trigger_color;
+  }
+
+  @if ($trigger-radius) {
+    border-radius: $trigger-radius;
+  }
+
   &:hover {
-    background-color: $trigger-hover_background;
     fill: currentColor;
+
+    @if ($trigger-hover_background) {
+      background-color: $trigger-hover_background;
+    }
+
+    @if ($trigger-hover_color) {
+      color: $trigger-hover_color;
+    }
   }
 
   &:active,
   &.is-active {
     background-color: $trigger-pressed_background;
     fill: currentColor;
+
+    @if ($trigger-pressed_background) {
+      color: $trigger-pressed_background;
+    }
+
+    @if ($trigger-pressed_color) {
+      color: $trigger-pressed_color;
+    }
   }
 
   &:disabled,
   &.is-disabled {
-    color: color-disabled($trigger_color);
     fill: currentColor;
+
+    @if ($trigger_background) {
+      background-color: color-disabled($trigger_background);
+    }
+
+    @if ($trigger_color) {
+      color: color-disabled($trigger_color);
+    }
   }
 }
 
-@mixin trigger($size: $min-touch-area) {
+@mixin trigger($size: $min-touch-area, $styles...) {
   @include trigger-layout($size);
-  @include trigger-style();
+  @include trigger-style($styles...);
 }
