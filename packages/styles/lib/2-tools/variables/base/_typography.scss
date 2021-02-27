@@ -25,14 +25,16 @@ $text-size: (
   xl: (
     size: $font-size-xl,
     height: $line-height-xl,
+    weight: $font-weight-bold,
   ),
   2xl: (
     size: $font-size-2xl,
     height: $line-height-2xl,
+    weight: $font-weight-bold,
   ),
   3xl: (
     size: $font-size-3xl,
     height: $line-height-3xl,
     weight: $font-weight-bold,
   ),
-);
+) !default;

@@ -33,6 +33,7 @@ $grid-unit: 0.8rem !default;
 /* Family */
 $font-family-base: system, -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI',
   'Helvetica Neue', 'Lucida Grande', sans-serif !default;
+$font-family-heading: $font-family-base !default;
 $font-family-monospace: consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
   'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
   'Nimbus Mono L', monaco, 'Courier New', courier, monospace !default;
@@ -41,6 +42,8 @@ $font-family-monospace: consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Conso
 $font-weight-regular: 400 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
+$font-weight-body: $font-weight-regular !default;
+$font-weight-headings: $font-weight-semibold !default;
 
 /* Size */
 $font-size-root: 62.5% !default;
@@ -54,15 +57,15 @@ $font-size-2xl: 3.2rem !default;
 $font-size-3xl: 4rem !default;
 
 /* height */
-$line-height: 1.4 !default;
-$line-height-2xs: 1.4rem !default;
-$line-height-xs: 1.6rem !default;
-$line-height-sm: 2rem !default;
-$line-height-md: 2.4rem !default;
-$line-height-lg: 2.8rem !default;
-$line-height-xl: 3.2rem !default;
-$line-height-2xl: 3.6rem !default;
-$line-height-3xl: 4.8rem !default;
+$line-height-2xs: 1.6rem !default;
+$line-height-xs: 2rem !default;
+$line-height-sm: 2.4rem !default;
+$line-height-md: 3.2rem !default;
+$line-height-lg: 3.6rem !default;
+$line-height-xl: 4rem !default;
+$line-height-2xl: 4.4rem !default;
+$line-height-3xl: 5.6rem !default;
+$line-height: $line-height-md !default;
 
 /* Colors
       NB! lightness value of your colors should not exceed 100%:
