@@ -1,0 +1,23 @@
+/*  ==========================================================================
+    Webkit scrollbar
+    ========================================================================== */
+
+$scrollbar_size: grid-unit(1.5);
+
+::-webkit-scrollbar {
+  width: $scrollbar_size;
+  height: $scrollbar_size;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darken($color-blue, 10%);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: darken($color-blue, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $scrollbar_size / 2;
+  background-color: $color-blue-900;
+}
