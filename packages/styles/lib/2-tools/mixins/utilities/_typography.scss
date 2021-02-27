@@ -2,10 +2,9 @@
     Text
     ========================================================================== */
 
-@mixin text($name, $weight: null) {
+@mixin text($name, $weight: map-deep-get($text-size, $name, weight)) {
   $size: map-deep-get($text-size, $name, size);
   $height: map-deep-get($text-size, $name, height);
-  $weight: map-deep-get($text-size, $name, weight);
 
   font-size: $size;
   line-height: $height;
