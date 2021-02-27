@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.5.0 (2021-02-27)
+
+
+### Bug Fixes
+
+* font weight configuration ([77ecdb9](https://github.com/pvds/pragmatics/commit/77ecdb99780046dd3a47d3f142d5c3aaa03d6a40))
+
+
+### Features
+
+* add webkit custom scrollbar styling ([ce73f4c](https://github.com/pvds/pragmatics/commit/ce73f4c78ef915f42fb24234c10324d41b0caa78))
+* make color variables configurable ([8d61c22](https://github.com/pvds/pragmatics/commit/8d61c226f706c92724dc4a60705ff8b247c952b1))
+* make trigger-style mixin more configurable ([fd9b58a](https://github.com/pvds/pragmatics/commit/fd9b58aef50829b57451a5850a79ba0cc8ff7c22))
+* make typography variables configurable ([d72d0da](https://github.com/pvds/pragmatics/commit/d72d0da4e51426e1692c4732b135e2a7f0d1aed1))
+
+
+
+
+
 ## [2.4.0](https://github.com/pvds/pragmatics/compare/@pragmatics/styles@2.3.0...@pragmatics/styles@2.4.0) (2020-10-03)
 
 
